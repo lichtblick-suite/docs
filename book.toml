@@ -1,0 +1,6 @@
+[book]
+authors = ["Lichtblick Team"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Lichtblick Documentation"
