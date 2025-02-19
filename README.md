@@ -16,7 +16,7 @@ cargo install mdbook
 
 ## Running a Local Preview  
 
-Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `docs` branch. Then, use the following command to generate a local preview:  
+Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:  
 
 ```
 mdbook serve
@@ -30,6 +30,6 @@ This will launch a local web server at `localhost:3000`, automatically updating 
 - Create a new branch based on `main`.  
 - File names should follow the `kebab-case` convention, using hyphens (`-`) instead of spaces.  
 - Use proper Markdown syntax and refer to the official documentation for formatting guidelines.  
-- Once your changes are complete, submit a pull request (PR) against the `docs` branch for review.  
+- Once your changes are complete, submit a pull request (PR) against the `main` branch for review.  
 
 Thank you for your contributions!
