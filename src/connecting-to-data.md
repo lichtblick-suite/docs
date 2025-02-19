@@ -9,12 +9,12 @@ To begin visualizing data, navigate to the Lichtblick dashboard and and select a
 
 Connect to a live data source or load local and imported files to visualize their data.
 
-**Live data** <br>
+#### Live data
 "open connection" - inspect real-time data from an active robotics stack or a remote source (e.g. S3 bucket)<br>
 _Supported Formats_ <br>
 ROS 1, ROS 2, Custom, MCAP, Velodyne
 
-**Local data** <br>
+#### Local data
 "open local file" - examine data stored locally on your computer <br>
 _Supported Formats_ <br>
 ROS 1, MCAP, PX4 ULog

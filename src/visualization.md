@@ -6,13 +6,13 @@ Lichtblick offers a comprehensive suite of visualization tools to help you analy
 
 To begin visualizing your data, connect to a data source and open a panel.
 
-**Open Data Source:**
+#### Open Data Source:
 * Click "Open data source" in the left-hand menu.
 * Choose from available options: live data or local file.
 
 ![image](https://github.com/user-attachments/assets/293c2c11-ddb0-4fe2-a892-46b5b4499412)
 
-**Opening a Panel:**
+#### Opening a Panel:
 * Click "Add panel" in the dashboard or left-hand menu.
 * Select the desired panel type (e.g., 3D, Raw Message, Image).
 
@@ -45,16 +45,16 @@ Lichtblick's interface is designed for intuitive navigation:
 
 ## Sidebars
 
-**Panel sidebar**<br>
+#### Panel sidebar
 Edit settings for any selected panel
 
-**Topics sidebar** <br>
+#### Topics sidebar
 View all topics available in the data source, along with their data types and message rates
 
-**Problems sidebar** <br>
+#### Problems sidebar
 See a list of playback errors to troubleshoot
 
-**Variables sidebar** <br>
+#### Variables sidebar
 set layout-wide variables that can be used in different panels with the message path syntax
 
 ## System Requirements
@@ -82,13 +82,13 @@ Robotics data is often associated with other timestamps, in addition to the log 
 
 Lichtblick optimizes how it loads complex robotics data for more streamlined seeking and playback.
 
-**Message "lookback"** <br>
+#### Message "lookback"
 When seeking to an arbitrary point in your loaded data, it's unlikely that every topic you are visualizing has a message at exactly the time you jumped to. To ensure that your layout still displays reasonable data, Lichtblick performs a "lookback" on your data. It looks for the most recent message on each subscribed topic, ensuring that even when seeking to an arbitrary point, Lichtblick will still display reasonable data for all the panels in your layout.
 
-**Latched Topics** <br>
+#### Latched Topics
 By default, ROS 1 .bag files, MCAP files, and Lichtblick data streams will play back using message latching. When seeking within your data, Lichtblick fetches the last message on all subscribed topics, even if they occurred multiple minutes before your seek location. Every panel in the layout will then automatically display the last data it saw for that topic, even if that data is infrequently published or was not published at that exact moment in time. Message latching allows panels to accurately display data from infrequently published topics, even while seeking around to multiple points in your data at random.
 
-**Preloading**<br>
+#### Preloading
 While most Lichtblick panels display just the most recent message for a given topic, others like the Plot and Map panels benefit from visualizing messages across the data's entire time range. Preloading data allows these panels to access all their historical data throughout playback, making it easier to spot anomalies, summarize robot behavior, and recognize trends and patterns.
 
 Even panels that visualize their most recently seen data can benefit from preloading. For example, the 3D panel preloads its transform messages to accurately position its markers. Robots often have many coordinate frames (e.g., joints of a robot arm, cameras on a self-driving car), each with their own markers. To render markers from different frames in a single 3D scene, the panel needs to use transforms to calculate the position of these visual elements in a common coordinate space. Since transforms accumulate and update over time, preloading ensures that the 3D panel has access to all necessary transform data for accurate visualization.
@@ -108,7 +108,7 @@ Alt + ➡️ - seek forward 500ms
 ## Introduction
 Lichtblick requires incoming messages to conform to specific structures for proper visualization. Utilizing schemas allows you to fully leverage the platform's built-in visualizations.
 
-**Supported Formats**
+#### Supported Formats
 * Protobuf
 * JSON schema
 * ROS 1
