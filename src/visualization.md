@@ -10,13 +10,14 @@ To begin visualizing your data, connect to a data source and open a panel.
 * Click "Open data source" in the left-hand menu.
 * Choose from available options: live data or local file.
 
-![image](https://github.com/user-attachments/assets/293c2c11-ddb0-4fe2-a892-46b5b4499412)
+![alt text](open-file.png)
 
 #### Opening a Panel:
 * Click "Add panel" in the dashboard or left-hand menu.
 * Select the desired panel type (e.g., 3D, Raw Message, Image).
 
-![{947F70A7-518D-4743-AE70-BDD041E32E12}](https://github.com/user-attachments/assets/f880582e-205d-49d6-88b5-27dca7948efe)<br>
+![alt text](add-panel.png)
+
 ![{761994DA-2C6F-40CF-8DE6-D8996C3B0A77}](https://github.com/user-attachments/assets/b0539e7b-ed89-42de-9f14-3b68ae94b969)
 
 
@@ -69,14 +70,18 @@ For the desktop application, download the latest version for your operating syst
 
 When visualizing local or remote data files, you can navigate their contents using the playback controls.
 
-![{58E45445-D716-4C49-8B61-BE76363797AB}](https://github.com/user-attachments/assets/d6acd218-898a-4596-a59a-ec787d71944b)
+![alt text](navigate-timestamp.png)
 
 ## Message Ordering
 
 Lichtblick orders and plays messages based on their log time. Log time typically refers to when the message was recorded but can be set to the timestamp that best reflects the reality you wish to visualize for time-critical signals. It's important to choose your log times carefully and consider sources of time skew such as network latency, batching, and buffering.
 
 Robotics data is often associated with other timestamps, in addition to the log time. The Plot and State Transitions panels can be configured to order data using alternative timestamp fields:
-![{B1E6DE5F-E32A-4131-9152-0EE5119F245D}](https://github.com/user-attachments/assets/5cadec1f-3728-4f61-9c67-bca95cda2739)
+
+|Timestamp Source|Description|
+|----------------|-----------|
+|Header stamp|A `header.stamp` field within the message data containing `sec` and `nsec` integers.|
+|Publish time|An optional MCAP-specific field|
 
 ## Message Loading
 
@@ -95,13 +100,13 @@ Even panels that visualize their most recently seen data can benefit from preloa
 
 ## Shortcuts
 
-Space - pause or play<br>
-shift + ⬅️ - seek backward 10ms <br>
-shift + ➡️ - seek forward 10 ms <br>
+`Space` - pause or play<br>
+`shift` + ⬅️ - seek backward 10ms <br>
+`shift` + ➡️ - seek forward 10 ms <br>
 ⬅️ - seek backward 100ms <br>
 ➡️ - seek forward 100ms <br>
-Alt + ⬅️ - seek backward 500ms <br>
-Alt + ➡️ - seek forward 500ms
+`Alt` + ⬅️ - seek backward 500ms <br>
+`Alt` + ➡️ - seek forward 500ms
 
 # Message schemas
 
@@ -138,7 +143,7 @@ If you've already developed custom messages, you can transform them into Lichtbl
 Panels in Lichtblick are flexible, modular elements that allow you to visualize and interact with data. You can customize and organize these panels within your layout.
 To add a panel, use the "Add Panel" menu to select a new panel, or drag and drop the panel directly into your layout. 
 
-![alt text]({4CAF3225-5B00-4D62-932F-7359095C871B}.png)
+![alt text](search-panels.png)
 
 Once added, you can easily move panels around by dragging their top bar.
 
@@ -149,25 +154,20 @@ Each panel's top bar has quick access to:
 ### Customizing Panels
 To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each pael will be highlighted with the orange border when selected.
 
-![alt text](image.png)
+![alt text](selected-panel.png)
 
 The sidebar allows you to filter the topics from your data source, and you can drang and drop topic results into panels for quick visualization. 
 
-![alt text]({15C040CA-3829-452F-A3A2-A57C63EB740C}.png)
+![alt text](search-for-topics.png)
 
 Topics can be mapped to specific panel types like:
 * Raw messages and table panel for detailed message views
 * Image panel for visual topics
 * Plot and State Transiton panel for mesage path with graph-related data.
 
-![alt text](image-1.png)
+![alt text](drag-and-drop-topics.png)
 
 For selecting multiple message paths, hold `shift` for a range, or `Ctrl` (or `Cmd` on macOS) for multiple non-adjacent items.
-
-
-
-
-
 
 
 
