@@ -64,7 +64,19 @@ Lichtblick supports several command-line parameters to streamline your workflow 
   lichtblick --source="path/to/your/files/"
   ```
 
-These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
+- `--time`: Opens Lichtblick player at a specific timestamp.
+
+  ```sh
+  # Specify the time as a UNIX timestamp (in seconds)
+  lichtblick --time=1633046400  # Interpreted as 2021-10-01 12:00:00 AM UTC
+
+  # Specify the time using a string format
+  lichtblick --time="2024-12-02 11:45"
+  lichtblick --time="2020-04-07 04:45:21 PM"
+  lichtblick --time="2020-04-07 04:45:21 PM CET"  # Lichtblick will attempt to convert this to the timezone used in the MCAP file
+  ```
+
+  These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
 
 ### Important Note
 
