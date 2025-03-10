@@ -14,6 +14,12 @@ After installing Rust, you can install mdBook by running the following command:
 cargo install mdbook
 ```  
 
+To fully utilize this documentation, you also need to install `mdbook-tabs`. You can do so with the following command:
+
+```bash
+cargo install mdbook-tabs
+```  
+
 ## Running a Local Preview  
 
 Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:  
