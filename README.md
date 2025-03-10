@@ -6,7 +6,25 @@ We appreciate your interest in contributing to this project! This guide provides
 
 This documentation is built using [mdBook](https://rust-lang.github.io/mdBook/index.html), which requires `Rust` and `Cargo` to be installed.  
 
-1. [Install Rust](https://www.rust-lang.org/tools/install)  
+1. [Install Rust](https://www.rust-lang.org/tools/install) 
+
+ **Note:** If you're on **Windows** you might need to install `Visual Studio Build Tools` before installing mdbook:
+
+### Step 1: Install Visual Studio Build Tools
+1. Download **Build Tools for Visual Studio** from the official [Microsoft site](https://visualstudio.microsoft.com/downloads/):  
+2. Scroll down and download **"Build Tools for Visual Studio"**.
+3. Open the installer and select **"C++ build tools"**.
+4. Ensure the following components are selected:
+   - MSVC v143 (or latest)
+   - Windows 10 SDK (or latest)
+   - CMake (optional but recommended)
+
+### Step 2: Set Up the Environment
+1. Open **"x86 Native Tools Command Prompt for VS"** from the Start menu.
+2. Run the following command to set Rust to the stable version:
+   ```sh
+   rustup default stable
+
 
 After installing Rust, you can install mdBook by running the following command:  
 
