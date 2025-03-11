@@ -18,9 +18,6 @@ To begin visualizing your data, connect to a data source and open a panel.
 
 ![alt text](add-panel.png)
 
-![{761994DA-2C6F-40CF-8DE6-D8996C3B0A77}](https://github.com/user-attachments/assets/b0539e7b-ed89-42de-9f14-3b68ae94b969)
-
-
 ## Desktop-only features
 
 Connecting to data
@@ -36,7 +33,7 @@ Extensions
 
 Lichtblick's interface is designed for intuitive navigation:
 
-![{D3195C34-85E3-4D29-B614-7EFC9A57EA00}](https://github.com/user-attachments/assets/07f8e2d8-5b30-41d6-ab43-88e35af8dffe)
+![alt text](instructions-workspace.png)
 
 **App Menu**: Connect to a data source, toggle sidebars, or access resources.<br>
 **Add Panel**: Add a new panel to your current layout.<br>
