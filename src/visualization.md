@@ -10,13 +10,13 @@ To begin visualizing your data, connect to a data source and open a panel.
 * Click "Open data source" in the left-hand menu.
 * Choose from available options: live data or local file.
 
-![alt text](open-file.png)
+![alt text](images/open-file.png)
 
 #### Opening a Panel:
 * Click "Add panel" in the dashboard or left-hand menu.
 * Select the desired panel type (e.g., 3D, Raw Message, Image).
 
-![alt text](add-panel.png)
+![alt text](images/add-panel.png)
 
 ## Desktop-only features
 
@@ -33,7 +33,7 @@ Extensions
 
 Lichtblick's interface is designed for intuitive navigation:
 
-![alt text](instructions-workspace.png)
+![alt text](images/instructions-workspace.png)
 
 **App Menu**: Connect to a data source, toggle sidebars, or access resources.<br>
 **Add Panel**: Add a new panel to your current layout.<br>
@@ -67,7 +67,7 @@ For the desktop application, download the latest version for your operating syst
 
 When visualizing local or remote data files, you can navigate their contents using the playback controls.
 
-![alt text](navigate-timestamp.png)
+![alt text](images/navigate-timestamp.png)
 
 ## Message Ordering
 
@@ -140,7 +140,7 @@ If you've already developed custom messages, you can transform them into Lichtbl
 Panels in Lichtblick are flexible, modular elements that allow you to visualize and interact with data. You can customize and organize these panels within your layout.
 To add a panel, use the "Add Panel" menu to select a new panel, or drag and drop the panel directly into your layout. 
 
-![alt text](search-panels.png)
+![alt text](images/search-panels.png)
 
 Once added, you can easily move panels around by dragging their top bar.
 
@@ -151,18 +151,18 @@ Each panel's top bar has quick access to:
 ### Customizing Panels
 To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each pael will be highlighted with the orange border when selected.
 
-![alt text](selected-panel.png)
+![alt text](images/selected-panel.png)
 
 The sidebar allows you to filter the topics from your data source, and you can drang and drop topic results into panels for quick visualization. 
 
-![alt text](search-for-topics.png)
+![alt text](images/search-for-topics.png)
 
 Topics can be mapped to specific panel types like:
 * Raw messages and table panel for detailed message views
 * Image panel for visual topics
 * Plot and State Transiton panel for mesage path with graph-related data.
 
-![alt text](drag-and-drop-topics.png)
+![alt text](images/drag-and-drop-topics.png)
 
 For selecting multiple message paths, hold `shift` for a range, or `Ctrl` (or `Cmd` on macOS) for multiple non-adjacent items.
 
