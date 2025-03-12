@@ -36,6 +36,7 @@ Lichtblick's interface is designed for intuitive navigation:
 ![alt text](images/instructions-workspace.png)
 
 **App Menu**: Connect to a data source, toggle sidebars, or access resources.<br>
+**Users Menu**: Go to app settings, extensions catalog, experimental features, licenses, and version <br>
 **Add Panel**: Add a new panel to your current layout.<br>
 **Layout Menu**: Save your workspace view as a layout and share it with teammates.<br>
 **Left Sidebar**: Edit panel settings, view data source topics, and troubleshoot connection issues.<br>
@@ -65,35 +66,38 @@ For the desktop application, download the latest version for your operating syst
 
 # Playback
 
-When visualizing local or remote data files, you can navigate their contents using the playback controls.
+Lichtblick enables seamless navigation through both local and remote datasets using its playback controls.
 
 ![alt text](images/navigate-timestamp.png)
 
-## Message Ordering
+## Message Sequencing
 
-Lichtblick orders and plays messages based on their log time. Log time typically refers to when the message was recorded but can be set to the timestamp that best reflects the reality you wish to visualize for time-critical signals. It's important to choose your log times carefully and consider sources of time skew such as network latency, batching, and buffering.
+Messages within Lichtblick are arranged and played in order of their log timestamps. The log timestamp typically represents the moment a message was captured but can be adjusted to reflect the most relevant time context for your analysis. Selecting an appropriate timestamp is crucial, as external factors such as network delays, buffering, or batch processing can introduce time discrepancies.
 
-Robotics data is often associated with other timestamps, in addition to the log time. The Plot and State Transitions panels can be configured to order data using alternative timestamp fields:
+In robotics, messages often carry multiple timestamps beyond the log time. Lichtblick’s Plot and State Transitions panels allow users to organize data using alternative timestamps:
 
-|Timestamp Source|Description|
-|----------------|-----------|
-|Header stamp|A `header.stamp` field within the message data containing `sec` and `nsec` integers.|
-|Publish time|An optional MCAP-specific field|
+| Timestamp       | Source                  | Description |
+|----------------|-------------------------|-------------|
+| Header Stamp   | ROS 1, ROS 2, custom messages | The `header.stamp` field contains separate `sec` and `nsec` values representing the recorded time. |
+| Publish Time   | MCAP                     | A specialized MCAP field that optionally records the time a message was published. |
 
-## Message Loading
+## Message Handling and Optimization
 
-Lichtblick optimizes how it loads complex robotics data for more streamlined seeking and playback.
+Lichtblick is designed to efficiently manage large-scale robotics data, ensuring smooth navigation and playback.
 
-#### Message "lookback"
-When seeking to an arbitrary point in your loaded data, it's unlikely that every topic you are visualizing has a message at exactly the time you jumped to. To ensure that your layout still displays reasonable data, Lichtblick performs a "lookback" on your data. It looks for the most recent message on each subscribed topic, ensuring that even when seeking to an arbitrary point, Lichtblick will still display reasonable data for all the panels in your layout.
+### Retrospective Message Fetching
 
-#### Latched Topics
-By default, ROS 1 .bag files, MCAP files, and Lichtblick data streams will play back using message latching. When seeking within your data, Lichtblick fetches the last message on all subscribed topics, even if they occurred multiple minutes before your seek location. Every panel in the layout will then automatically display the last data it saw for that topic, even if that data is infrequently published or was not published at that exact moment in time. Message latching allows panels to accurately display data from infrequently published topics, even while seeking around to multiple points in your data at random.
+When seeking a specific point in the data stream, it is unlikely that every subscribed topic has a message at the exact timestamp selected. To maintain data consistency across panels, Lichtblick implements a retrospective search for the most recent message on each topic. This ensures that when navigating to arbitrary time points, all active panels retain relevant and contextually accurate data.
 
-#### Preloading
-While most Lichtblick panels display just the most recent message for a given topic, others like the Plot and Map panels benefit from visualizing messages across the data's entire time range. Preloading data allows these panels to access all their historical data throughout playback, making it easier to spot anomalies, summarize robot behavior, and recognize trends and patterns.
+### Persistent Data for Latched Topics
 
-Even panels that visualize their most recently seen data can benefit from preloading. For example, the 3D panel preloads its transform messages to accurately position its markers. Robots often have many coordinate frames (e.g., joints of a robot arm, cameras on a self-driving car), each with their own markers. To render markers from different frames in a single 3D scene, the panel needs to use transforms to calculate the position of these visual elements in a common coordinate space. Since transforms accumulate and update over time, preloading ensures that the 3D panel has access to all necessary transform data for accurate visualization.
+By default, Lichtblick retains the latest received messages for all topics when handling ROS 1 `.bag` files, MCAP files, or direct Lichtblick data streams. When navigating through time, Lichtblick retrieves and displays the most recent messages from all topics, even if they were recorded minutes before the selected timestamp. This feature allows panels to visualize infrequently published data reliably, ensuring continuity even when reviewing sparse datasets.
+
+### Data Preloading for Enhanced Visualization
+
+Certain Lichtblick panels, such as the Plot and Map panels, benefit from accessing data spanning the entire recording duration. Preloading enables these panels to analyze complete historical trends, detect anomalies, and observe long-term behavioral patterns in robotic systems.
+
+Even panels that primarily display the latest data, such as the 3D panel, take advantage of preloaded data for precise rendering. For example, the 3D visualization panel preloads transformation messages to correctly position objects in a unified coordinate frame. In robotics, multiple reference frames (e.g., robotic arm joints, autonomous vehicle sensors) must be aligned for accurate visualization. Preloading ensures that Lichtblick has access to all necessary transform data, preventing inconsistencies in rendering dynamic robotic systems.
 
 ## Shortcuts
 
@@ -105,33 +109,201 @@ Even panels that visualize their most recently seen data can benefit from preloa
 `Alt` + ⬅️ - seek backward 500ms <br>
 `Alt` + ➡️ - seek forward 500ms
 
-# Message schemas
+# Message Schemas
 
-## Introduction
-Lichtblick requires incoming messages to conform to specific structures for proper visualization. Utilizing schemas allows you to fully leverage the platform's built-in visualizations.
+Lichtblick relies on structured message formats to ensure accurate data visualization and processing. By adhering to Lichtblick's schema standards, users can leverage the platform's robust visualization tools effectively.
 
-#### Supported Formats
-* Protobuf
-* JSON schema
-* ROS 1
-* ROS 2
-* TypeScript
-* FlatBuffers
+## Supported Schema Formats
+Lichtblick supports a variety of message formats, enabling seamless integration with diverse data sources. The supported formats include:
 
-If you've already developed custom messages, you can transform them into Lichtblick-supported schemas using a message converter extension.
+- Protobuf
+- JSON Schema
+- ROS 1
+- ROS 2
+- TypeScript
+- FlatBuffers
+
+If your existing message formats differ from these, Lichtblick provides tools to convert them into compatible schemas using a message conversion extension.
+
+### Working with Protobuf and JSON Schema
+
+To use Protobuf or JSON Schema with Lichtblick, follow these steps:
+
+1. **Protobuf**: Include the necessary `.proto` files in your project. These files can be used to publish data via a WebSocket connection or log data into an MCAP file.
+2. **JSON Schema**: Similarly, copy the required `.json` schema files into your project.
+
+**Note on Protobuf Time Formats**: When using `google.protobuf.Timestamp` or `google.protobuf.Duration`, Lichtblick represents time values with `sec` and `nsec` fields (instead of `seconds` and `nanos`). This ensures consistency across time and duration formats in user scripts, message converters, and other platform components.
+
+For JSON Schema integration, you can import schemas directly using the `@lichtblick/schemas` npm package:
+
+```typescript
+import { CompressedImage } from "@lichtblick/schemas/jsonschema";
+```
+
+Lichtblick also offers WebSocket libraries for real-time data handling in Python, JavaScript, and C++, as well as MCAP writers for logging pre-recorded datasets. For a practical example, refer to our blog post on **Recording Robotic Data with MCAP**, which demonstrates how to use the MCAP C++ writer to log Protobuf data.
+
+### Schemaless JSON Support
+
+Lichtblick supports schemaless JSON messages through MCAP. To send JSON data without a schema:
+
+1. Set the channel's message encoding to `json`.
+2. Assign the schema ID as `0` to indicate no associated schema.
+
+For more details, consult the [MCAP Specification on Channels](https://mcap.dev/spec#channel-op0x04).
 
 
-# **WIP**
+## ROS Integration
 
-## Protobuf and JSON schema
+Lichtblick provides dedicated ROS message packages for both ROS 1 and ROS 2. To integrate:
+
+1. Install the appropriate package for your ROS version:
+```sh
+sudo apt install ros-noetic-lichtblick-msgs # For ROS 1
+```
+```sh
+sudo apt install ros-galactic-lichtblick-msgs # For ROS 2
+```
+
+2. Import the necessary schemas into your ROS project to begin publishing data:
+
+```python
+from lichtblick_msgs.msg import Vector2
+
+...
+msg = Vector2()
+msg.x = 0.5
+msg.y = 0.7
+```
+
+## TypeScript Integration
+
+Lichtblick schemas can be imported as TypeScript types, enabling type-checking and message validation. Here’s how to use them:
+
+1. **In User Scripts**: Specify the schema using `Message<"lichtblick.[SchemaName]">` in the User Scripts panel:
+
+```typescript
+import { Input, Message } from "./types";
+
+type Output = Message<"lichtblick.Point2">;
+
+export const inputs = ["/input/topic"];
+export const output = "/studio_script/output_topic";
+
+export default function script(event: Input<"/input/topic">): Output {
+  return { x: 1, y: 2 };
+}
+```
+
+2. **In TypeScript Projects**: Import types directly from the `@lichtblick/schemas` npm package:
+
+```typescript
+import { Point2 } from "@lichtblick/schemas";
+
+const myImage: Point2 = { x: 1, y: 2 };
+```
+
+These types are compatible with JavaScript WebSocket or MCAP projects and can be used when writing custom data transformation scripts within Lichtblick's User Scripts panel.
 
 
---------------------------------
--------------------------------
----------------------------------
--------------------------------
+# Custom Layouts in Lichtblick
 
-# Layouts
+Lichtblick layouts enable users to design and save customized workspaces tailored to specific tasks or workflows. These layouts can be reused for recurring projects or shared with team members working on similar challenges.
+
+## Use Cases for Layouts
+
+Layouts are highly versatile and can be adapted to various engineering and development scenarios. For instance:
+
+- **Perception Engineers**: Create layouts for sensor calibration tasks.
+- **Planning Engineers**: Design layouts to visualize and analyze routing algorithm outputs.
+- **Controls Engineers**: Configure layouts to monitor and debug robot kinematics.
+
+The **Layouts** menu provides all the tools needed to create, modify, and share layouts, ensuring a streamlined workflow.
+
+![alt text](images/layouts-tab.png)
+
+## Layouts Menu Overview
+
+### Personal Layouts
+
+Personal layouts are exclusive to your account and cannot be accessed or modified by others. When signed in, these layouts are synchronized across all your devices, ensuring consistency. Additionally, personal layouts can be shared with your organization if required.
+
+---
+
+### Creating a Layout
+
+To create a new custom workspace:
+
+1. Navigate to the **Layouts** menu.
+2. Select **Create new layout**.
+
+![alt text](images/new-layout.png)
+
+#### Customization Options:
+- **Add and arrange panels**: Organize panels to suit your workflow.
+- **Adjust panel settings**: Configure individual panel properties.
+- **Configure playback settings**: Tailor playback behavior for your data.
+- **Set and manage variable values**: Define and control variables within the layout.
+
+---
+
+### Editing Layouts
+
+When switching layouts after making changes to your current workspace, you will be prompted with the following options:
+
+- **Save changes**: Save your modifications to the layout.
+- **Revert**: Discard changes and restore the last saved version.
+
+![alt text](images/layout-options.png)
+
+---
+
+### Importing and Exporting Layouts
+
+#### Exporting a Layout
+To export a layout as a JSON file:
+
+1. Open the layout’s context menu.
+2. Select **Export...**.
+
+Alternatively, you can access this option through the **View** submenu in the app menu (**Export layout to file...**).
+
+#### Importing a Layout
+To import a previously exported layout:
+
+1. Navigate to the **Layouts** menu.
+2. Select **Import from file...**.
+
+This option is also available in the **View** submenu in the app menu (**Import layout from file...**).
+
+---
+
+### Sharing Layouts
+
+To share a personal layout with your organization:
+
+1. Open the layout’s context menu.
+2. Select **Share with team...**.
+
+---
+
+### Additional Layout Actions
+
+Each layout includes a **Details** menu, which provides options to:
+
+- **Rename**: Change the layout’s name.
+- **Duplicate**: Create a copy of the layout.
+- **Delete**: Remove the layout permanently.
+
+#### Batch Actions
+To perform actions on multiple layouts simultaneously:
+
+- Use **Cmd** (Mac) or **Ctrl** (Windows/Linux) to select multiple individual layouts.
+- Use **Shift** to select a contiguous range of layouts.
+- Right-click any selected layout and use the context menu to apply batch actions.
+
+---
+
+By leveraging Lichtblick's layout features, you can create efficient, reusable workspaces tailored to your specific needs, enhancing productivity and collaboration.
 
 
 # Panels
