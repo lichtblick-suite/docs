@@ -6,4 +6,5 @@
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization](./visualization.md)
+  - [Panels](./visualization-panels.md)
   - [Open via CLI](./visualization/open-via-cli.md)
