@@ -5,6 +5,6 @@
 - [Extensions](./extensions.md)
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
-- [Visualization](./visualization.md)
+- [Visualization]()
   - [Panels](./visualization-panels.md)
   - [Open via CLI](./visualization/open-via-cli.md)
