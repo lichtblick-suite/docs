@@ -6,4 +6,5 @@
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization](./visualization.md)
-  - [Open via CLI](./visualization/open-via-cli.md)
+  - [Message Schemas](./message-schemas-introduction.md)
+  - [Open via CLI](./open-via-cli.md)
