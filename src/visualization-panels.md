@@ -13,7 +13,7 @@ Each panel's top bar has quick access to:
 * **Settings** accessed through the cog icon to adjust the panel's configuration
 
 ### Customizing Panels
-To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each pael will be highlighted with the orange border when selected.
+To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each pael will be highlighted with a colored border when selected.
 
 ![alt text](images/selected-panel.png)
 
