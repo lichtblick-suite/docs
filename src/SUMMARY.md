@@ -8,4 +8,4 @@
 - [Visualization]()
   - [Message Schemas]()
     - [Introduction](./visualization-message-schemas-introduction.md)
-  - [Open via CLI](./open-via-cli.md)
+  - [Open via CLI](./visualization-open-via-cli.md)
