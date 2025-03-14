@@ -16,12 +16,6 @@ The **Layouts** menu provides all the tools needed to create, modify, and share 
 
 ## Layouts Menu Overview
 
-### Personal Layouts
-
-Personal layouts are exclusive to your account and cannot be accessed or modified by others. When signed in, these layouts are synchronized across all your devices, ensuring consistency. Additionally, personal layouts can be shared with your organization if required.
-
----
-
 ### Creating a Layout
 
 To create a new custom workspace:
@@ -48,6 +42,18 @@ When switching layouts after making changes to your current workspace, you will 
 
 ![alt text](images/layout-options.png)
 
+
+### Web Version Considerations
+
+For users accessing Lichtblick via the web version, it’s important to note that layouts are stored in **IndexedDB**, a client-side NoSQL database. Since browser data, including IndexedDB, can be cleared during cache or history deletion, it is recommended to export and save your layouts as JSON files to prevent data loss.
+
+To ensure your layouts are preserved:
+
+1. Export your layout as a JSON file using the **Export...** option in the layout’s context menu.
+2. Store the exported file securely for future use or re-import it as needed.
+
+This practice ensures that your custom layouts remain accessible even if browser data is cleared.
+
 ---
 
 ### Importing and Exporting Layouts
@@ -70,14 +76,6 @@ This option is also available in the **View** submenu in the app menu (**Import 
 
 ---
 
-### Sharing Layouts
-
-To share a personal layout with your organization:
-
-1. Open the layout’s context menu.
-2. Select **Share with team...**.
-
----
 
 ### Additional Layout Actions
 
