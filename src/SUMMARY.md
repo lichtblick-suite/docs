@@ -7,4 +7,4 @@
 - [Settings](./settings.md)
 - [Visualization]()
   - [Panels](./visualization-panels.md)
-  - [Open via CLI](./visualization/open-via-cli.md)
+  - [Open via CLI](./visualization-open-via-cli.md)
