@@ -23,10 +23,10 @@ To use Protobuf or JSON Schema with Lichtblick, follow these steps:
 
 **Note on Protobuf Time Formats**: When using `google.protobuf.Timestamp` or `google.protobuf.Duration`, Lichtblick represents time values with `sec` and `nsec` fields (instead of `seconds` and `nanos`). This ensures consistency across time and duration formats in user scripts, message converters, and other platform components.
 
-For JSON Schema integration, you can import schemas directly using the `@lichtblick/schemas` npm package:
+For JSON Schema integration, you can import schemas directly using the `@foxglove/schemas` npm package:
 
 ```typescript
-import { CompressedImage } from "@lichtblick/schemas/jsonschema";
+import { CompressedImage } from "@foxglove/schemas/jsonschema";
 ```
 
 Lichtblick also offers WebSocket libraries for real-time data handling in Python, JavaScript, and C++, as well as MCAP writers for logging pre-recorded datasets. For a practical example, refer to our blog post on **Recording Robotic Data with MCAP**, which demonstrates how to use the MCAP C++ writer to log Protobuf data.
@@ -83,10 +83,10 @@ export default function script(event: Input<"/input/topic">): Output {
 }
 ```
 
-2. **In TypeScript Projects**: Import types directly from the `@lichtblick/schemas` npm package:
+2. **In TypeScript Projects**: Import types directly from the `@foxglove/schemas` npm package:
 
 ```typescript
-import { Point2 } from "@lichtblick/schemas";
+import { Point2 } from "@foxglove/schemas";
 
 const myImage: Point2 = { x: 1, y: 2 };
 ```
