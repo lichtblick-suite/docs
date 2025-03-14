@@ -23,11 +23,9 @@ To begin visualizing your data, connect to a data source and open a panel.
 Connecting to data
 * open a native ROS 1 connection
 * connect to a Velodyne LIDAR hardware
-* load local URDF and mesh resources in your 3D panel using package:// prefixed in the URLs
 
 Extensions
 * Install via registry
-* Install locally 
 
 ## Interface Overview
 
@@ -36,7 +34,7 @@ Lichtblick's interface is designed for intuitive navigation:
 ![alt text](images/instructions-workspace.png)
 
 **App Menu**: Connect to a data source, toggle sidebars, or access resources.<br>
-**Users Menu**: Go to app settings, extensions catalog, experimental features, licenses, and version <br>
+**Users Menu**: Go to app settings, extensions catalog, experimental features, licenses, and version. <br>
 **Add Panel**: Add a new panel to your current layout.<br>
 **Layout Menu**: Save your workspace view as a layout and share it with teammates.<br>
 **Left Sidebar**: Edit panel settings, view data source topics, and troubleshoot connection issues.<br>
@@ -54,7 +52,7 @@ View all topics available in the data source, along with their data types and me
 See a list of playback errors to troubleshoot
 
 #### Variables sidebar
-set layout-wide variables that can be used in different panels with the message path syntax
+Set layout-wide variables that can be used in different panels with the message path syntax
 
 ## System Requirements
 
@@ -62,4 +60,4 @@ Lichtblick supports Windows, macOS, and Linux on both web and desktop platforms.
 
 For the web application, use Chrome v111 or later.
 
-For the desktop application, download the latest version for your operating system - check our latest release.
+For the desktop application, download the latest version for your operating system - check our latest release here: [Lichtblick Releases](https://github.com/Lichtblick-Suite/lichtblick/releases)
