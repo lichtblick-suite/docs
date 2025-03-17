@@ -7,4 +7,5 @@
 - [Settings](./settings.md)
 - [Visualization]()
   - [Introduction](./visualization-introduction.md)
+  - [Playback](./visualization-playback.md)
   - [Open via CLI](./visualization-open-via-cli.md)
