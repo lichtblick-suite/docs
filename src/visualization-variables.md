@@ -4,7 +4,7 @@ Variables in Lichtblick allow users to define global values that can be reused a
 
 To manage variables, access the **Variables** tab in the sidebar, where you can view, add, and modify them.
 
-![variables](images/variables.png)
+![variables](images/show-sidebar.png)
 
 ---
 
@@ -25,9 +25,17 @@ Panels that support message path syntax—such as **Raw Messages**, **Plot**, an
 
 User scripts can reference variables but cannot modify them. When a script is executed, it receives all variables as an object, allowing for dynamic data processing.
 
-### In Lichtblick Extensions
+### Accessing and Modifying Variables in Extensions
 
-Custom extension panels can access variables using the **extension API RenderState**, enabling seamless integration with user-defined values.
+Custom extension panels can interact with variables in two ways:
+
+1. **Accessing Variables**:  
+   Extensions can access variables using the **extension API RenderState**. This allows panels to seamlessly integrate with user-defined values, enabling dynamic and context-aware visualizations.
+
+2. **Modifying Variables**:  
+   Extensions can also create and modify variables programmatically using the **extension API PanelExtensionContext**. This capability is useful for updating variables based on user interactions or data processing within the extension.
+
+For example, a custom panel could update a variable to reflect the current state of a simulation or user input, ensuring that the layout remains responsive and interactive.
 
 ---
 
@@ -38,7 +46,7 @@ Variables can be updated in two ways:
 1. **Manually**: Edit variable values directly in the **Variables** tab.
 2. **Dynamically**: Use interactive elements in the **3D panel** or **Variable Slider panel** to adjust variable values in real time.
 
-Additionally, Lichtblick extensions can create and modify variables programmatically using the **extension API PanelExtensionContext**.
+
 
 ---
 
