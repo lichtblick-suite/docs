@@ -6,6 +6,6 @@
 - [Settings](./settings.md)
 - [Visualization](./visualization.md)
   - [Extensions]()
-    - [Introduction](./visualization-extensions.md)
+    - [Introduction](./visualization-extensions-introduction.md)
     - [Settings API](./visualization-extensions-settings-api.md)
   - [Open via CLI](./visualization-open-via-cli.md)
