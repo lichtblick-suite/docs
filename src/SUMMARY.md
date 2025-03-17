@@ -4,7 +4,7 @@
 - [Connecting to Data](connecting-to-data.md)
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
-- [Visualization](./visualization.md)
+- [Visualization]()
   - [Extensions]()
     - [Introduction](./visualization-extensions-introduction.md)
     - [Settings API](./visualization-extensions-settings-api.md)
