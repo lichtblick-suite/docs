@@ -11,4 +11,6 @@
   - [Message Schemas]()
     - [Introduction](./visualization-message-schemas-introduction.md)
   - [Layouts](./visualization-layouts.md)
+  - [Panels]()
+    - [Introduction](./visualization-panels-introduction.md)
   - [Open via CLI](./visualization-open-via-cli.md)
