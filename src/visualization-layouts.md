@@ -92,6 +92,30 @@ To perform actions on multiple layouts simultaneously:
 - Use **Shift** to select a contiguous range of layouts.
 - Right-click any selected layout and use the context menu to apply batch actions.
 
+### Open Lichtblick via CLI with a Layout Parameter
+**Desktop only**
+
+Once you have created and saved a layout, it can be referenced as a parameter when launching Litchblick via CLI.
+
+{{#tabs}}
+{{#tab name="Linux"}}
+```bash
+lichtblick --defaultLayout="layout_example"
+```
+{{#endtab}}
+{{#tab name="MacOS"}}
+```bash
+/Applications/Lichtblick.app/Contents/MacOS/Lichtblick --defaultLayout="layout_example"
+```
+{{#endtab}}
+{{#tab name="Windows"}}
+```bash
+C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe --defaultLayout="layout_example"
+```
+{{#endtab}}
+{{#endtabs}}
+
+
 ---
 
 By leveraging Lichtblick's layout features, you can create efficient, reusable workspaces tailored to your specific needs, enhancing productivity and collaboration.
