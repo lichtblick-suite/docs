@@ -10,4 +10,5 @@
   - [Playback](./visualization-playback.md)
   - [Message Schemas]()
     - [Introduction](./visualization-message-schemas-introduction.md)
+  - [Layouts](./visualization-layouts.md)
   - [Open via CLI](./visualization-open-via-cli.md)
