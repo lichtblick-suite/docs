@@ -13,7 +13,7 @@ Each panel's top bar has quick access to:
 * **Settings** accessed through the cog icon to adjust the panel's configuration
 
 ### Customizing Panels
-To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each pael will be highlighted with a colored border when selected.
+To edit a panel, click on the cog icon on its top bar to open the settings in the left sidebar. Each panel will be highlighted with a colored border when selected.
 
 ![alt text](images/selected-panel.png)
 
@@ -24,7 +24,7 @@ The sidebar allows you to filter the topics from your data source, and you can d
 Topics can be mapped to specific panel types like:
 * Raw messages and table panel for detailed message views
 * Image panel for visual topics
-* Plot and State Transiton panel for mesage path with graph-related data.
+* Plot and State Transiton panel for message path with graph-related data.
 
 ![alt text](images/drag-and-drop-topics.png)
 
