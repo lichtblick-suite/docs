@@ -2,6 +2,8 @@
 
 Lichtblick relies on structured message formats to ensure accurate data visualization and processing. By adhering to Lichtblick's schema standards, users can leverage the platform's robust visualization tools effectively.
 
+{{#include ./components/foxglove_note.md}}
+
 ## Supported Schema Formats
 Lichtblick supports a variety of message formats, enabling seamless integration with diverse data sources. The supported formats include:
 
@@ -45,18 +47,20 @@ For more details, consult the [MCAP Specification on Channels](https://mcap.dev/
 
 Lichtblick provides dedicated ROS message packages for both ROS 1 and ROS 2. To integrate:
 
-1. Install the appropriate package for your ROS version:
+1. Install the [foxglove_msgs](https://index.ros.org/r/foxglove_msgs/) package:
+
+2. Install the appropriate package for your ROS version:
 ```sh
-sudo apt install ros-noetic-lichtblick-msgs # For ROS 1
+sudo apt install ros-noetic-foxglove-msgs # For ROS 1
 ```
 ```sh
-sudo apt install ros-galactic-lichtblick-msgs # For ROS 2
+sudo apt install ros-galactic-foxglove-msgs # For ROS 2
 ```
 
-2. Import the necessary schemas into your ROS project to begin publishing data:
+3. Import the necessary schemas into your ROS project to begin publishing data:
 
 ```python
-from lichtblick_msgs.msg import Vector2
+from foxglove_msgs.msg import Vector2
 
 ...
 msg = Vector2()
@@ -68,22 +72,7 @@ msg.y = 0.7
 
 Lichtblick schemas can be imported as TypeScript types, enabling type-checking and message validation. Here’s how to use them:
 
-1. **In User Scripts**: Specify the schema using `Message<"lichtblick.[SchemaName]">` in the User Scripts panel:
-
-```typescript
-import { Input, Message } from "./types";
-
-type Output = Message<"lichtblick.Point2">;
-
-export const inputs = ["/input/topic"];
-export const output = "/studio_script/output_topic";
-
-export default function script(event: Input<"/input/topic">): Output {
-  return { x: 1, y: 2 };
-}
-```
-
-2. **In TypeScript Projects**: Import types directly from the `@foxglove/schemas` npm package:
+1. **In TypeScript Projects**: Import types directly from the `@foxglove/schemas` npm package:
 
 ```typescript
 import { Point2 } from "@foxglove/schemas";
