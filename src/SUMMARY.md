@@ -12,6 +12,7 @@
   - [Layouts](./visualization-layouts.md)
   - [Panels]()
     - [Introduction](./visualization-panels-introduction.md)
+  - [Variables](./visualization-variables.md)
   - [Extensions]()
     - [Introduction](./visualization-extensions-introduction.md)
     - [Settings API](./visualization-extensions-settings-api.md)
