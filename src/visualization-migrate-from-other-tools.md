@@ -17,8 +17,8 @@ Lichtblick streamlines robotics development by integrating commonly used develop
 | [`rviz`](http://wiki.ros.org/rviz) | 3D |
 | [`teleop_twist_keyboard`](http://wiki.ros.org/teleop_twist_keyboard) | Teleop |
 | **ROS 2** | |
-| `ros2 param` | Parameters |
-| `ros2 topic` | Data Source Info, Raw Messages |
+| [`ros2 param`](https://docs.ros.org/en/galactic/How-To-Guides/Using-ros2-param.html) | Parameters |
+| [`ros2 topic`](https://docs.ros.org/en/galactic/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html) | Data Source Info, Raw Messages |
 | [`rqt_console`](https://docs.ros.org/en/galactic/Tutorials/Beginner-CLI-Tools/Using-Rqt-Console/Using-Rqt-Console.html) | Log |
 | [`rqt_graph`](https://docs.ros.org/en/galactic/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html) | Topic Graph |
 | [`rqt_image_view`](https://wiki.ros.org/rqt_image_view) | Image |
