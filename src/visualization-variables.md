@@ -16,6 +16,8 @@ Variables are referenced using the `$` prefix. For example, a variable named `my
 
 Panels that support message path syntax—such as **Raw Messages**, **Plot**, and **State Transitions**—can leverage variables to dynamically filter or slice data. This enables flexible and interactive data visualization.
 
+![variables](images/variables-in-message-path.png)
+
 #### Example Workflow:
 1. Create a variable named `my_ID` in the **Variables** tab and set its value to `101`.
 2. In a **Raw Messages** panel, use the path `/my_objects.objects[:]{id==$my_ID}` to inspect the object with `id == 101`.
