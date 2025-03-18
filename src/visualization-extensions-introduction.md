@@ -4,6 +4,8 @@ Lichtblick’s extensibility allows you to tailor the platform to your team’s 
 
 Once your extension is built and installed, you can manage it through the app settings, where all available and installed extensions are listed.
 
+![App Settings Extensions](images/app-settings.png)
+
 ---
 ## Custom Panels
 
