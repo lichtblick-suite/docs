@@ -4,6 +4,7 @@ Use keyboard shortcuts to efficiently navigate the Lichtblick visualization inte
 
 ## Playback Controls
 
+
 | Shortcut | Action |
 |----------|--------|
 | Space | Pause or play |
@@ -11,8 +12,12 @@ Use keyboard shortcuts to efficiently navigate the Lichtblick visualization inte
 | → | Seek forward 100ms |
 | Shift + ← | Seek backward 10ms |
 | Shift + → | Seek forward 10ms |
-| Alt + ← | Seek backward 500ms |
+| Alt + ← <br> Opt + (macOS) ← <br> ⌥ + ← (macOS) | Seek backward 500ms |
 | Alt + → | Seek forward 500ms |
+
+
+
+
 
 ## General
 
@@ -21,6 +26,10 @@ Use keyboard shortcuts to efficiently navigate the Lichtblick visualization inte
 | Shortcut | Action |
 |----------|--------|
 | Shift + Left-click | Select multiple panels in the current layout or tab |
+|[ | show / hide left sidebar |
+|] | show / hide right sidebar |
+| Ctrl + O <br>  ⌘O (macOS) | Open local file(s)...|
+| Ctrl + Shift + O <br> ⌘⇧O (macOS)| Open connection...|
 
 ### Panel Settings
 
