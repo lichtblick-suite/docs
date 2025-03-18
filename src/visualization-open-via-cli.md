@@ -1,4 +1,4 @@
-# Open va CLI
+# Open via CLI
 
 Easily open local files using the command line by installing the Lichtblick desktop application. This allows you to quickly access .mcap files without manually navigating through the interface.
 
