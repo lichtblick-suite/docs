@@ -16,4 +16,4 @@
     - [Introduction](./visualization-extensions-introduction.md)
     - [Settings API](./visualization-extensions-settings-api.md)
   - [Open via CLI](./visualization-open-via-cli.md)
-  - [Shotcuts](./visualization-shortcuts.md)
+  - [Shortcuts](./visualization-shortcuts.md)
