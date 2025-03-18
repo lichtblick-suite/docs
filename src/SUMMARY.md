@@ -16,3 +16,4 @@
     - [Introduction](./visualization-extensions-introduction.md)
     - [Settings API](./visualization-extensions-settings-api.md)
   - [Open via CLI](./visualization-open-via-cli.md)
+  - [Migrate from other tools](./visualization-migrate-from-other-tools.md)
