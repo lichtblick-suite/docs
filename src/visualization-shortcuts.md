@@ -10,10 +10,10 @@ Use keyboard shortcuts to efficiently navigate the Lichtblick visualization inte
 | Space | Pause or play |
 | ← | Seek backward 100ms |
 | → | Seek forward 100ms |
-| Shift + ← | Seek backward 10ms |
-| Shift + → | Seek forward 10ms |
-| Alt + ← <br> Opt + (macOS) ← <br> ⌥ + ← (macOS) | Seek backward 500ms |
-| Alt + → | Seek forward 500ms |
+| Shift ← | Seek backward 10ms |
+| Shift → | Seek forward 10ms |
+| Alt ← <br> ⌥← (macOS) | Seek backward 500ms |
+| Alt →  <br> ⌥→ (macOS)| Seek forward 500ms |
 
 
 
