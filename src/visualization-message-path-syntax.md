@@ -1,6 +1,6 @@
 # Message Path Syntax
 
-In Foxglove, message path syntax is utilized to precisely access specific data within your messages.
+In Lichtblick, message path syntax is utilized to precisely access specific data within your messages.
 
 ## Topics and Fields
 
