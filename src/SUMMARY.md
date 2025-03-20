@@ -18,3 +18,4 @@
     - [Settings API](./visualization-extensions-settings-api.md)
   - [Message Path Syntax](./visualization-message-path-syntax.md)
   - [Open via CLI](./visualization-open-via-cli.md)
+  - [Shortcuts](./visualization-shortcuts.md)
