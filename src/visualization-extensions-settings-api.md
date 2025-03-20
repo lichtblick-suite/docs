@@ -1,9 +1,3 @@
-# Introduction
-
-Enhance Lichtblick's functionality with custom extensions tailored to your team's specific workflows. Create personalized panels, transform custom messages into Lichtblick-compatible schemas, and map topic names for improved visualization.
-
-After developing and installing your extension, navigate to your app settings to view all available and installed extensions.
-
 ## Settings API
 The Panel Settings API allows users to link settings to message converters based on panel types.
 
