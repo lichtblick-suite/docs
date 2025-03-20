@@ -19,3 +19,5 @@
   - [Message Path Syntax](./visualization-message-path-syntax.md)
   - [Open via CLI](./visualization-open-via-cli.md)
   - [Shortcuts](./visualization-shortcuts.md)
+  - [Open via CLI](./visualization-open-via-cli.md)
+  - [Annotate ROS enum fields](./visualization-annotate-ros-enum-fields.md)
