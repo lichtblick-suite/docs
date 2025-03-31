@@ -1,10 +1,10 @@
-# ROS 1
+# ROS 2
 
-Load local and remote ROS 1 (`.bag`) files, or connect directly to a live ROS 1 stack.
+Load local and remote [MCAP](../connecting-to-data/mcap.md) files containing ROS 2 data, or connect directly to a live ROS 2 stack.
 
 ## Live data
 
-[Install ROS 1](https://wiki.ros.org/ROS/Installation), and make sure you're connected to the same network as the robot.
+[Install ROS 2](https://wiki.ros.org/ROS/Installation), and make sure you're connected to the same network as the robot.
 
 Then, in Lichtblick, select ["Open connection"](./introduction.md), either on the initial welcome pop up or via the app bar menu.
 
@@ -45,11 +45,11 @@ A Rosbridge connection uses a standardized protocol to link Lichtblick with your
 
 To open a Rosbridge connectionm, you need to have installed [rosbridge-suite](https://wiki.ros.org/rosbridge_suite):
 
-`$ sudo apt install ros-noetic-rosbridge-suite`
+`$ sudo apt install ros-galactic-rosbridge-suite`
 
 Next, start the WebSocket server, and review the command printout to determine the port it is listening on (e.g. `ws://0.0.0.0:9090`):
 
-`$ roslaunch rosbridge_server rosbridge_websocket.launch`
+`$ ros2 launch rosbridge_server rosbridge_websocket_launch.xml`
 
 Finally "Open connection" in the "Open data source" dialog, select "Rosbridge" and then enter the URL to your Rosbridge server:
 
@@ -60,27 +60,9 @@ To test if everything is working well, you can check the topics tab on the left 
 ### Limitations
 Rosbridge connections support publishing back to your ROS stack, but not reading or setting ROS parameters.
 
-## Native
-
-<div class="warning">
-Desktop Only
-</div>
-
-For direct access to your ROS master and nodes, connect using a native TCP (Transmission Control Protocol) connection.
-
-Ensure you have a working [ROS 1 setup](https://wiki.ros.org/ROS/Installation) and then run `roscore` in your terminal.
-
-Select "ROS 1" in the "Open data source" dialog, and enter your [ROS_MASTER_URI](https://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI) (ROS master's IP and port) and [ROS_HOSTNAME](https://wiki.ros.org/ROS/EnvironmentVariables#ROS_IP.2FROS_HOSTNAME):
-
-![connect-to-ros1](../images/connect-to-ros1.png)
-
-If you encounter connectivity issues, verify that your ROS stack and Foxglove have unrestricted network access, as ROS communicates over multiple ports.
-
-If ROS and Foxglove are running on different machines, refer to the ROS 1 [Network Setup documentation](https://wiki.ros.org/ROS/NetworkSetup) to properly configure your environment.
-
 ## Remote File
 
-For this option just select the "Remote file" in the "Open connection" option and enter the URL to your remote `.bag` file.
+Remote ROS 2 `.db3` files are not supported, but you can convert them into MCAP files for remote file support. Select the "Remote file" option after opening the "Open connection".
 
 ![open-remote-file](../images/open-remote-file.png)
 
