@@ -12,7 +12,7 @@ Then, in Lichtblick, select "Open connection", either on the initial welcome pop
 
 ### Live connections
 
-You can use [Rosbridge websocket](../connecting-to-data/rosbridge.md) or a [Foxglove websocket](https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge) to establish a live connection between Lichtblick and ROS. This enables real-time data streaming, allowing you to interact with ROS topics, services, and parameters directly from Lichtblick.
+You can use [Rosbridge](../connecting-to-data/rosbridge.md) or [Ros foxglove bridge](https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge) to establish a live connection between Lichtblick and ROS. This enables real-time data streaming, allowing you to interact with ROS topics, services, and parameters directly from Lichtblick.
 
 ## Local Data 
 
