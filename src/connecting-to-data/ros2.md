@@ -6,7 +6,7 @@ Load local and remote [MCAP](../connecting-to-data/mcap.md) files containing ROS
 
 [Install ROS 2](https://wiki.ros.org/ROS/Installation), and make sure you're connected to the same network as the robot.
 
-Then, in Lichtblick, select ["Open connection"](./introduction.md), either on the initial welcome pop up or via the app bar menu.
+Then, in Lichtblick, select "Open connection", either on the initial welcome pop up or via the app bar menu.
 
 ![open-connection](../images/open-connection.png)
 
@@ -43,7 +43,7 @@ If you prefer, you can connect Foxglove to your running ROS stack via WebSockets
 
 A Rosbridge connection uses a standardized protocol to link Lichtblick with your ROS master over WebSockets. While it does require running an additional ROS node [rosbridge_server](https://wiki.ros.org/rosbridge_server), it is a good option if a network firewall separates ROS and Lichtblick, as it minimizes port exposure.
 
-To open a Rosbridge connectionm, you need to have installed [rosbridge-suite](https://wiki.ros.org/rosbridge_suite):
+To open a Rosbridge connection, you need to have installed [rosbridge-suite](https://wiki.ros.org/rosbridge_suite):
 
 `$ sudo apt install ros-galactic-rosbridge-suite`
 
@@ -73,6 +73,6 @@ Don't forget to [set up CORS](../connecting-to-data/live-data.html#cross-origin-
 You can load local files for visualization by: 
 
 * The "Open local file(s)..." in the initial pop up or the menu on the top left;
-* By dragging the files from your OS file manager;
+* You can drag'n drop the files from your OS file manager;
 
 {{#include ../components/foxglove_note.md}}

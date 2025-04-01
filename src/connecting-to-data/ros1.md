@@ -91,6 +91,6 @@ Don't forget to [set up CORS](../connecting-to-data/live-data.html#cross-origin-
 You can load local files for visualization by: 
 
 * The "Open local file(s)..." in the initial pop up or the menu on the top left;
-* By dragging the files from your OS file manager;
+* You can drag'n drop the files from your OS file manager;
 
 {{#include ../components/foxglove_note.md}}

@@ -2,6 +2,8 @@
 
 <div class="warning">
 Desktop Only
+<br>
+Velodyne sensors communicate using UDP sockets, which are not supported by web browsers. To establish a connection with a Velodyne sensor, please use our desktop application, which is designed to handle UDP communication reliably.
 </div>
 
 

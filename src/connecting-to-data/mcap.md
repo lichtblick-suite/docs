@@ -1,6 +1,6 @@
 # MCAP
 
-Load local and remote [`.mcap`](https://mcap.dev) files.
+Load local and remote [MCAP files](https://mcap.dev).
 
 ## Live Data
 
@@ -30,6 +30,6 @@ Don't forget to [set up CORS](../connecting-to-data/live-data.html#cross-origin-
 You can load local files for visualization by: 
 
 * The "Open local file(s)..." in the initial pop up or the menu on the top left;
-* By dragging the files from your OS file manager;
+* You can drag'n drop the files from your OS file manager;
 
-**When dealing with mulitple files**, Lichtblick will merge them into a single playback timeline. It's important that they all come from the same data source to avoid potencial data loss or erros during playtime.
+**When dealing with multiple files**, Lichtblick will merge them into a single playback timeline. It's important that they all come from the same data source to avoid potencial data loss or erros during playtime.
