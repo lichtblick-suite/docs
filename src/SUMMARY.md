@@ -1,7 +1,10 @@
 # Summary
 
 - [Home](./home.md)
-- [Connecting to Data](connecting-to-data.md)
+- [Connecting to Data]()
+  - [Introduction](./connecting-to-data/introduction.md)
+  - [Live Data](./connecting-to-data/live-data.md)
+  - [Local Data](./connecting-to-data/local-data.md)
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization]()
