@@ -1,7 +1,7 @@
 # Rosbridge
 
 <div class="warning">
-For better performance, we recommend using the Foxglove websocket connection instead.
+ There's also the possibility to use <a href="https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge">Foxglove Bridge</a> as an alternative.
 </div>
 
 The rosbridge package enables communication between [ROS 1](../connecting-to-data/ros1.md) or [ROS 2](../connecting-to-data/ros2.md) and external applications via a websocket connection. It allows non-ROS systems, including web applications, to interact with ROS topics, services, and parameters.

@@ -12,6 +12,7 @@
     - [PX 4](./connecting-to-data/px-4.md)
     - [Velodyne](./connecting-to-data/velodyne.md)
     - [Rosbridge](./connecting-to-data/rosbridge.md)
+    - [Schema Encodings](./connecting-to-data/schema-encodings.md)
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization]()
