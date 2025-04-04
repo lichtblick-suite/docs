@@ -1,4 +1,4 @@
-# Layouts 
+# Layouts
 
 Lichtblick layouts enable users to design and save customized workspaces tailored to specific tasks or workflows. These layouts can be reused for recurring projects or shared with team members working on similar challenges.
 
@@ -26,6 +26,7 @@ To create a new custom workspace:
 ![alt text](images/new-layout.png)
 
 #### Customization Options:
+
 - **Add and arrange panels**: Organize panels to suit your workflow.
 - **Adjust panel settings**: Configure individual panel properties.
 - **Configure playback settings**: Tailor playback behavior for your data.
@@ -41,7 +42,6 @@ When switching layouts after making changes to your current workspace, you will 
 - **Revert**: Discard changes and restore the last saved version.
 
 ![alt text](images/layout-options.png)
-
 
 ### Web Version Considerations
 
@@ -59,6 +59,7 @@ This practice ensures that your custom layouts remain accessible even if browser
 ### Importing and Exporting Layouts
 
 #### Exporting a Layout
+
 To export a layout as a JSON file:
 
 1. Open the layout’s context menu.
@@ -67,6 +68,7 @@ To export a layout as a JSON file:
 Alternatively, you can access this option through the **View** submenu in the app menu (**Export layout to file...**).
 
 #### Importing a Layout
+
 To import a previously exported layout:
 
 1. Navigate to the **Layouts** menu.
@@ -75,7 +77,6 @@ To import a previously exported layout:
 This option is also available in the **View** submenu in the app menu (**Import layout from file...**).
 
 ---
-
 
 ### Additional Layout Actions
 
@@ -86,6 +87,7 @@ Each layout includes a **Details** menu, which provides options to:
 - **Delete**: Remove the layout permanently.
 
 #### Batch Actions
+
 To perform actions on multiple layouts simultaneously:
 
 - Use **Cmd** (Mac) or **Ctrl** (Windows/Linux) to select multiple individual layouts.
@@ -93,28 +95,73 @@ To perform actions on multiple layouts simultaneously:
 - Right-click any selected layout and use the context menu to apply batch actions.
 
 ### Open Lichtblick via CLI with a Layout Parameter
+
 **Desktop only**
 
 Once you have created and saved a layout, it can be referenced as a parameter when launching Litchblick via CLI.
 
 {{#tabs}}
 {{#tab name="Linux"}}
+
 ```bash
 lichtblick --defaultLayout="layout_example"
 ```
+
 {{#endtab}}
 {{#tab name="MacOS"}}
+
 ```bash
 /Applications/Lichtblick.app/Contents/MacOS/Lichtblick --defaultLayout="layout_example"
 ```
+
 {{#endtab}}
 {{#tab name="Windows"}}
+
 ```bash
 C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe --defaultLayout="layout_example"
 ```
+
 {{#endtab}}
 {{#endtabs}}
 
+---
+
+# Automatically loading layouts from user directory
+
+**Desktop only**
+
+Lichtblick supports automatically importing layout files from a predefined user directory. This allows users to preload layouts on startup, making it easier to maintain a consistent workspace configuration across sessions or machines.
+
+### How It Works
+
+When Lichtblick starts, it checks the user directory for layout files with the .json extension. These must be valid Lichtblick layout files. If a layout from the directory is not already present in your saved layouts, it will be imported automatically.
+
+#### This mechanism is particularly useful for scenarios where:
+
+- Teams want to distribute a standard set of layouts.
+- Users frequently open Lichtblick on different systems or in new environments.
+- Layouts need to be preloaded when launching via CLI or automation scripts.
+
+### Directory Path
+
+| Platform      | Path                        |
+| ------------- | --------------------------- |
+| MacOS / Linux | ~/.lichtblick-suite/layouts |
+| Windows       | TBD                         |
+
+\*You can navigate to these paths and place your exported .json layout files directly into the folder.
+
+### Behavior and Characteristics
+
+Layout files are imported in alphabetical order.
+
+- If no layout was previously selected, the first layout (by alphabetical order) will be automatically activated on startup.
+- Layouts are identified by name:
+  - If a layout already exists with the same name, it will not be re-imported.
+  - If the layout is renamed, it will be treated as a new layout and imported again.
+  - If you want to force an update to a layout, delete the existing one before restarting Lichtblick or rename the updated file.
+
+This automatic import system ensures that your custom layouts can be effortlessly reused, even in fresh environments or shared workstations.
 
 ---
 
