@@ -144,10 +144,10 @@ When Lichtblick starts, it checks the user directory for layout files with the .
 
 ### Directory Path
 
-| Platform      | Path                        |
-| ------------- | --------------------------- |
-| MacOS / Linux | ~/.lichtblick-suite/layouts |
-| Windows       | TBD                         |
+| Platform      | Path                                          |
+| ------------- | --------------------------------------------- |
+| MacOS & Linux | ~/.lichtblick-suite/layouts                   |
+| Windows       | C:\Users\\\<USER\>\\.lichtblick-suite\layouts |
 
 \*You can navigate to these paths and place your exported .json layout files directly into the folder.
 
