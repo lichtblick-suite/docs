@@ -153,8 +153,7 @@ When Lichtblick starts, it checks the user directory for layout files with the .
 
 ### Behavior and Characteristics
 
-Layout files are imported in alphabetical order.
-
+- Layout files are imported in alphabetical order.
 - If no layout was previously selected, the first layout (by alphabetical order) will be automatically activated on startup.
 - Layouts are identified by name:
   - If a layout already exists with the same name, it will not be re-imported.
