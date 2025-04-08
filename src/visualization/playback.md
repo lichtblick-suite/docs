@@ -2,7 +2,7 @@
 
 Lichtblick enables seamless navigation through both local and remote datasets using its playback controls.
 
-![alt text](images/navigate-timestamp.png)
+![alt text](/images/navigate-timestamp.png)
 
 ## Message Sequencing
 
@@ -10,10 +10,10 @@ Messages within Lichtblick are arranged and played in order of their log timesta
 
 In robotics, messages often carry multiple timestamps beyond the log time. Lichtblick’s Plot and State Transitions panels allow users to organize data using alternative timestamps:
 
-| Timestamp       | Source                  | Description |
-|----------------|-------------------------|-------------|
-| Header Stamp   | ROS 1, ROS 2, custom messages | The `header.stamp` field contains separate `sec` and `nsec` values representing the recorded time. |
-| Publish Time   | MCAP                     | A specialized MCAP field that optionally records the time a message was published. |
+| Timestamp    | Source                        | Description                                                                                        |
+| ------------ | ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Header Stamp | ROS 1, ROS 2, custom messages | The `header.stamp` field contains separate `sec` and `nsec` values representing the recorded time. |
+| Publish Time | MCAP                          | A specialized MCAP field that optionally records the time a message was published.                 |
 
 ## Message Handling and Optimization
 
