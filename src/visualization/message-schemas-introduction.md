@@ -2,7 +2,7 @@
 
 Lichtblick relies on structured message formats to ensure accurate data visualization and processing. By adhering to Lichtblick's schema standards, users can leverage the platform's robust visualization tools effectively.
 
-{{#include ./components/foxglove_note.md}}
+{{#include ../components/foxglove_note.md}}
 
 ## Supported Schema Formats
 Lichtblick supports a variety of message formats, enabling seamless integration with diverse data sources. The supported formats include:
