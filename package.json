@@ -1,5 +1,12 @@
 {
-  "name": "docs",
+  "name": "lichtblick-docs",
+  "private": true,
+  "description": "Documentation of Lichtblick",
+  "homepage": "https://lichtblick-suite.github.io/docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lichtblick-suite/docs.git"
+  },
   "packageManager": "yarn@4.4.1",
   "scripts": {
     "setup": "cargo install mdbook",
