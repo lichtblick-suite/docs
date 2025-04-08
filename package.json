@@ -1,0 +1,8 @@
+{
+  "name": "docs",
+  "packageManager": "yarn@4.4.1",
+  "scripts": {
+    "setup": "cargo install mdbook",
+    "start": "mdbook serve --open"
+  }
+}
