@@ -14,7 +14,7 @@ Variables are referenced using the `$` prefix. For example, a variable named `my
 
 ### In Message Paths
 
-Panels that support message path syntax—such as **Raw Messages**, **Plot**, and **State Transitions**—can leverage variables to dynamically filter or slice data. This enables flexible and interactive data visualization.
+Panels that support message path syntax—such as **Raw Messages**, **Indicator**, **Plot**, and **State Transitions**—can leverage variables to dynamically filter or slice data. This enables flexible and interactive data visualization.
 
 ![variables](images/variables-in-message-path.png)
 
