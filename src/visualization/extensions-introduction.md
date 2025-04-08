@@ -4,9 +4,10 @@ Lichtblick’s extensibility allows you to tailor the platform to your team’s 
 
 Once your extension is built and installed, you can manage it through the app settings, where all available and installed extensions are listed.
 
-![App Settings Extensions](images/app-settings.png)
+![App Settings Extensions](/images/app-settings.png)
 
 ---
+
 ## Custom Panels
 
 While Lichtblick offers a robust set of built-in panels for robotics data visualization and debugging, custom panel extensions enable you to create domain-specific solutions tailored to your needs. These panels can:
@@ -22,7 +23,10 @@ Custom panels are ideal when your visualization or interaction requirements go b
 ```typescript
 export function activate(extensionContext: ExtensionContext) {
   // Register a new panel
-  extensionContext.registerPanel({ name: "example-panel", initPanel: initExamplePanel });
+  extensionContext.registerPanel({
+    name: "example-panel",
+    initPanel: initExamplePanel,
+  });
 }
 ```
 
@@ -35,6 +39,7 @@ Message converter extensions allow you to transform messages from one schema to 
 **Note**: Message converters run on-demand when a panel subscribes to a topic.
 
 **Example: Message Converter**
+
 ```typescript
 export function activate(extensionContext: ExtensionContext) {
   // Register a new message converter
@@ -67,13 +72,15 @@ export function activate(extensionContext: ExtensionContext): void {
     // Use the current value of the `camera` global variable
     const camera = globalVariables["camera"] ?? "FRONT";
     return [
-      { sourceTopicName: `/CAM_${camera}/image_rect_compressed`, name: `/selected_camera_image` },
+      {
+        sourceTopicName: `/CAM_${camera}/image_rect_compressed`,
+        name: `/selected_camera_image`,
+      },
       { sourceTopicName: "/imu", name: "/aliased_imu" },
       { sourceTopicName: "/odom", name: "/aliased_odom" },
     ];
   });
 }
-
 ```
 
 ---
@@ -85,9 +92,11 @@ Extensions can be developed in JavaScript or TypeScript and packaged as `.foxe` 
 Lichtblick provides starter templates and commands in the [create-lichtblick-extension](https://github.com/Lichtblick-Suite/create-lichtblick-extension) package to simplify the development process.
 
 ### Requirements:
+
 - **Node.js 14+**
 
 To set up an extension project, follow the instruction from the GitHub repository.
 
 ---
+
 By leveraging Lichtblick’s extensibility, you can create powerful, customized solutions that enhance your team’s productivity and data visualization capabilities.
