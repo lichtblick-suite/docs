@@ -18,7 +18,7 @@ Lichtblick requires the schema data to be a binary [`FileDescriptorSet`](https:/
 
 Lichtblick also expects `schemaName` to be one of the message types defined in the `FileDescriptorSet`.
 
-## FlatBuffers 
+## FlatBuffers
 
 For FlatBuffers data, set the schema encoding to `flatbuffer` and the message encoding to `flatbuffer`.
 
@@ -38,7 +38,7 @@ For ROS 2 data, use the schema encoding `ros2msg` or `ros2idl` and the message e
 
 Lichtblick requires the schema data to be a concatenation of the referenced `.msg` or `.idl` file along with its dependencies. For details on the concatenated format, refer to the [MCAP specific documentation](https://mcap.dev/spec/registry#ros1msg-data-format).
 
-## OMG IDL 
+## OMG IDL
 
 For IDL schemas with CDR data, use the schema encoding `omgidl` and the message encoding `cdr`.
 
