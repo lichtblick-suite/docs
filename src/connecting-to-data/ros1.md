@@ -8,7 +8,7 @@ Load local and remote ROS 1 (`.bag`) files, or connect directly to a live ROS 1 
 
 Then, in Lichtblick, select ["Open connection"](./introduction.md), either on the initial welcome pop up or via the app bar menu.
 
-![open-connection](../images/open-connection.png)
+![open-connection](images/open-connection.png)
 
 ### Live connections
 
@@ -26,7 +26,7 @@ Ensure you have a working [ROS 1 setup](https://wiki.ros.org/ROS/Installation) a
 
 Select "ROS 1" in the "Open data source" dialog, and enter your [ROS_MASTER_URI](https://wiki.ros.org/ROS/EnvironmentVariables#ROS_MASTER_URI) (ROS master's IP and port) and [ROS_HOSTNAME](https://wiki.ros.org/ROS/EnvironmentVariables#ROS_IP.2FROS_HOSTNAME):
 
-![connect-to-ros1](../images/connect-to-ros1.png)
+![connect-to-ros1](images/connect-to-ros1.png)
 
 If you encounter connectivity issues, verify that your ROS stack and Lichtblick have unrestricted network access, as ROS communicates over multiple ports.
 
@@ -36,7 +36,7 @@ If ROS and Lichtblick are running on different machines, refer to the ROS 1 [Net
 
 For this option just select the "Remote file" in the "Open connection" option and enter the URL to your remote `.bag` file.
 
-![open-remote-file](../images/open-remote-file.png)
+![open-remote-file](images/open-remote-file.png)
 
 Don't forget to [set up CORS](../connecting-to-data/live-data.html#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
 

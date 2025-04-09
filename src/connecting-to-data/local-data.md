@@ -19,4 +19,4 @@ To visualize local files, follow these steps:
 * Click `"Open local file(s)…"` from the dashboard or left-hand menu to browse and select files.
 * Open files directly or drag-and-drop them from your OS file manager for quick access.
 
-![alt text](../images/open-file.png)
+![alt text](images/open-file.png)
