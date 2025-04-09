@@ -11,14 +11,14 @@ To begin visualizing your data, connect to a data source and open a panel.
 - Click "Open data source" in the left-hand menu.
 - Choose from available options: live data or local file.
 
-![alt text](/images/open-file.png)
+![Open file](/images/open-file.png)
 
 #### Opening a Panel:
 
 - Click "Add panel" in the dashboard or left-hand menu.
 - Select the desired panel type (e.g., 3D, Raw Message, Image).
 
-![alt text](/images/add-panel.png)
+![Add panel](/images/add-panel.png)
 
 ## Desktop-only features
 
@@ -35,7 +35,7 @@ Extensions
 
 Lichtblick's interface is designed for intuitive navigation:
 
-![alt text](/images/instructions-workspace.png)
+![Workspace instructions](/images/instructions-workspace.png)
 
 **App Menu**: Connect to a data source, toggle sidebars, or access resources.<br>
 **Users Menu**: Go to app settings, extensions catalog, experimental features, licenses, and version. <br>

@@ -4,7 +4,7 @@ Variables in Lichtblick allow users to define global values that can be reused a
 
 To manage variables, access the **Variables** tab in the sidebar, where you can view, add, and modify them.
 
-![variables](/images/show-sidebar.png)
+![Variables in sidebar](/images/show-sidebar.png)
 
 ---
 
@@ -16,7 +16,7 @@ Variables are referenced using the `$` prefix. For example, a variable named `my
 
 Panels that support message path syntax—such as **Raw Messages**, **Indicator**, **Plot**, and **State Transitions**—can leverage variables to dynamically filter or slice data. This enables flexible and interactive data visualization.
 
-![variables](/images/variables-in-message-path.png)
+![Variables in message path](/images/variables-in-message-path.png)
 
 #### Example Workflow:
 

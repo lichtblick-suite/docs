@@ -12,7 +12,7 @@ Layouts are highly versatile and can be adapted to various engineering and devel
 
 The **Layouts** menu provides all the tools needed to create, modify, and share layouts, ensuring a streamlined workflow.
 
-![alt text](/images/layouts-tab.png)
+![Layouts tab](/images/layouts-tab.png)
 
 ## Layouts Menu Overview
 
@@ -23,7 +23,7 @@ To create a new custom workspace:
 1. Navigate to the **Layouts** menu.
 2. Select **Create new layout**.
 
-![alt text](/images/new-layout.png)
+![Creating a new layout](/images/new-layout.png)
 
 #### Customization Options:
 
@@ -41,7 +41,7 @@ When switching layouts after making changes to your current workspace, you will 
 - **Save changes**: Save your modifications to the layout.
 - **Revert**: Discard changes and restore the last saved version.
 
-![alt text](/images/layout-options.png)
+![Layout options](/images/layout-options.png)
 
 ### Web Version Considerations
 
