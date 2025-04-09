@@ -9,7 +9,7 @@
   },
   "packageManager": "yarn@4.4.1",
   "scripts": {
-    "setup": "cargo install mdbook",
+    "setup": "cargo install mdbook & cargo install mdbook-tabs",
     "start": "mdbook serve --open"
   }
 }

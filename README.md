@@ -26,16 +26,10 @@ This documentation is built using [mdBook](https://rust-lang.github.io/mdBook/in
    rustup default stable
     ```
 
-## Installing mdBook
+## Installing mdBook and dependencies
 
 ```bash
-cargo install mdbook
-```  
-
-To fully utilize this documentation, you also need to install `mdbook-tabs`. You can do so with the following command:
-
-```bash
-cargo install mdbook-tabs
+yarn setup
 ```  
 
 ## Running a Local Preview  
@@ -43,7 +37,7 @@ cargo install mdbook-tabs
 Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:  
 
 ```
-mdbook serve
+yarn start
 ```  
 
 This will launch a local web server at `localhost:3000`, automatically updating the content whenever changes are made.  
