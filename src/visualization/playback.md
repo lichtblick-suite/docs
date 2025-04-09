@@ -2,7 +2,7 @@
 
 Lichtblick enables seamless navigation through both local and remote datasets using its playback controls.
 
-![alt text](/images/navigate-timestamp.png)
+![Playback](/images/navigate-timestamp.png)
 
 ## Message Sequencing
 
