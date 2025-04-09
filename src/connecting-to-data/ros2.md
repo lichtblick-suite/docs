@@ -8,7 +8,7 @@ Load local and remote [MCAP](../connecting-to-data/mcap.md) files containing ROS
 
 Then, in Lichtblick, select "Open connection", either on the initial welcome pop up or via the app bar menu.
 
-![open-connection](../images/open-connection.png)
+![open-connection](images/open-connection.png)
 
 ### Live connections
 

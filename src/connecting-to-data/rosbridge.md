@@ -35,7 +35,7 @@ Finally "Open connection" in the "Open data source" dialog, select "Rosbridge" a
 
 To test if everything is working well, you can check the topics tab on the left sidebar.
 
-![connect-to-rosbridge](../images/connect-to-rosbridge.png)
+![connect-to-rosbridge](images/connect-to-rosbridge.png)
 
 ## Example connection 
 
@@ -43,4 +43,4 @@ As you can see below this enables real-time communication between ROS and Lichtb
 
 In the example, the ROSBridge server runs inside a Docker container, exposing a websocket interface that Lichtblick can connect to. Data is exchanged by publishing and subscribing to ROS topics via websocket messages, allowing seamless integration between ROS and external applications. 
 
-![connect-to-rosbridge-real-time](../images/rosbridge-connection-to-lichtblick.png)
+![connect-to-rosbridge-real-time](images/rosbridge-connection-to-lichtblick.png)
