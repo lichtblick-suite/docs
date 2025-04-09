@@ -14,8 +14,11 @@ Each message must be UTF-8 encoded JSON representing an object. Any binary data 
 
 For Protobuf data, use schema encoding `"protobuf"` and message encoding `"protobuf"`.
 
+<<<<<<< HEAD
 ChatGPT said:
 
+=======
+>>>>>>> origin
 Lichtblick requires the schema data to be a binary [`FileDescriptorSet`](https://protobuf.dev/programming-guides/techniques/#self-description). For websocket connections, this binary data must also be base64-encoded since it is represented as a string.
 
 Lichtblick also expects `schemaName` to be one of the message types defined in the `FileDescriptorSet`.
