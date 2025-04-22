@@ -13,6 +13,7 @@
     - [Velodyne](./connecting-to-data/velodyne.md)
     - [Rosbridge](./connecting-to-data/rosbridge.md)
     - [Schema Encodings](./connecting-to-data/schema-encodings.md)
+  - [Multiple Files](./connecting-to-data/multiple-files.md)
 - [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization]()
