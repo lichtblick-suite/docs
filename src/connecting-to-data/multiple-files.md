@@ -1,4 +1,4 @@
-# Opening mulitple files
+# Multiple files
 
 <div class="warning">
 <strong>Note:</strong> Opening multiple files with Lichtblick is <strong>limited to <code>.mcap</code> files only</strong >. Support for aditional file types may be added in future releases.
@@ -19,11 +19,11 @@ A Lichtblick session with multiple files opened will look like this:
 Just like with single files, Lichtblick allows users to open multiple files, whether they are stored locally or accessed remotely.
 
 
-### Opening multiple files from local storage 
+### Opening multiple local files
 
-To open local files, as described in our [Local Data](./local-data.md) documentation, you can either select the files using the `"Open local file(s)…"` option or simply drag-and-drop them into Lichtblick.
+To open local files, as described in our [local data](./local-data.md) documentation, you can either select the files using `"Open local file(s)…"` option or simply drag-and-drop them into Lichtblick.
 
-Alternatively, you can open multiple files before launching the application by using our CLI commands. To learn more about how this works, see [this section of our documentation](../visualization/open-via-cli.md).
+Alternatively, you can open multiple files before launching the application by using our CLI commands. To learn more about how this works, see [this section of our documentation](../visualization/open-via-cli.html#local-files).
 
 
 ### Opening multiple files from remote sources 
@@ -80,7 +80,3 @@ When dealing with multiple files, there are some important limitations to be awa
 * Schema consistency is another critical factor. Lichtblick expects schema definitions to be unique across all files. If multiple files define schemas with the same name but different structures, only the first definition encountered will be used. This can cause panels to misinterpret the data, leading to incorrect rendering or visual glitches. To avoid this, we strongly recommend using consistent and non-conflicting schema definitions across all files.
 
 Finally, Lichtblick includes built-in alerts to notify users of conflicting scenarios, such as duplicate schemas or ambiguous timestamps, that could impact the accuracy or integrity of the data.
-
-
-
-
