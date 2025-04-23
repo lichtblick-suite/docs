@@ -6,11 +6,11 @@ Lichtblick enables you to load local data files for visualization.
 
 |   | File extension               |
 |---|------------------------------|
-| [ROS1]() | `.bag`                |
-| [ROS2]() (legacy) | `.db3`       |
-| [ROS2]() (Iron onward) | `.mcap` |
-| [MCAP]() | `.mcap`               |
-| [PX4 Ulog]() | `.ulg`            |
+| [ROS1](./ros1.md) | `.bag`                |
+| [ROS2](./ros2.md) (legacy) | `.db3`       |
+| [ROS2](./ros2.md) (Iron onward) | `.mcap` |
+| [MCAP](./mcap.md) | `.mcap`               |
+| [PX4 Ulog](./px-4.md) | `.ulg`            |
 
 ## Getting started
 

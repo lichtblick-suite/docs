@@ -11,6 +11,6 @@ Lichtblick allows its users to open data via two options, either a [local data s
 
 |   | Use Case         | Supported Formats           |
 |---|------------------|-----------------------------|
-| [Local Data](./local-data.md) <br> `Open local file(s)...` | Allows to open and inspect data saved locally | <ul><li>[MCAP]()</li><li>[ROS 1]()</li><li>[PX4 Ulog]()</li></ul>        |
-| [Live Data](./live-data.md) <br> `Open connection` | Inspect real-time incoming data  | <ul><li>[MCAP]()</li><li>[ROS 1]()</li><li>[ROS 2]()</li><li>[Custom]()</li><li>[Velodyne]()</li></ul> |
+| [Local Data](./local-data.md) <br> `Open local file(s)...` | Allows to open and inspect data saved locally | <ul><li>[MCAP](./mcap.md)</li><li>[ROS 1](./ros1.md)</li><li>[PX4 Ulog](./px-4.md)</li></ul>        |
+| [Live Data](./live-data.md) <br> `Open connection` | Inspect real-time incoming data  | <ul><li>[MCAP](./mcap.md)</li><li>[ROS 1](./ros1.md)</li><li>[ROS 2](./ros2.md)</li><li>[Rosbridge](./rosbridge.md)</li><li>[Velodyne](./velodyne.md)</li></ul> |
 
