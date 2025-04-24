@@ -1,4 +1,4 @@
-# Introduction
+# Visualization
 
 Lichtblick offers a comprehensive suite of visualization tools to help you analyze and interpret your robotics data effectively.
 

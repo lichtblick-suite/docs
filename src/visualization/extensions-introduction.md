@@ -1,4 +1,4 @@
-# Introduction
+# Extensions
 
 Lichtblick’s extensibility allows you to tailor the platform to your team’s unique workflows. By developing custom extensions, you can create specialized panels, convert custom message schemas into Lichtblick-supported formats, and alias topic names for seamless integration and visualization.
 
