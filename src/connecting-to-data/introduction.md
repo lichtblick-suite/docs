@@ -1,4 +1,4 @@
-# Introduction
+# Connecting to Data
 
 To begin visualizing data, navigate to the Lichtblick dashboard and select a data source option.
 
