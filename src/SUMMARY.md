@@ -1,6 +1,7 @@
 # Summary
 
 - [Home](./home.md)
+- [Initial Information](./initial-information.md)
 - [Connecting to Data](./connecting-to-data/introduction.md)
   - [Live Data](./connecting-to-data/live-data.md)
   - [Local Data](./connecting-to-data/local-data.md)
@@ -13,7 +14,6 @@
     - [Rosbridge](./connecting-to-data/rosbridge.md)
     - [Schema Encodings](./connecting-to-data/schema-encodings.md)
   - [Multiple Files](./connecting-to-data/multiple-files.md)
-- [Initial Information](./initial-information.md)
 - [Settings](./settings.md)
 - [Visualization](./visualization/introduction.md)
   - [Playback](./visualization/playback.md)
