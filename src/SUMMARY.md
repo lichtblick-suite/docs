@@ -22,6 +22,7 @@
   - [Panels](./visualization/panels/panels-introduction.md)
     - [Plot](./visualization/panels/plot-panel.md)
     - [Raw Messages](./visualization/panels/raw-messages-panel.md)
+    - [Playback Performance](./visualization/panels/playback-performance.md)
   - [Variables](./visualization/variables.md)
   - [Extensions](./visualization/extensions-introduction.md)
     - [Settings API](./visualization/extensions-settings-api.md)
