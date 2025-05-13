@@ -29,3 +29,5 @@
   - [Annotate ROS enum fields](./visualization/annotate-ros-enum-fields.md)
   - [Migrate from other tools](./visualization/migrate-from-other-tools.md)
 - [Browser Support](./browser-support.md)
+- [Experimental Features](./experimental-features/introduction.md)
+  - [Sync Instances](./experimental-features/sync-instances.md)
