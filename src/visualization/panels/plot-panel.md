@@ -2,7 +2,7 @@
 
 The Plot panel in Lichtblick is a powerful visualization tool designed to chart time-series data, allowing you to monitor and analyze numeric values in real time or from recorded sessions. It gets it's data from topic message paths that point to numeric fields.
 
-![Plot panel](../images/plot-panel.png)
+![Plot panel](./images/plot-panel.png)
 
 ## Settings 
 
@@ -23,7 +23,7 @@ The Plot panel in Lichtblick is a powerful visualization tool designed to chart 
 | Show Values | Shows the current y-axis value to the corresponding series in the legend |
 
 
-![Plot panel labels](../images/plot-values-labels.png)
+![Plot panel labels](./images/plot-values-labels.png)
 
 Plot series legend.
 
@@ -61,7 +61,7 @@ Plot series legend.
 
 To remove a series from the Panel you use the `x`, next to each data series, like it's shown below.
 
-![Plot panel series](../images/plot-panel-series.png)
+![Plot panel series](./images/plot-panel-series.png)
 
 To enter the data you wanna plot use the message path syntax, `Lichtblick` will also show suggestions that exits on the topics available.
 
