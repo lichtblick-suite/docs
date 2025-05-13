@@ -2,7 +2,7 @@
 
 ## Overview
 
-The PlaybackPerformance panel provides a real-time visualization of playback performance metrics during the execution of a playback session. It displays four primary metrics over a sliding time window:
+The Playback Performance panel provides a real-time visualization of playback performance metrics during the execution of a playback session. It displays four primary metrics over a sliding time window:
 
 - Playback Speed relative to real-time (× realtime)
 - Frame Rate (fps)
