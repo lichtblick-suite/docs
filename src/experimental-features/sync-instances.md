@@ -69,15 +69,3 @@ To ensure the feature works properly:
 
 - **Timing offsets may occur**:  
   Playback buffering is local to each instance. The sync mechanism sends time targets, but **frame-perfect synchronization is not guaranteed**.
-
----
-
-## Contributing & Feedback
-
-We welcome feedback and contributions to improve the synchronization experience.
-
-- Found an issue or have an idea?
-- Want to improve synchronization precision or support new platforms?
-
-→ Please open an issue or a pull request in the Lichtblick repository.  
-Together, we can refine this feature for collaborative use cases.
