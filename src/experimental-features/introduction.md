@@ -28,13 +28,11 @@ Once enabled, the corresponding feature becomes available immediately in the use
 ## Staying Updated
 
 The list of experimental features is **dynamic**—it may change across releases.  
-We recommend checking:
+To stay informed about new features, updates, or deprecations, we recommend to check:
 
 - **Release notes**
 - **Documentation**
 - **In-app announcements**
-
-to stay informed about new features, updates, or deprecations.
 
 ---
 
