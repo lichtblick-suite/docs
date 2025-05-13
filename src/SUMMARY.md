@@ -21,6 +21,7 @@
   - [Layouts](./visualization/layouts.md)
   - [Panels](./visualization/panels/panels-introduction.md)
     - [Plot](./visualization/panels/plot-panel.md)
+    - [Raw Messages](./visualization/panels/raw-messages-panel.md)
   - [Variables](./visualization/variables.md)
   - [Extensions](./visualization/extensions-introduction.md)
     - [Settings API](./visualization/extensions-settings-api.md)
