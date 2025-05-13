@@ -1,6 +1,6 @@
 # Plot
 
-The Plot panel in Lichtblick is a powerful visualization tool designed to chart time-series data, allowing you to monitor and analyze numeric values in real time or from recorded sessions. It gets it's data from topic message paths that point to numeric fields.
+The Plot Panel in Lichtblick is a user interface component designed to facilitate the visualization and control of plotting data. It allows to view, modify, and export graphical representations of datasets or modeling results.
 
 ![Plot panel](./images/plot-panel.png)
 
