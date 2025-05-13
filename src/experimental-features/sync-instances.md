@@ -25,7 +25,10 @@ Once enabled, a small toggle button will appear in the **bottom-right corner** o
 
 Once the feature is enabled and toggled **on**, the current instance will **broadcast** playback actions to other active instances running on the same platform.
 
-![alt text](images/sync-demonstration.mp4)
+<video controls autoplay muted loop style="max-width: 100%; border-radius: 8px;">
+  <source src="images/sync-demonstration.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Supported Broadcast Actions:
 
