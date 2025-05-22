@@ -47,7 +47,6 @@ lichtblick /path/to/your/file.mcap
 # Open a single .mcap file using the default application handler
 start /path/to/your/file.mcap
 
-
 # Alternatively, execute the Lichtblick binary directly (using the absolute path)
 C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe /path/to/your/file.mcap
 
