@@ -44,14 +44,20 @@ lichtblick /path/to/your/file.mcap
 {{#tab name="Windows"}}
 
 ```sh
-# Open a single .mcap file using the default handler
+# Open a single .mcap file using the default application handler
 start /path/to/your/file.mcap
 
-# Or run the Lichtblick executable directly
-lichtblick.exe /path/to/your/file.mcap
 
-# Open multiple .mcap files
-lichtblick.exe /path/to/your/file1.mcap /path/to/your/file2.mcap
+# Alternatively, execute the Lichtblick binary directly (using the absolute path)
+C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe /path/to/your/file.mcap
+
+# To open multiple .mcap files, run the binary directly with multiple paths or use a wildcard
+C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe /path/to/your/file1.mcap /path/to/your/file2.mcap
+C:\Users\<USER>\AppData\Local\Programs\lichtblick\Lichtblick.exe /path/to/your/files/*.mcap
+
+
+# Optional: add to PATH for easier usage
+setx PATH "%PATH%;C:\Users\<USER>\AppData\Local\Programs\lichtblick" # need to restart the terminal
 lichtblick.exe /path/to/your/files/*.mcap
 ```
 
