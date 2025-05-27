@@ -35,12 +35,7 @@ export function activate(extensionContext: ExtensionContext) {
 
 Custom camera model extensions enable support for specialized lens distortion or projection models beyond Lichtblick’s built-in camera model. By registering a custom camera model, you can ensure that camera images with unique distortion (e.g. fisheye or other wide-angle lenses) are interpreted correctly in Lichtblick’s Image panel. This allows the Images panel to accurately render images using your custom projection logic, just as it does for the standard pinhole camera model.
 
-**Note:** Distortion model name matching is case-sensitive. Ensure that the `distortion_model` string in your incoming `CameraInfo` messages exactly matches the name you register. The Images panel will seamlessly switch to your custom model for any camera stream with that distortion model, without additional user configuration.
-
-**Example:** To create a custom camera model, first implement a class that encapsulates your distortion model (for example, a `CylinderCameraModel` class implementing the necessary camera projection interface). Then, in your extension’s entry point (the `activate` function), register the new camera model using the `extensionContext.registerCameraModel`.
-
-For example, the code below registers a camera model named `"CylinderCameraModel"` and supplies a builder function that instantiates a `CylinderCameraModel` with the provided calibration data:
-
+**Example: Custom Camera Model**
 ```typescript
 import { CylinderCameraModel } from "./CylinderCameraModel";
 import { ExtendedExtensionContext, CameraInfo } from "./lichtblick-suite.types";
@@ -52,9 +47,6 @@ export function activate(extensionContext: ExtensionContext): void {
   });
 }
 ```
-
-In the code above, the string `"CylinderCameraModel"` is the unique name of your distortion model. This name should exactly match the `distortion_model` field in any camera calibration messages (camera info) that you want to be handled by your custom model. When Lichtblick encounters a camera calibration with `distortion_model: "CylinderCameraModel"`, it will call the provided builder function to create an instance of your `CylinderCameraModel` class for processing that camera’s data.
-
 _You can find out more details about Custom Camera Models and its usage on this page:
 [Custom Camera Models](extensions-custom-camera-model.md)_
 
