@@ -31,6 +31,26 @@ export function activate(extensionContext: ExtensionContext) {
 ```
 
 ---
+## Custom Camera Models
+
+Custom camera model extensions enable support for specialized lens distortion or projection models beyond Lichtblick’s built-in camera model. By registering a custom camera model, you can ensure that camera images with unique distortion (e.g. fisheye or other wide-angle lenses) are interpreted correctly in Lichtblick’s Image panel. This allows the Images panel to accurately render images using your custom projection logic, just as it does for the standard pinhole camera model.
+
+**Example: Custom Camera Model**
+```typescript
+import { CylinderCameraModel } from "./CylinderCameraModel";
+import { ExtendedExtensionContext, CameraInfo } from "./lichtblick-suite.types";
+
+export function activate(extensionContext: ExtensionContext): void {
+  extensionContext.registerCameraModel({
+    name: "CylinderCameraModel",
+    modelBuilder: (cameraInfo: CameraInfo) => new CylinderCameraModel(cameraInfo),
+  });
+}
+```
+_You can find out more details about Custom Camera Models and its usage on this page:
+[Custom Camera Models](extensions-custom-camera-model.md)_
+
+---
 
 ## Message Converters
 
