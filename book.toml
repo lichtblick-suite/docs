@@ -11,3 +11,6 @@ title = "Lichtblick Documentation"
 static-files = ["images"]
 additional-css = ["theme/tabs.css"]
 additional-js = ["theme/tabs.js"]
+
+[output.html.fold]
+enable = true
