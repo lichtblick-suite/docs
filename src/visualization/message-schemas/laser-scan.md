@@ -12,7 +12,7 @@ Single scan from a planar laser range-finder
 | Field             | Type                                              | Description                                                                                                                      |
 |-------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `type`            | [`LineType`](#)                                   | Type of line primitive to draw.                                                                  |
-| `pose`            | [`Pose`](#)                                       | The position and orientation of the line relative to the reference frame.                                                      |
+| `pose`            | [`Pose`](./pose.md)                                       | The position and orientation of the line relative to the reference frame.                                                      |
 | `thickness`       | [`float64`](#)                                    | Thickness of the line.                                                                                                         |
 | `scale_invariant` | [`boolean`](#)                                    | If true, thickness is fixed in screen pixels. If false, thickness scales with distance in world units.                        |
 | `points`          | [`Point3[]`](#)                                   | Points along the line                                                                                                           |

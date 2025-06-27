@@ -11,7 +11,7 @@ A primitive representing a 3D model file loaded from an external URL or embedded
 
 | Field           | Type                       | Description                                                                                                                            |
 |-----------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `pose`          | [`Pose`](#)                | The position and orientation of the model relative to the reference frame.                                                            |
+| `pose`          | [`Pose`](./pose.md)                | The position and orientation of the model relative to the reference frame.                                                            |
 | `scale`         | [`Vector3`](#)             | Scale factor applied to the model along each axis.                                                                          |
 | `color`         | [`Color`](#)               | Solid color applied to the entire model if `override_color` is set to true.                                                           |
 | `override_color`| [`boolean`](#)             | If true, overrides the model's original material colors with the specified `color`.                                                   |
