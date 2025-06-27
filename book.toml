@@ -14,3 +14,4 @@ additional-js = ["theme/tabs.js"]
 
 [output.html.fold]
 enable = true
+level = 1
