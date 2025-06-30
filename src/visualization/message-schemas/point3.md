@@ -23,8 +23,8 @@ Foxglove schemas are independent of any specific framework and can be used with 
 
 | Encoding     | Schema                                   |
 |--------------|------------------------------------------|
-| ROS 1        | [`foxglove_msgs/Point3`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/Point3.msg)          |
-| ROS 2        | [`foxglove_msgs/msg/Point3`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/Point3.msg)      |
+| ROS 1        | [`foxglove_msgs/Point3`](https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Point.html)          |
+| ROS 2        | [`foxglove_msgs/msg/Point3`](https://docs.ros2.org/galactic/api/geometry_msgs/msg/Point.html)      |
 | JSON         | [`foxglove.Point3`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/Point3.json)        |
 | Protobuf     | [`foxglove.Point3`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/Point3.proto)   |
 | FlatBuffers  | [`foxglove.Point3`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/Point3.fbs)         |
