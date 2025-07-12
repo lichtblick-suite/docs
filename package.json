@@ -11,7 +11,7 @@
   "scripts": {
     "setup": "sh setup.sh",
     "start": "mdbook serve --open",
-    "lint:docs": "textlint --rule doubled-spaces src/*"
+    "lint:docs": "textlint src/*"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
