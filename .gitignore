@@ -5,4 +5,3 @@ book
 !.yarn/patches
 !.yarn/plugins
 !.yarn/sdks
-.pnp.*

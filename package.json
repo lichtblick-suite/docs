@@ -10,6 +10,16 @@
   "packageManager": "yarn@4.4.1",
   "scripts": {
     "setup": "sh setup.sh",
-    "start": "mdbook serve --open"
+    "start": "mdbook serve --open",
+    "lint:docs": "textlint --rule doubled-spaces src/*"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "textlint": "^15.2.0"
+  },
+  "dependencies": {
+    "dictionary-en": "^4.0.0",
+    "textlint-rule-doubled-spaces": "^1.0.2",
+    "textlint-rule-spelling": "^0.3.0"
   }
 }
