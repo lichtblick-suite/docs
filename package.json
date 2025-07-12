@@ -14,7 +14,6 @@
     "lint:docs": "textlint src/*"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
     "textlint": "^15.2.0"
   },
   "dependencies": {
