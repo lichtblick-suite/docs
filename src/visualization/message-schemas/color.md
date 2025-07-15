@@ -27,11 +27,11 @@ A color represented in RGBA format.
 
 Foxglove schemas are framework-agnostic and can be implemented using any supported message encoding:
 
-| Encoding    | Schema                    |
-| ----------- | ------------------------- |
-| ROS 1       | `foxglove_msgs/Color`     |
-| ROS 2       | `foxglove_msgs/msg/Color` |
-| JSON        | `foxglove.Color`          |
-| Protobuf    | `foxglove.Color`          |
-| FlatBuffers | `foxglove.Color`          |
-| OMG IDL     | `foxglove::Color`         |
+| Encoding    | Schema                                                                                                    |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/Color.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/Color.msg)    |
+| JSON        | [`foxglove.Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/Color.json)      |
+| Protobuf    | [`foxglove.Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/Color.proto) |
+| FlatBuffers | [`foxglove.Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/Color.fbs)       |
+| OMG IDL     | [`foxglove::Color`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/Color.idl) |

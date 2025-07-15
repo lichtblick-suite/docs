@@ -23,11 +23,11 @@ Represents a visual arrow used to indicate direction or orientation in 3D space.
 
 Foxglove schemas are designed to be cross-platform and are compatible with multiple encoding formats. Use the exact schema names listed below to ensure compatibility:
 
-| Encoding    | Schema                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| ROS 1       | [`foxglove_msgs/ArrowPrimitive`](https://github.com/foxglove/foxglove-msgs/blob/main/foxglove_msgs/msg/ArrowPrimitive.msg)     |
-| ROS 2       | [`foxglove_msgs/msg/ArrowPrimitive`](https://github.com/foxglove/foxglove-msgs/blob/main/foxglove_msgs/msg/ArrowPrimitive.msg) |
-| JSON        | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/ArrowPrimitive.json)         |
-| Protobuf    | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/ArrowPrimitive.proto)    |
-| FlatBuffers | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/ArrowPrimitive.fbs)          |
-| OMG IDL     | [`foxglove::ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/ArrowPrimitive.idl)    |
+| Encoding    | Schema                                                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/ArrowPrimitive.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/ArrowPrimitive.msg)    |
+| JSON        | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/ArrowPrimitive.json)      |
+| Protobuf    | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/ArrowPrimitive.proto) |
+| FlatBuffers | [`foxglove.ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/ArrowPrimitive.fbs)       |
+| OMG IDL     | [`foxglove::ArrowPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/ArrowPrimitive.idl) |

@@ -28,9 +28,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                             |
 | ----------- | ---------------------------------- |
-| ROS 1       | `foxglove_msgs/FrameTransform`     |
-| ROS 2       | `foxglove_msgs/msg/FrameTransform` |
-| JSON        | `foxglove.FrameTransform`          |
-| Protobuf    | `foxglove.FrameTransform`          |
-| FlatBuffers | `foxglove.FrameTransform`          |
-| OMG IDL     | `foxglove::FrameTransform`         |
+| ROS 1       | [`foxglove_msgs/FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/FrameTransform.msg) |
+| ROS 2       | [`foxglove_msgs/msg/FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/FrameTransform.msg) |
+| JSON        | [`foxglove.FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/FrameTransform.json) |
+| Protobuf    | [`foxglove.FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/FrameTransform.proto) |
+| FlatBuffers | [`foxglove.FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/FrameTransform.fbs) |
+| OMG IDL     | [`foxglove::FrameTransform`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/FrameTransform.idl) |

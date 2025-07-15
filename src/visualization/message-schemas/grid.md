@@ -28,9 +28,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                   |
 | ----------- | ------------------------ |
-| ROS 1       | `foxglove_msgs/Grid`     |
-| ROS 2       | `foxglove_msgs/msg/Grid` |
-| JSON        | `foxglove.Grid`          |
-| Protobuf    | `foxglove.Grid`          |
-| FlatBuffers | `foxglove.Grid`          |
-| OMG IDL     | `foxglove::Grid`         |
+| ROS 1       | [`foxglove_msgs/Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/Grid.msg) |
+| ROS 2       | [`foxglove_msgs/msg/Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/Grid.msg) |
+| JSON        | [`foxglove.Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/Grid.json) |
+| Protobuf    | [`foxglove.Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/Grid.proto) |
+| FlatBuffers | [`foxglove.Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/Grid.fbs) |
+| OMG IDL     | [`foxglove::Grid`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/Grid.idl) |

@@ -20,9 +20,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                            |
 | ----------- | --------------------------------- |
-| ROS 1       | `foxglove_msgs/CubePrimitive`     |
-| ROS 2       | `foxglove_msgs/msg/CubePrimitive` |
-| JSON        | `foxglove.CubePrimitive`          |
-| Protobuf    | `foxglove.CubePrimitive`          |
-| FlatBuffers | `foxglove.CubePrimitive`          |
-| OMG IDL     | `foxglove::CubePrimitive`         |
+| ROS 1       | [`foxglove_msgs/CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CubePrimitive.msg) |
+| ROS 2       | [`foxglove_msgs/msg/CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CubePrimitive.msg) |
+| JSON        | [`foxglove.CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CubePrimitive.json) |
+| Protobuf    | [`foxglove.CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CubePrimitive.proto) |
+| FlatBuffers | [`foxglove.CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CubePrimitive.fbs) |
+| OMG IDL     | [`foxglove::CubePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CubePrimitive.idl) |

@@ -79,11 +79,11 @@ This applies to both images in a stereo pair.
 
 Foxglove schemas are implementation-independent and can be used with any of the supported message encodings:
 
-| Encoding    | Schema                                |
-| ----------- | ------------------------------------- |
-| ROS 1       | `foxglove_msgs/CameraCalibration`     |
-| ROS 2       | `foxglove_msgs/msg/CameraCalibration` |
-| JSON        | `foxglove.CameraCalibration`          |
-| Protobuf    | `foxglove.CameraCalibration`          |
-| FlatBuffers | `foxglove.CameraCalibration`          |
-| OMG IDL     | `foxglove::CameraCalibration`         |
+| Encoding    | Schema                                                                                                                            |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CameraCalibration.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CameraCalibration.msg)    |
+| JSON        | [`foxglove.CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CameraCalibration.json)      |
+| Protobuf    | [`foxglove.CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CameraCalibration.proto) |
+| FlatBuffers | [`foxglove.CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CameraCalibration.fbs)       |
+| OMG IDL     | [`foxglove::CameraCalibration`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CameraCalibration.idl) |

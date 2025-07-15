@@ -21,9 +21,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                          |
 | ----------- | ------------------------------- |
-| ROS 1       | `foxglove_msgs/SceneUpdate`     |
-| ROS 2       | `foxglove_msgs/msg/SceneUpdate` |
-| JSON        | `foxglove.SceneUpdate`          |
-| Protobuf    | `foxglove.SceneUpdate`          |
-| FlatBuffers | `foxglove.SceneUpdate`          |
-| OMG IDL     | `foxglove::SceneUpdate`         |
+| ROS 1       | [`foxglove_msgs/SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/SceneUpdate.msg) |
+| ROS 2       | [`foxglove_msgs/msg/SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/SceneUpdate.msg) |
+| JSON        | [`foxglove.SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/SceneUpdate.json) |
+| Protobuf    | [`foxglove.SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/SceneUpdate.proto) |
+| FlatBuffers | [`foxglove.SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/SceneUpdate.fbs) |
+| OMG IDL     | [`foxglove::SceneUpdate`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/SceneUpdate.idl) |

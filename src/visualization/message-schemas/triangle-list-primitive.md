@@ -26,9 +26,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                                    |
 | ----------- | ----------------------------------------- |
-| ROS 1       | `foxglove_msgs/TriangleListPrimitive`     |
-| ROS 2       | `foxglove_msgs/msg/TriangleListPrimitive` |
-| JSON        | `foxglove.TriangleListPrimitive`          |
-| Protobuf    | `foxglove.TriangleListPrimitive`          |
-| FlatBuffers | `foxglove.TriangleListPrimitive`          |
-| OMG IDL     | `foxglove::TriangleListPrimitive`         |
+| ROS 1       | [`foxglove_msgs/TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/TriangleListPrimitive.msg) |
+| ROS 2       | [`foxglove_msgs/msg/TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/TriangleListPrimitive.msg) |
+| JSON        | [`foxglove.TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/TriangleListPrimitive.json) |
+| Protobuf    | [`foxglove.TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/TriangleListPrimitive.proto) |
+| FlatBuffers | [`foxglove.TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/TriangleListPrimitive.fbs) |
+| OMG IDL     | [`foxglove::TriangleListPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/TriangleListPrimitive.idl) |

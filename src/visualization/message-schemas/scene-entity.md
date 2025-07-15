@@ -31,9 +31,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                          |
 | ----------- | ------------------------------- |
-| ROS 1       | `foxglove_msgs/SceneEntity`     |
-| ROS 2       | `foxglove_msgs/msg/SceneEntity` |
-| JSON        | `foxglove.SceneEntity`          |
-| Protobuf    | `foxglove.SceneEntity`          |
-| FlatBuffers | `foxglove.SceneEntity`          |
-| OMG IDL     | `foxglove::SceneEntity`         |
+| ROS 1       | [`foxglove_msgs/SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/SceneEntity.msg) |
+| ROS 2       | [`foxglove_msgs/msg/SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/SceneEntity.msg) |
+| JSON        | [`foxglove.SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/SceneEntity.json) |
+| Protobuf    | [`foxglove.SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/SceneEntity.proto) |
+| FlatBuffers | [`foxglove.SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/SceneEntity.fbs) |
+| OMG IDL     | [`foxglove::SceneEntity`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/SceneEntity.idl) |

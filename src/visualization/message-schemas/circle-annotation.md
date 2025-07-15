@@ -21,11 +21,11 @@ A circle annotation on a 2D image.
 
 Foxglove schemas are framework-agnostic and can be implemented using any supported message encoding:
 
-| Encoding    | Schema                               |
-| ----------- | ------------------------------------ |
-| ROS 1       | `foxglove_msgs/CircleAnnotation`     |
-| ROS 2       | `foxglove_msgs/msg/CircleAnnotation` |
-| JSON        | `foxglove.CircleAnnotation`          |
-| Protobuf    | `foxglove.CircleAnnotation`          |
-| FlatBuffers | `foxglove.CircleAnnotation`          |
-| OMG IDL     | `foxglove::CircleAnnotation`         |
+| Encoding    | Schema                                                                                                                          |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CircleAnnotation.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CircleAnnotation.msg)    |
+| JSON        | [`foxglove.CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CircleAnnotation.json)      |
+| Protobuf    | [`foxglove.CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CircleAnnotation.proto) |
+| FlatBuffers | [`foxglove.CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CircleAnnotation.fbs)       |
+| OMG IDL     | [`foxglove::CircleAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CircleAnnotation.idl) |

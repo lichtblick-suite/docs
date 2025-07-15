@@ -20,11 +20,11 @@ A primitive representing a cylinder, elliptic cylinder, or truncated cone.
 
 Foxglove schemas are framework-agnostic and can be implemented using any supported message encoding:
 
-| Encoding    | Schema                                |
-| ----------- | ------------------------------------- |
-| ROS 1       | `foxglove_msgs/CylinderPrimitive`     |
-| ROS 2       | `foxglove_msgs/msg/CylinderPrimitive` |
-| JSON        | `foxglove.CylinderPrimitive`          |
-| Protobuf    | `foxglove.CylinderPrimitive`          |
-| FlatBuffers | `foxglove.CylinderPrimitive`          |
-| OMG IDL     | `foxglove::CylinderPrimitive`         |
+| Encoding    | Schema                                                                                                                            |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CylinderPrimitive.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CylinderPrimitive.msg)    |
+| JSON        | [`foxglove.CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CylinderPrimitive.json)      |
+| Protobuf    | [`foxglove.CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CylinderPrimitive.proto) |
+| FlatBuffers | [`foxglove.CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CylinderPrimitive.fbs)       |
+| OMG IDL     | [`foxglove::CylinderPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CylinderPrimitive.idl) |

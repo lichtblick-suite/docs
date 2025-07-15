@@ -20,9 +20,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                              |
 | ----------- | ----------------------------------- |
-| ROS 1       | `foxglove_msgs/SpherePrimitive`     |
-| ROS 2       | `foxglove_msgs/msg/SpherePrimitive` |
-| JSON        | `foxglove.SpherePrimitive`          |
-| Protobuf    | `foxglove.SpherePrimitive`          |
-| FlatBuffers | `foxglove.SpherePrimitive`          |
-| OMG IDL     | `foxglove::SpherePrimitive`         |
+| ROS 1       | [`foxglove_msgs/SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/SpherePrimitive.msg) |
+| ROS 2       | [`foxglove_msgs/msg/SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/SpherePrimitive.msg) |
+| JSON        | [`foxglove.SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/SpherePrimitive.json) |
+| Protobuf    | [`foxglove.SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/SpherePrimitive.proto) |
+| FlatBuffers | [`foxglove.SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/SpherePrimitive.fbs) |
+| OMG IDL     | [`foxglove::SpherePrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/SpherePrimitive.idl) |

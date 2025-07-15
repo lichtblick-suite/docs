@@ -27,9 +27,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                             |
 | ----------- | ---------------------------------- |
-| ROS 1       | `foxglove_msgs/TextAnnotation`     |
-| ROS 2       | `foxglove_msgs/msg/TextAnnotation` |
-| JSON        | `foxglove.TextAnnotation`          |
-| Protobuf    | `foxglove.TextAnnotation`          |
-| FlatBuffers | `foxglove.TextAnnotation`          |
-| OMG IDL     | `foxglove::TextAnnotation`         |
+| ROS 1       | [`foxglove_msgs/TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/TextAnnotation.msg) |
+| ROS 2       | [`foxglove_msgs/msg/TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/TextAnnotation.msg) |
+| JSON        | [`foxglove.TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/TextAnnotation.json) |
+| Protobuf    | [`foxglove.TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/TextAnnotation.proto) |
+| FlatBuffers | [`foxglove.TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/TextAnnotation.fbs) |
+| OMG IDL     | [`foxglove::TextAnnotation`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/TextAnnotation.idl) |

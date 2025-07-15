@@ -29,11 +29,11 @@ A single frame of a compressed video bitstream.
 
 Foxglove schemas are framework-agnostic and can be implemented using any supported message encoding:
 
-| Encoding    | Schema                              |
-| ----------- | ----------------------------------- |
-| ROS 1       | `foxglove_msgs/CompressedVideo`     |
-| ROS 2       | `foxglove_msgs/msg/CompressedVideo` |
-| JSON        | `foxglove.CompressedVideo`          |
-| Protobuf    | `foxglove.CompressedVideo`          |
-| FlatBuffers | `foxglove.CompressedVideo`          |
-| OMG IDL     | `foxglove::CompressedVideo`         |
+| Encoding    | Schema                                                                                                                        |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| ROS 1       | [`foxglove_msgs/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CompressedVideo.msg)        |
+| ROS 2       | [`foxglove_msgs/msg/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CompressedVideo.msg)    |
+| JSON        | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CompressedVideo.json)      |
+| Protobuf    | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CompressedVideo.proto) |
+| FlatBuffers | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CompressedVideo.fbs)       |
+| OMG IDL     | [`foxglove::CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CompressedVideo.idl) |

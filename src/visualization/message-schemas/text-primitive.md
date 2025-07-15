@@ -23,9 +23,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                            |
 | ----------- | --------------------------------- |
-| ROS 1       | `foxglove_msgs/TextPrimitive`     |
-| ROS 2       | `foxglove_msgs/msg/TextPrimitive` |
-| JSON        | `foxglove.TextPrimitive`          |
-| Protobuf    | `foxglove.TextPrimitive`          |
-| FlatBuffers | `foxglove.TextPrimitive`          |
-| OMG IDL     | `foxglove::TextPrimitive`         |
+| ROS 1       | [`foxglove_msgs/TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/TextPrimitive.msg) |
+| ROS 2       | [`foxglove_msgs/msg/TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/TextPrimitive.msg) |
+| JSON        | [`foxglove.TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/TextPrimitive.json) |
+| Protobuf    | [`foxglove.TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/TextPrimitive.proto) |
+| FlatBuffers | [`foxglove.TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/TextPrimitive.fbs) |
+| OMG IDL     | [`foxglove::TextPrimitive`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/TextPrimitive.idl) |

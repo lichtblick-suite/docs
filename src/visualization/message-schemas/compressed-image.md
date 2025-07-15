@@ -26,9 +26,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                              |
 | ----------- | ----------------------------------- |
-| ROS 1       | `foxglove_msgs/CompressedImage`     |
-| ROS 2       | `foxglove_msgs/msg/CompressedImage` |
-| JSON        | `foxglove.CompressedImage`          |
-| Protobuf    | `foxglove.CompressedImage`          |
-| FlatBuffers | `foxglove.CompressedImage`          |
-| OMG IDL     | `foxglove::CompressedImage`         |
+| ROS 1       | [`foxglove_msgs/CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CompressedImage.msg) |
+| ROS 2       | [`foxglove_msgs/msg/CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CompressedImage.msg) |
+| JSON        | [`foxglove.CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CompressedImage.json) |
+| Protobuf    | [`foxglove.CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CompressedImage.proto) |
+| FlatBuffers | [`foxglove.CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CompressedImage.fbs) |
+| OMG IDL     | [`foxglove::CompressedImage`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CompressedImage.idl) |

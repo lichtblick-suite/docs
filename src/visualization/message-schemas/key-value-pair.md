@@ -19,9 +19,9 @@ Foxglove schemas are framework-agnostic and can be implemented using any support
 
 | Encoding    | Schema                           |
 | ----------- | -------------------------------- |
-| ROS 1       | `foxglove_msgs/KeyValuePair`     |
-| ROS 2       | `foxglove_msgs/msg/KeyValuePair` |
-| JSON        | `foxglove.KeyValuePair`          |
-| Protobuf    | `foxglove.KeyValuePair`          |
-| FlatBuffers | `foxglove.KeyValuePair`          |
-| OMG IDL     | `foxglove::KeyValuePair`         |
+| ROS 1       | [`foxglove_msgs/KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/KeyValuePair.msg) |
+| ROS 2       | [`foxglove_msgs/msg/KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/KeyValuePair.msg) |
+| JSON        | [`foxglove.KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/KeyValuePair.json) |
+| Protobuf    | [`foxglove.KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/KeyValuePair.proto) |
+| FlatBuffers | [`foxglove.KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/KeyValuePair.fbs) |
+| OMG IDL     | [`foxglove::KeyValuePair`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/KeyValuePair.idl) |
