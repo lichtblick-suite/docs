@@ -16,12 +16,10 @@
   - [Multiple Files](./connecting-to-data/multiple-files.md)
 - [Settings](./settings.md)
 - [Visualization](./visualization/introduction.md)
-
   - [Playback](./visualization/playback.md)
   - [Message Schemas](./visualization/message-schemas-introduction.md)
-
-    - [Built-in types](./visualization/message-schemas/built-in-types.md)
     - [ArrowPrimitive](./visualization/message-schemas/arrow-primitive.md)
+    - [Built-in types](./visualization/message-schemas/built-in-types.md)
     - [CameraCalibration](./visualization/message-schemas/camera-calibration.md)
     - [CircleAnnotation](./visualization/message-schemas/circle-annotation.md)
     - [Color](./visualization/message-schemas/color.md)
@@ -65,7 +63,6 @@
     - [Enum PointsAnnotationType](./visualization/message-schemas/enum-points-annotation-type.md)
     - [Enum PositionCovarianceType](./visualization/message-schemas/enum-position-covariance-type.md)
     - [Enum SceneEntityDeletionType](./visualization/message-schemas/enum-scene-entity-deletion-type.md)
-
   - [Layouts](./visualization/layouts.md)
   - [Panels](./visualization/panels/panels-introduction.md)
     - [Plot](./visualization/panels/plot-panel.md)
@@ -81,7 +78,6 @@
   - [Shortcuts](./visualization/shortcuts.md)
   - [Annotate ROS enum fields](./visualization/annotate-ros-enum-fields.md)
   - [Migrate from other tools](./visualization/migrate-from-other-tools.md)
-
 - [Browser Support](./browser-support.md)
 - [Experimental Features](./experimental-features/introduction.md)
   - [Sync Instances](./experimental-features/sync-instances.md)

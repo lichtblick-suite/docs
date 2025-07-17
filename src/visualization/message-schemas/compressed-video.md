@@ -10,12 +10,12 @@ A single frame of a compressed video bitstream.
 
 ## Schema
 
-| Field       | Type                                   | Description                                                                                                                                                                                                                                                                                                                                   |
-| ----------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `timestamp` | [`time`](./built-in-types.md#time)     | Timestamp of the video frame.                                                                                                                                                                                                                                                                                                                 |
-| `frame_id`  | [`string`](./built-in-types.md#string) | Frame of reference for the video. The origin is the optical center of the camera. +X points right, +Y points down, and +Z points into the plane.                                                                                                                                                                                              |
-| `data`      | [`bytes`](./built-in-types.md#bytes)   | Compressed video frame data. For packet-based video codecs, this data must begin and end on packet boundaries (no partial packets), and must contain enough video packets to decode exactly one image (either a keyframe or delta frame). Note: Foxglove does not support video streams that include B frames because they require lookahead. |
-| `format`    | [`string`](./built-in-types.md#string) | Video format. Supported value: `h264`.                                                                                                                                                                                                                                                                                                        |
+| Field | Type | Description |
+| --- | --- | --- |
+| `timestamp` | [`time`](./built-in-types.md#time) | Timestamp of the video frame. |
+| `frame_id` | [`string`](./built-in-types.md#string) | Frame of reference for the video. The origin is the optical center of the camera. +X points right, +Y points down, and +Z points into the plane. |
+| `data` | [`bytes`](./built-in-types.md#bytes) | Compressed video frame data. For packet-based video codecs, this data must begin and end on packet boundaries (no partial packets), and must contain enough video packets to decode exactly one image (either a keyframe or delta frame). Note: Lichtblick does not support video streams that include B frames because they require lookahead. |
+| `format` | [`string`](./built-in-types.md#string) | Video format. Supported value: `h264`. |
 
 ## Format details for h264 (Annex B)
 
@@ -29,11 +29,11 @@ A single frame of a compressed video bitstream.
 
 Foxglove schemas are framework-agnostic and can be implemented using any supported message encoding:
 
-| Encoding    | Schema                                                                                                                        |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| ROS 1       | [`foxglove_msgs/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CompressedVideo.msg)        |
-| ROS 2       | [`foxglove_msgs/msg/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CompressedVideo.msg)    |
-| JSON        | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CompressedVideo.json)      |
-| Protobuf    | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CompressedVideo.proto) |
-| FlatBuffers | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CompressedVideo.fbs)       |
-| OMG IDL     | [`foxglove::CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CompressedVideo.idl) |
+| Encoding | Schema |
+| --- | --- |
+| ROS 1 | [`foxglove_msgs/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros1/CompressedVideo.msg) |
+| ROS 2 | [`foxglove_msgs/msg/CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/ros2/CompressedVideo.msg) |
+| JSON | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/jsonschema/CompressedVideo.json) |
+| Protobuf | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/proto/foxglove/CompressedVideo.proto) |
+| FlatBuffers | [`foxglove.CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/flatbuffer/CompressedVideo.fbs) |
+| OMG IDL | [`foxglove::CompressedVideo`](https://github.com/foxglove/foxglove-sdk/blob/main/schemas/omgidl/foxglove/CompressedVideo.idl) |
