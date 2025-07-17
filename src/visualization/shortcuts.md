@@ -8,16 +8,17 @@ Use keyboard shortcuts to efficiently navigate the Lichtblick visualization inte
 | Shortcut | Action |
 |----------|--------|
 | Space | Pause or play |
-| ← | Seek backward 100ms |
-| → | Seek forward 100ms |
+| ← | Seek backward 100ms* |
+| → | Seek forward 100ms* |
 | Shift ← | Seek backward 10ms |
 | Shift → | Seek forward 10ms |
 | Alt ← <br> ⌥← (macOS) | Seek backward 500ms |
 | Alt →  <br> ⌥→ (macOS)| Seek forward 500ms |
 
 
-
-
+***Note:**
+The basic seek forward and backward actions (using only the arrow keys) can be customized in the [Settings menu](../settings.md).
+It's also important to know that seek forward only works when the player is paused.
 
 ## General
 
