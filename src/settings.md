@@ -16,7 +16,7 @@ Here you can find the general settings that allows you to configure core prefere
 | Time zone | Dropdown menu to select the time zone for displaying timestamps. |
 | Timestamp format | Formatting options use to display timestamps (12-hour, seconds) |
 | Message rate | Controls the update rate of the message pipeline. Lowering this can reduce CPU/GPU usage and power consumption while keeping the UI smooth at 60 FPS. |
-| Step Size | In here users are able to customize the default step size on the player (jump in time when clicking the arrow keys, [more info here](./visualization/shortcuts.md)). The default value is 100ms. |
+| Step Size | Customize the default step size on the player (jump in time when clicking the arrow keys, [more info here](./visualization/shortcuts.md)). The default value is 100ms. |
 | Language | Menu to select the app's language |
 | Automatic updates | If selected allows the application to search and install updates (macOS and Windows only) |
 | [ROS_PACKAGE_PATH](https://wiki.ros.org/ROS/EnvironmentVariables#ROS_PACKAGE_PATH) | Paths to search for ROS packages (local file paths or package:// URLs); separate paths with standard OS path separator (e.g. ':' on Unix).  |
