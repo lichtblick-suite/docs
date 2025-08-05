@@ -97,7 +97,16 @@ Lichtblick supports several command-line parameters to streamline your workflow 
   lichtblick --time="2020-04-07 04:45:21 PM CET"  # Lichtblick will attempt to convert this to the timezone used in the MCAP file
   ```
 
-  These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
+- `--force-multiple-windows`: Forces Lichtblick to open a new window instance while bypassing the default single-instance behavior. This flag ensures that files and deep links are handled independently in separate windows, preventing resource conflicts that can occur when multiple processes attempt to access the same locked resources. 
+
+  ```sh
+  lichtblick --force-multiple-windows
+  ```
+
+  **Note:** On Linux systems, process isolation typically allows multiple Lichtblick instances to run without conflicts. However, on macOS and Windows, the default single-instance architecture can cause resource contention and process conflicts. This flag is essential on these platforms when you need to run multiple independent Lichtblick sessions simultaneously.
+
+
+These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
 
 ### Important Note
 
