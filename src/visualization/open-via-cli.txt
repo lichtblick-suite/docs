@@ -8,7 +8,8 @@ Easily open local files using the command line by installing the Lichtblick desk
 
 Once the desktop application is installed, Lichtblick will automatically be set as the default handler for `.mcap` files. You can open files directly from the command line based on your operating system:
 
-{{#tabs}} {{#tab name="Linux"}}
+{{#tabs}}
+{{#tab name="Linux"}}
 
 ```sh
 lichtblick /path/to/your/file.mcap
@@ -20,7 +21,8 @@ lichtblick /path/to/your/file1.mcap /path/to/your/file2.mcap
 lichtblick /path/to/your/files/*.mcap
 ```
 
-{{#endtab}} {{#tab name="macOS"}}
+{{#endtab}}
+{{#tab name="macOS"}}
 
 ```sh
 # Open a single .mcap file using the default application handler
@@ -38,7 +40,8 @@ echo 'export PATH="/Applications/Lichtblick.app/Contents/MacOS:$PATH"' >> ~/.zsh
 lichtblick /path/to/your/file.mcap
 ```
 
-{{#endtab}} {{#tab name="Windows"}}
+{{#endtab}}
+{{#tab name="Windows"}}
 
 ```sh
 # Open a single .mcap file using the default application handler
@@ -57,7 +60,8 @@ setx PATH "%PATH%;C:\Users\<USER>\AppData\Local\Programs\lichtblick" # need to r
 lichtblick.exe /path/to/your/files/*.mcap
 ```
 
-{{#endtab}} {{#endtabs}}
+{{#endtab}}
+{{#endtabs}}
 
 ### Flags and Parameters
 
@@ -93,13 +97,13 @@ Lichtblick supports several command-line parameters to streamline your workflow 
   lichtblick --time="2020-04-07 04:45:21 PM CET"  # Lichtblick will attempt to convert this to the timezone used in the MCAP file
   ```
 
-- `--force-multiple-windows`: Forces Lichtblick to open a new window instance while bypassing the default single-instance behavior. This flag ensures that files and deep links are handled independently in separate windows, preventing resource conflicts that can occur when multiple processes attempt to access the same locked resources.
+- `--force-multiple-windows`: Forces Lichtblick to open a new window instance while bypassing the default single-instance behavior. This flag ensures that files and deep links are handled independently in separate windows, preventing resource conflicts that can occur when multiple processes attempt to access the same locked resources. On Linux systems, process isolation typically allows multiple Lichtblick instances to run without conflicts. However, on macOS and Windows, the default single-instance architecture can cause resource contention and process conflicts. This flag is essential on these platforms when you need to run multiple independent Lichtblick sessions simultaneously.
 
   ```sh
   lichtblick --force-multiple-windows
   ```
 
-  On Linux systems, process isolation typically allows multiple Lichtblick instances to run without conflicts. However, on macOS and Windows, the default single-instance architecture can cause resource contention and process conflicts. This flag is essential on these platforms when you need to run multiple independent Lichtblick sessions simultaneously.
+  These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
 
 ### Important Note
 
