@@ -11,19 +11,22 @@ To register a custom camera model, use the `extensionContext.registerCameraModel
 For example, the code below registers a camera model named `"CylinderCameraModel"` and supplies a builder function that instantiates a `CylinderCameraModel` with the provided calibration data:
 
 ```typescript
+import { ExtensionContext, CameraInfo } from "@lichtblick/suite";
 import { CylinderCameraModel } from "./CylinderCameraModel";
-import { ExtendedExtensionContext, CameraInfo } from "./lichtblick-suite.types";
 
 export function activate(extensionContext: ExtensionContext): void {
   extensionContext.registerCameraModel({
     name: "CylinderCameraModel",
-    modelBuilder: (cameraInfo: CameraInfo) => new CylinderCameraModel(cameraInfo),
+    modelBuilder: (cameraInfo: CameraInfo) =>
+      new CylinderCameraModel(cameraInfo),
   });
 }
 ```
+
 In the code above, the string `"CylinderCameraModel"` is the unique name of your distortion model. This name should exactly match the `distortion_model` field in any camera calibration messages (camera info) that you want to be handled by your custom model. When Lichtblick encounters a camera calibration with `distortion_model: "CylinderCameraModel"`, it will call the provided builder function to create an instance of your `CylinderCameraModel` class for processing that camera’s data.
 
 ### Testing a Custom Camera Model in the User Scripts Panel
+
 After registering your custom camera model, you can quickly **test it using the User Scripts panel**. A user script can intercept an existing camera calibration message, alter its `distortion_model` to your custom model’s name, and publish the modified message on a new topic. This allows you to feed an image through your custom distortion model and verify its behavior in real time.
 
 For example, suppose you have a camera info topic `/CAM_FRONT/camera_info` from a front camera. You can create a user script to output a new camera info on `/camera_info_custom` with the same calibration data but the `distortion_model` set to `"CylinderCameraModel"`. An image panel subscribed to the new calibration topic (and the corresponding image topic) will then apply your custom distortion logic. Below is a sample user script that accomplishes this:
@@ -40,14 +43,13 @@ export const inputs = ["/CAM_FRONT/camera_info"];
 export const output = "/camera_info_custom";
 
 export default function script(
-  event: Input<"/CAM_FRONT/camera_info">,
+  event: Input<"/CAM_FRONT/camera_info">
 ): CameraCalibration {
   return {
     ...event.message,
     distortion_model: DISTORTION_MODEL,
   };
 }
-
 ```
 
 In this script, we listen to the original camera info message on `/CAM_FRONT/camera_info`, copy its contents, and override the `distortion_model` field to `"CylinderCameraModel"`. The modified camera calibration is emitted on the `/camera_info_custom` topic. By opening the User Scripts panel in Lichtblick and running this script, you can then point an Image panel to use the `/camera_info_custom` calibration (along with the camera’s image topic). This setup will route the camera’s data through your custom distortion model, allowing you to verify that your `CylinderCameraModel` is functioning correctly in the visualization.
