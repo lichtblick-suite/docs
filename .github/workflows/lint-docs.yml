@@ -1,0 +1,29 @@
+name: Spell checking 
+
+on:
+  push:
+    branches: [main, release/*]
+  pull_request:
+    
+  workflow_dispatch:   
+
+jobs:
+  lint-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Run Textlint
+        run: yarn textlint 'src/**/*.md'
