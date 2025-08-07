@@ -69,6 +69,7 @@
     - [Raw Messages](./visualization/panels/raw-messages-panel.md)
     - [Playback Performance](./visualization/panels/playback-performance.md)
     - [User Scripts](./visualization/panels/user-scripts.md)
+    - [Teleop](./visualization/panels/teleop-panel.md)
   - [Variables](./visualization/variables.md)
   - [Extensions](./visualization/extensions/extensions-introduction.md)
     - [Settings API](./visualization/extensions/extensions-settings-api.md)
