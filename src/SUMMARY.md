@@ -77,7 +77,7 @@
   - [Open via CLI](./visualization/open-via-cli.md)
   - [Shortcuts](./visualization/shortcuts.md)
   - [Annotate ROS enum fields](./visualization/annotate-ros-enum-fields.md)
+  - [Sync Instances](./visualization/sync-instances.md)
   - [Migrate from other tools](./visualization/migrate-from-other-tools.md)
 - [Browser Support](./browser-support.md)
 - [Experimental Features](./experimental-features/introduction.md)
-  - [Sync Instances](./experimental-features/sync-instances.md)
