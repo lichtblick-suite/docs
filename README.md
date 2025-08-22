@@ -45,4 +45,20 @@ This generates static content into the `build` directory.
 - Use proper Markdown syntax and refer to the official documentation for formatting guidelines.
 - Once your changes are complete, submit a pull request (PR) against the `main` branch for review.
 
-Thank you for your contributions!
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
