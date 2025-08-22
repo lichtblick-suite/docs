@@ -1,41 +1,48 @@
-# Website
+# Contribution Guide
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+We appreciate your interest in contributing to this project! This guide provides all the necessary steps to help you get started.
 
-## Installation
+## Setting Up
+
+This documentation is built using [Docusaurus](https://docusaurus.io/), a modern static website generator that requires `Node.js` to be installed.
+
+1. [Install Node.js](https://nodejs.org/) (version 18.0 or above)
+2. Install Yarn: `npm install -g yarn`
+
+Note: This project uses Yarn 3 with the packageManager field configured.
+
+## Installing Dependencies
 
 ```bash
-yarn
+yarn install
 ```
 
-## Local Development
+## Running a Local Preview
+
+Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:
 
 ```bash
 yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This will launch a local web server at `localhost:3000`, automatically updating the content whenever changes are made.
 
 ## Build
+
+To create a production build:
 
 ```bash
 yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This generates static content into the `build` directory.
 
-## Deployment
+## Contribution Guidelines
 
-Using SSH:
+- Familiarize yourself with the [Docusaurus documentation](https://docusaurus.io/docs) to understand the basics.
+- Create a new branch based on `main`.
+- File names should follow the `kebab-case` convention, using hyphens (`-`) instead of spaces.
+- Use proper Markdown syntax and refer to the official documentation for formatting guidelines.
+- Once your changes are complete, submit a pull request (PR) against the `main` branch for review.
 
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Thank you for your contributions!
