@@ -1,53 +1,41 @@
-# Contribution Guide  
+# Website
 
-We appreciate your interest in contributing to this project! This guide provides all the necessary steps to help you get started.  
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Setting Up  
-
-This documentation is built using [mdBook](https://rust-lang.github.io/mdBook/index.html), which requires `Rust` and `Cargo` to be installed.  
-
-1. [Install Rust](https://www.rust-lang.org/tools/install) 
-
- **Note:** If you're on **Windows** you might need to install `Visual Studio Build Tools` before installing mdbook:
-
-#### [Windows] Step 1: Install Visual Studio Build Tools
-1. Download **Build Tools for Visual Studio** from the official [Microsoft site](https://visualstudio.microsoft.com/downloads/):  
-2. Scroll down and download **"Build Tools for Visual Studio"**.
-3. Open the installer and select **"C++ build tools"**.
-4. Ensure the following components are selected:
-   - MSVC v143 (or latest)
-   - Windows 10 SDK (or latest)
-   - CMake (optional but recommended)
-
-#### [Windows] Step 2: Set Up the Environment
-1. Open **"x86 Native Tools Command Prompt for VS"** from the Start menu.
-2. Run the following command to set Rust to the stable version:
-   ```sh
-   rustup default stable
-    ```
-
-## Installing mdBook and dependencies
+## Installation
 
 ```bash
-yarn setup
-```  
-
-## Running a Local Preview  
-
-Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:  
-
+yarn
 ```
+
+## Local Development
+
+```bash
 yarn start
-```  
+```
 
-This will launch a local web server at `localhost:3000`, automatically updating the content whenever changes are made.  
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Contribution Guidelines  
+## Build
 
-- Familiarize yourself with the [mdBook documentation](https://rust-lang.github.io/mdBook/guide/creating.html) to understand the basics.  
-- Create a new branch based on `main`.  
-- File names should follow the `kebab-case` convention, using hyphens (`-`) instead of spaces.  
-- Use proper Markdown syntax and refer to the official documentation for formatting guidelines.  
-- Once your changes are complete, submit a pull request (PR) against the `main` branch for review.  
+```bash
+yarn build
+```
 
-Thank you for your contributions!
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
