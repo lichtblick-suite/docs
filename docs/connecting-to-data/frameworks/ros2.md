@@ -21,6 +21,6 @@ You can load local files for visualization by:
 - The "Open local file(s)..." in the initial pop up or the menu on the top left;
 - You can drag'n drop the files from your OS file manager;
 
-import FoxgloveNote from '../\_partials/\_foxglove-note.mdx';
+import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
 
 <FoxgloveNote />
