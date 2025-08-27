@@ -47,10 +47,22 @@ You can load local files for visualization by:
 - The "Open local file(s)..." in the initial pop up or the menu on the top left;
 - You can drag'n drop the files from your OS file manager;
 
-<<<<<<<< HEAD:docs/connecting-to-data/frameworks/ros1.md
-import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
-========
+# <<<<<<< HEAD
+
+<<<<<<<< HEAD:docs/connecting-to-data/ros1.md
+
+> > > > > > > 3671f78 (fix PR review) <<<<<<<< HEAD:docs/connecting-to-data/frameworks/ros1.md
+
+# import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
+
 import FoxgloveNote from '../\_partials/\_foxglove-note.mdx';
->>>>>>>> e3bb9ae (Update documentation to docusaurus):docs/connecting-to-data/ros1.md
+
+> > > > > > > > e3bb9ae (Update documentation to docusaurus):docs/connecting-to-data/ros1.md
+
+# <<<<<<< HEAD
+
+======== import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
+
+> > > > > > > > 3671f78 (fix PR review):docs/connecting-to-data/frameworks/ros1.md 3671f78 (fix PR review)
 
 <FoxgloveNote />

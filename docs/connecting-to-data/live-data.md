@@ -1,3 +1,7 @@
+---
+position: 2
+---
+
 # Live Data
 
 Connect to live data sources using Lichtblick's WebSocket, Rosbridge, and Velodyne Lidar integrations for real-time streaming. You can also load remote data files via URL for easy access and processing.
