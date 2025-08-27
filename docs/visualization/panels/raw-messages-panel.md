@@ -1,11 +1,10 @@
 # Raw Messages
 
-The **Raw Messages** panel in Lichtblick is a powerful debugging and inspection tool that enables users to visualize raw [ROS](../../connecting-to-data/ros1.md) or [MCAP](../../connecting-to-data/mcap.md) messages in a structured and interactive JSON format. It is particularly useful for understanding message structures, tracking state changes over time, and drilling into specific message fields for advanced diagnostics or visualizations.
+The **Raw Messages** panel in Lichtblick is a powerful debugging and inspection tool that enables users to visualize raw [ROS](/connecting-to-data/frameworks/ros1.md) or [MCAP](/connecting-to-data/frameworks/mcap.md) messages in a structured and interactive JSON format. It is particularly useful for understanding message structures, tracking state changes over time, and drilling into specific message fields for advanced diagnostics or visualizations.
 
 As new messages are received for a specific path, the panel tree will show just the last message. It's also possible to expand and collapse keys, and that will persist across playback
 
 ![Raw messages panel](./images/raw-messages-panel.png)
-
 
 ## Features
 
@@ -36,9 +35,7 @@ A link to documentation about the selected schema is available at the top.
 
 ![Raw messages panel message link](./images/raw-messasges-panel-message-link.png)
 
-
 ### 4. Contextual Actions (Right-click or Click)
-
 
 Hovering over a field provides contextual actions, such as:
 
@@ -47,7 +44,6 @@ Hovering over a field provides contextual actions, such as:
 ![Raw messages plot shortcut](./images/raw-message-plot-shortcut.png)
 
 - **Open state transition visualization**
-
 
 ![Raw messages state transitions shortcut](./images/raw-message-state-transitions-shortcut.png)
 
@@ -72,13 +68,11 @@ Each message is displayed as a JSON object, preserving full structural fidelity.
 
 ![Additional info on raw messages](../images/additional-value-on-raw-messages.png)
 
+## Settings
 
-## Settings 
-
-| Field | Descripiton |
-|----------|--------|
+| Field     | Descripiton                               |
+| --------- | ----------------------------------------- |
 | Font size | Font size for text displayed on the panel |
-
 
 ## Best Practices
 

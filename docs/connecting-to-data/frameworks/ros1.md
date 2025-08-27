@@ -12,7 +12,7 @@ Then, in Lichtblick, select ["Open connection"](./introduction.md), either on th
 
 ### Live connections
 
-You can use [Rosbridge](../connecting-to-data/rosbridge.md) or [Ros foxglove bridge](https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge) to establish a live connection between Lichtblick and ROS. This enables real-time data streaming, allowing you to interact with ROS topics, services, and parameters directly from Lichtblick.
+You can use [Rosbridge](./rosbridge.md) or [Ros foxglove bridge](https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge) to establish a live connection between Lichtblick and ROS. This enables real-time data streaming, allowing you to interact with ROS topics, services, and parameters directly from Lichtblick.
 
 ## Native
 
@@ -38,7 +38,7 @@ For this option just select the "Remote file" in the "Open connection" option an
 
 ![open-remote-file](images/open-remote-file.png)
 
-Don't forget to [set up CORS](../connecting-to-data/live-data.html#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
+Don't forget to [set up CORS](../live-data.html#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
 
 ## Local Data
 

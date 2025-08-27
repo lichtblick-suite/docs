@@ -4,22 +4,23 @@
  There's also the possibility to use <a href="https://docs.foxglove.dev/docs/connecting-to-data/ros-foxglove-bridge">Foxglove Bridge</a> as an alternative.
 </div>
 
-The rosbridge package enables communication between [ROS 1](../connecting-to-data/ros1.md) or [ROS 2](../connecting-to-data/ros2.md) and external applications via a websocket connection. It allows non-ROS systems, including web applications, to interact with ROS topics, services, and parameters.
+The rosbridge package enables communication between [ROS 1](./ros1.md) or [ROS 2](./ros2.md) and external applications via a websocket connection. It allows non-ROS systems, including web applications, to interact with ROS topics, services, and parameters.
 
-## Overview 
+## Overview
+
 Rosbridge provides a websocket-based API for sending and receiving ROS messages over the network. It is designed for general-purpose communication, enabling integration with web applications, cloud services, and custom remote interfaces.
 
 **Key features:**
 
-* Supports ROS 1 and ROS 2
+- Supports ROS 1 and ROS 2
 
-* Implements the rosbridge_protocol for structured websocket communication
+- Implements the rosbridge_protocol for structured websocket communication
 
-* Enables non-ROS clients to subscribe, publish, and call services
+- Enables non-ROS clients to subscribe, publish, and call services
 
-* Allows remote monitoring and control of ROS systems from web applications
+- Allows remote monitoring and control of ROS systems from web applications
 
-## Connecting 
+## Connecting
 
 A Rosbridge connection uses a standardized protocol to link Lichtblick with your ROS master over websockets. While it does require running an additional ROS node [rosbridge_server](https://wiki.ros.org/rosbridge_server), it is a good option if a network firewall separates ROS and Lichtblick, as it minimizes port exposure.
 
@@ -37,10 +38,10 @@ To test if everything is working well, you can check the topics tab on the left 
 
 ![connect-to-rosbridge](images/connect-to-rosbridge.png)
 
-## Example connection 
+## Example connection
 
-As you can see below this enables real-time communication between ROS and Lichtblick using rosridge websocket. 
+As you can see below this enables real-time communication between ROS and Lichtblick using rosridge websocket.
 
-In the example, the ROSBridge server runs inside a Docker container, exposing a websocket interface that Lichtblick can connect to. Data is exchanged by publishing and subscribing to ROS topics via websocket messages, allowing seamless integration between ROS and external applications. 
+In the example, the ROSBridge server runs inside a Docker container, exposing a websocket interface that Lichtblick can connect to. Data is exchanged by publishing and subscribing to ROS topics via websocket messages, allowing seamless integration between ROS and external applications.
 
 ![connect-to-rosbridge-real-time](images/rosbridge-connection-to-lichtblick.png)

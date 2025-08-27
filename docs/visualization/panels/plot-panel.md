@@ -51,7 +51,7 @@ Plot series legend.
 | Color | Color used on the series |
 | Line size | Width of line connecting data points |
 | Show lines | Show lines connecting data points. Active by default |
-| Timestamp | For time serie plots, selects the time information used for message ordening:<br/><ul><li>**Receive time:** is a time that refers to the when a message is received by `Lichtblick`, not when was originally published</li><li>**Header stamp:** is a `header.stamp` [ROS1](../../connecting-to-data/ros1.md) or [ROS2](../../connecting-to-data/ros2.md) field containing `sec` and `nsec` integers</li></ul> |
+| Timestamp | For time serie plots, selects the time information used for message ordening:<br/><ul><li>**Receive time:** is a time that refers to the when a message is received by `Lichtblick`, not when was originally published</li><li>**Header stamp:** is a `header.stamp` [ROS1](/connecting-to-data/frameworks/ros1.md) or [ROS2](/connecting-to-data/frameworks/ros2.md) field containing `sec` and `nsec` integers</li></ul> |
 
 To remove a series from the Panel you use the `x`, next to each data series, like it's shown below.
 

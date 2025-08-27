@@ -1,7 +1,3 @@
----
-position: 2
----
-
 # Live Data
 
 Connect to live data sources using Lichtblick's WebSocket, Rosbridge, and Velodyne Lidar integrations for real-time streaming. You can also load remote data files via URL for easy access and processing.
@@ -10,11 +6,11 @@ Connect to live data sources using Lichtblick's WebSocket, Rosbridge, and Velody
 
 |  | Supported formats | Configuration options |
 | --- | --- | --- |
-| **Foxglove WebSocket** | <ul><li>[ROS 1](./ros1.md)</li><li>[ROS 2](./ros2.md)</li><li>[Rosbridge](./rosbridge.md)</li><li>[MCAP](./mcap.md)</li></ul> | WebSocket URL |
-| **Rosbridge** | <ul><li>[ROS 1](./ros1.md)</li><li>[ROS 2](./ros2.md)</li></ul> | WebSocket URL |
-| **ROS 1** | [ROS 1](./ros1.md) Desktop only | ROS_MASTER_URI and ROS_HOSTNAME |
-| **Velodyne Lidar** | [Velydone](./velodyne.md) Desktop only | UDP port |
-| **Remote file** | <ul><li>[ROS 1](./ros1.md)</li><li>[MCAP](./mcap.md)</li></ul> | Requires CORS setup |
+| **Foxglove WebSocket** | <ul><li>[ROS 1](./frameworks/ros1.md)</li><li>[ROS 2](./frameworks/ros2.md)</li><li>[Rosbridge](./frameworks/rosbridge.md)</li><li>[MCAP](./frameworks/mcap.md)</li></ul> | WebSocket URL |
+| **Rosbridge** | <ul><li>[ROS 1](./frameworks/ros1.md)</li><li>[ROS 2](./frameworks/ros2.md)</li></ul> | WebSocket URL |
+| **ROS 1** | [ROS 1](./frameworks/ros1.md) Desktop only | ROS_MASTER_URI and ROS_HOSTNAME |
+| **Velodyne Lidar** | [Velydone](./frameworks/velodyne.md) Desktop only | UDP port |
+| **Remote file** | <ul><li>[ROS 1](./frameworks/ros1.md)</li><li>[MCAP](./frameworks/mcap.md)</li></ul> | Requires CORS setup |
 
 ## Limitations
 

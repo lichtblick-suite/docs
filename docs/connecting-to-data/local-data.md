@@ -8,13 +8,13 @@ Lichtblick enables you to load local data files for visualization.
 
 ## Supported formats
 
-|                                 | File extension |
-| ------------------------------- | -------------- |
-| [ROS1](./ros1.md)               | `.bag`         |
-| [ROS2](./ros2.md) (legacy)      | `.db3`         |
-| [ROS2](./ros2.md) (Iron onward) | `.mcap`        |
-| [MCAP](./mcap.md)               | `.mcap`        |
-| [PX4 Ulog](./px-4.md)           | `.ulg`         |
+|                                            | File extension |
+| ------------------------------------------ | -------------- |
+| [ROS1](./frameworks/ros1.md)               | `.bag`         |
+| [ROS2](./frameworks/ros2.md) (legacy)      | `.db3`         |
+| [ROS2](./frameworks/ros2.md) (Iron onward) | `.mcap`        |
+| [MCAP](./frameworks/mcap.md)               | `.mcap`        |
+| [PX4 Ulog](./frameworks/px-4.md)           | `.ulg`         |
 
 ## Getting started
 
