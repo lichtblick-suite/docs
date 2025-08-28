@@ -1,53 +1,48 @@
-# Contribution Guide  
+# Contribution Guide
 
-We appreciate your interest in contributing to this project! This guide provides all the necessary steps to help you get started.  
+We appreciate your interest in contributing to this project! This guide provides all the necessary steps to help you get started.
 
-## Setting Up  
+## Setting Up
 
-This documentation is built using [mdBook](https://rust-lang.github.io/mdBook/index.html), which requires `Rust` and `Cargo` to be installed.  
+This documentation is built using [Docusaurus](https://docusaurus.io/), a modern static website generator that requires `Node.js` to be installed.
 
-1. [Install Rust](https://www.rust-lang.org/tools/install) 
+1. [Install Node.js](https://nodejs.org/) (version 18.0 or above)
+2. Install Yarn: `npm install -g yarn`
 
- **Note:** If you're on **Windows** you might need to install `Visual Studio Build Tools` before installing mdbook:
+Note: This project uses Yarn 3 with the packageManager field configured.
 
-#### [Windows] Step 1: Install Visual Studio Build Tools
-1. Download **Build Tools for Visual Studio** from the official [Microsoft site](https://visualstudio.microsoft.com/downloads/):  
-2. Scroll down and download **"Build Tools for Visual Studio"**.
-3. Open the installer and select **"C++ build tools"**.
-4. Ensure the following components are selected:
-   - MSVC v143 (or latest)
-   - Windows 10 SDK (or latest)
-   - CMake (optional but recommended)
-
-#### [Windows] Step 2: Set Up the Environment
-1. Open **"x86 Native Tools Command Prompt for VS"** from the Start menu.
-2. Run the following command to set Rust to the stable version:
-   ```sh
-   rustup default stable
-    ```
-
-## Installing mdBook and dependencies
+## Installing Dependencies
 
 ```bash
-yarn setup
-```  
-
-## Running a Local Preview  
-
-Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:  
-
+yarn install
 ```
+
+## Running a Local Preview
+
+Before proceeding, ensure you have completed the installation steps above. Clone this repository and switch to the `main` branch. Then, use the following command to generate a local preview:
+
+```bash
 yarn start
-```  
+```
 
-This will launch a local web server at `localhost:3000`, automatically updating the content whenever changes are made.  
+This will launch a local web server at `localhost:3000`, automatically updating the content whenever changes are made.
 
-## Contribution Guidelines  
+## Build
 
-- Familiarize yourself with the [mdBook documentation](https://rust-lang.github.io/mdBook/guide/creating.html) to understand the basics.  
-- Create a new branch based on `main`.  
-- File names should follow the `kebab-case` convention, using hyphens (`-`) instead of spaces.  
-- Use proper Markdown syntax and refer to the official documentation for formatting guidelines.  
-- Once your changes are complete, submit a pull request (PR) against the `main` branch for review.  
+To create a production build:
+
+```bash
+yarn build
+```
+
+This generates static content into the `build` directory.
+
+## Contribution Guidelines
+
+- Familiarize yourself with the [Docusaurus documentation](https://docusaurus.io/docs) to understand the basics.
+- Create a new branch based on `main`.
+- File names should follow the `kebab-case` convention, using hyphens (`-`) instead of spaces.
+- Use proper Markdown syntax and refer to the official documentation for formatting guidelines.
+- Once your changes are complete, submit a pull request (PR) against the `main` branch for review.
 
 Thank you for your contributions!

@@ -1,0 +1,153 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #f97316;
+  --ifm-color-primary-dark: #ea580c;
+  --ifm-color-primary-darker: #dc2626;
+  --ifm-color-primary-darkest: #c2410c;
+  --ifm-color-primary-light: #fb923c;
+  --ifm-color-primary-lighter: #fdba74;
+  --ifm-color-primary-lightest: #fed7aa;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(249, 115, 22, 0.1);
+  
+  /* Lichtblick brand colors - Orange palette */
+  --lichtblick-orange: #f97316;
+  --lichtblick-orange-dark: #ea580c;
+  --lichtblick-orange-light: #fb923c;
+  --lichtblick-amber: #f59e0b;
+  --lichtblick-yellow: #eab308;
+  --lichtblick-dark: #1a1a1a;
+  --lichtblick-gray: #6b7280;
+  --lichtblick-light-bg: #fffbeb;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #fb923c;
+  --ifm-color-primary-dark: #f97316;
+  --ifm-color-primary-darker: #ea580c;
+  --ifm-color-primary-darkest: #dc2626;
+  --ifm-color-primary-light: #fdba74;
+  --ifm-color-primary-lighter: #fed7aa;
+  --ifm-color-primary-lightest: #ffedd5;
+  --docusaurus-highlighted-code-line-bg: rgba(249, 115, 22, 0.3);
+  
+  /* Dark theme background colors */
+  --ifm-background-color: #18181b;
+  --ifm-background-surface-color: #27272a;
+  --ifm-navbar-background-color: var(--lichtblick-dark);
+  --ifm-footer-background-color: var(--lichtblick-dark);
+}
+
+/* Custom navbar styling */
+.navbar {
+  background: var(--lichtblick-dark) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] .navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar__brand:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='light'] .navbar__item {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .navbar__link {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .navbar__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='light'] .navbar__title {
+  color: #1f2937 !important;
+}
+
+/* Theme toggle button */
+[data-theme='light'] .navbar__toggle {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .navbar__toggle:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Dropdown menu styling for light theme */
+[data-theme='light'] .dropdown__menu {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme='light'] .dropdown__link {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .dropdown__link:hover {
+  color: var(--ifm-color-primary) !important;
+  background: rgba(249, 115, 22, 0.05) !important;
+}
+
+/* Custom footer styling */
+.footer {
+  background: var(--lichtblick-dark) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] .footer {
+  background: #ffffff !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+[data-theme='light'] .footer__title {
+  color: #374151 !important;
+}
+
+[data-theme='light'] .footer__item {
+  color: #6b7280 !important;
+}
+
+[data-theme='light'] .footer__link-item {
+  color: #6b7280 !important;
+}
+
+[data-theme='light'] .footer__link-item:hover {
+  color: #f97316 !important;
+}
+
+[data-theme='light'] .footer__copyright {
+  color: #9ca3af !important;
+}
+
+/* Sidebar improvements - minimalista */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: none !important;
+  border-left: 3px solid var(--ifm-color-primary) !important;
+  border-radius: 0 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
+  background: none !important;
+  border-left: 3px solid #f97316 !important;
+  border-radius: 0 !important;
+  color: #f97316 !important;
+}

@@ -1,0 +1,278 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='light'] .heroBanner {
+  background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+  color: #1f2937;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+[data-theme='light'] .heroBanner::before {
+  background: radial-gradient(circle at 30% 70%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroText {
+  flex: 1;
+  text-align: left;
+}
+
+.heroLogo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #f97316, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='light'] .heroTitle {
+  background: linear-gradient(45deg, #ea580c, #dc2626);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+  max-width: 500px;
+}
+
+[data-theme='light'] .heroSubtitle {
+  color: #4b5563;
+}
+
+.heroImage {
+  flex: 1;
+  text-align: center;
+}
+
+.screenshot {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.getStartedButton {
+  background: linear-gradient(45deg, #f97316, #ea580c) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.getStartedButton:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4) !important;
+  background: linear-gradient(45deg, #ea580c, #dc2626) !important;
+}
+
+.githubButton {
+  background: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+[data-theme='light'] .githubButton {
+  border: 2px solid rgba(249, 115, 22, 0.3) !important;
+  color: #f97316 !important;
+}
+
+.githubButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: white !important;
+}
+
+[data-theme='light'] .githubButton:hover {
+  background: rgba(249, 115, 22, 0.1) !important;
+  border-color: #f97316 !important;
+  color: #ea580c !important;
+}
+
+.features {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+[data-theme='dark'] .features {
+  background: #18181b;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #1f2937;
+}
+
+[data-theme='dark'] .featuresTitle {
+  color: #f9fafb;
+}
+
+/* Add MORE spacing between card rows - this is the key fix */
+.features .row {
+  margin-bottom: 6rem;
+}
+
+.features .row:first-child {
+  margin-bottom: 2rem; /* Title row has less margin */
+}
+
+.features .row:last-child {
+  margin-bottom: 0;
+}
+
+/* Adjust column spacing */
+.features .col {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.featureCard {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+[data-theme='dark'] .featureCard {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #f97316;
+}
+
+[data-theme='dark'] .featureCard:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: #fb923c;
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+[data-theme='dark'] .featureCard h3 {
+  color: #f9fafb;
+}
+
+.featureCard p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+[data-theme='dark'] .featureCard p {
+  color: #d1d5db;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 0;
+  }
+  
+  .heroContent {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .heroText {
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .features {
+    padding: 4rem 0;
+  }
+  
+  .featuresTitle {
+    font-size: 2rem;
+  }
+}
