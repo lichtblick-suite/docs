@@ -38,7 +38,7 @@ For this option just select the "Remote file" in the "Open connection" option an
 
 ![open-remote-file](images/open-remote-file.png)
 
-Don't forget to [set up CORS](../live-data.html#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
+Don't forget to [set up CORS](../live-data.md#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
 
 ## Local Data
 
