@@ -27,7 +27,7 @@ When connecting to a live robotics stack, each connection will have different ca
 | **Call actions**            |                        |           |       |
 | **Read and set parameters** | ✓                      |           | ✓     |
 
-# Cross-Origin Resource Sharing (CORS) setup
+## Cross-Origin Resource Sharing (CORS) setup
 
 To load remote data files, they must be hosted on a server or cloud provider that supports **Cross-Origin Resource Sharing (CORS)** and **range requests**.
 
