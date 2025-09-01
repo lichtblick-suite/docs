@@ -18,7 +18,6 @@ The `index.ts` file in your project's `src` folder is the entry point for your e
 
 To register a message converter, call `registerMessageConverter` on the `extensionContext` argument with:
 
-- The type `"schema"`
 - The source schema name (`fromSchemaName`)
 - The destination schema name (`toSchemaName`)
 - The actual `converter` function
