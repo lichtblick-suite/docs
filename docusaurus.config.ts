@@ -26,7 +26,7 @@ const config: Config = {
   projectName: "docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -50,6 +50,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "guides",
+        path: "guides",
+        routeBasePath: "guides",
+        sidebarPath: "./sidebars.ts",
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/home-page-image.png",
@@ -67,6 +79,13 @@ const config: Config = {
           sidebarId: "tutorialSidebar",
           position: "left",
           label: "Documentation",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "guidesSidebar",
+          position: "left",
+          label: "Guides",
+          docsPluginId: "guides",
         },
         {
           type: "html",
