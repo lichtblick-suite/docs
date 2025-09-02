@@ -14,9 +14,9 @@ The `PanelSettings<ExtensionSettings>` interface defines the structure for manag
 
 - `ExtensionSettings`: Represents the type of the custom settings object. This is user-defined and should match the structure of the settings you want to configure.
 
-### Properties
+## Properties
 
-1. settings(config)
+### settings(config)
 
 ```typescript
 settings: (config?: ExtensionSettings) => SettingsTreeNode;
@@ -45,7 +45,7 @@ settings: (config) => ({
 
 ---
 
-2. handler(action, config)
+### handler(action, config)
 
 ```typescript
 handler: (action: SettingsTreeAction, config?: ExtensionSettings) => void;
@@ -75,7 +75,7 @@ handler: (action, config) => {
 
 ---
 
-3. defaultConfig
+### defaultConfig
 
 ```typescript
 defaultConfig?: ExtensionSettings;
@@ -229,4 +229,3 @@ The `PanelSettings<ExtensionSettings>` interface provides a structured way to:
 4. Provide default values for the settings.
 
 By implementing this interface, you enable users to configure their panel or converter dynamically, making it more flexible and adaptable to different use cases. In panels, render the editor via `updatePanelSettingsEditor` on the [PanelExtensionContext](./panel-extension-context).
-
