@@ -14,7 +14,6 @@ You’ll use **[create-lichtblick-extension](https://github.com/Lichtblick-Suite
 
 **Requirements:**
 
-- Node.js 18
 - A modern editor (VS Code recommended)
 
 ---
