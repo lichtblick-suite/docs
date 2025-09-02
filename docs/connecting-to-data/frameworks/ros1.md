@@ -38,9 +38,7 @@ For this option just select the "Remote file" in the "Open connection" option an
 
 ![open-remote-file](images/open-remote-file.png)
 
-<<<<<<< HEAD Don't forget to [set up CORS](../live-data.md#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick. ======= Don't forget to [set up CORS](../live-data.html#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
-
-> > > > > > > 7acfc0a (fix links and add title)
+Don't forget to [set up CORS](../live-data.md#cross-origin-resource-sharing-cors-setup) if you intend to host the files yourself and load them into Lichtblick.
 
 ## Local Data
 
@@ -49,22 +47,6 @@ You can load local files for visualization by:
 - The "Open local file(s)..." in the initial pop up or the menu on the top left;
 - You can drag'n drop the files from your OS file manager;
 
-# <<<<<<< HEAD
-
-<<<<<<<< HEAD:docs/connecting-to-data/ros1.md
-
-> > > > > > > 3671f78 (fix PR review) <<<<<<<< HEAD:docs/connecting-to-data/frameworks/ros1.md
-
-# import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
-
-import FoxgloveNote from '../\_partials/\_foxglove-note.mdx';
-
-> > > > > > > > e3bb9ae (Update documentation to docusaurus):docs/connecting-to-data/ros1.md
-
-# <<<<<<< HEAD
-
-======== import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
-
-> > > > > > > > 3671f78 (fix PR review):docs/connecting-to-data/frameworks/ros1.md 3671f78 (fix PR review)
+import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
 
 <FoxgloveNote />
