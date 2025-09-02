@@ -45,4 +45,6 @@ This generates static content into the `build` directory.
 - Use proper Markdown syntax and refer to the official documentation for formatting guidelines.
 - Once your changes are complete, submit a pull request (PR) against the `main` branch for review.
 
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
 Thank you for your contributions!

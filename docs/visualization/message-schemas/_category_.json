@@ -1,4 +1,8 @@
 {
   "label": "Message Schemas",
-  "position": 2
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "visualization/message-schemas/introduction"
+  }
 }

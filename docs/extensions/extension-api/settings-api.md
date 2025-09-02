@@ -1,23 +1,22 @@
 ---
-sidebar_position: 3
-title: Settings API
+sidebar_position: 6
 ---
 
-## Settings API
+# Settings API
 
-The Panel Settings API allows users to link settings to message converters based on panel types.
+Use the Settings API to attach per-topic settings UI to [message converters](./message-converters) (scoped by panel type). This lets users adjust converter behavior directly from the panel sidebar with a [Settings Tree](./settings-tree).
 
-## PanelSettings Interface
+## PanelSettings
 
 The `PanelSettings<ExtensionSettings>` interface defines the structure for managing custom settings associated with message converters and panels. It allows users to define settings that can be dynamically applied to specific topics or schemas, enabling flexible configuration of message processing behavior.
 
-#### Generic Type Parameter
+### Type Parameter
 
 - `ExtensionSettings`: Represents the type of the custom settings object. This is user-defined and should match the structure of the settings you want to configure.
 
-#### Properties
+## Properties
 
-1. `settings`
+### settings(config)
 
 ```typescript
 settings: (config?: ExtensionSettings) => SettingsTreeNode;
@@ -28,7 +27,7 @@ settings: (config?: ExtensionSettings) => SettingsTreeNode;
 
   - `config`: An optional object containing the current configuration values. Its type is inferred from the `defaultConfig` property.
 
-- **Returns:** A `SettingsTreeNode` that describes the structure of the settings UI. This node will be merged with the settings tree for the associated topic (under the path `["topics", "__topic_name__"]`).
+- **Returns:** A `SettingsTreeNode` (see [Settings Tree](./settings-tree)) that describes the structure of the settings UI. This node will be merged with the settings tree for the associated topic (under the path `["topics", "__topic_name__"]`).
 
 - **Example:**
 
@@ -46,7 +45,7 @@ settings: (config) => ({
 
 ---
 
-2. `handler`
+### handler(action, config)
 
 ```typescript
 handler: (action: SettingsTreeAction, config?: ExtensionSettings) => void;
@@ -76,7 +75,7 @@ handler: (action, config) => {
 
 ---
 
-3. `defaultConfig`
+### defaultConfig
 
 ```typescript
 defaultConfig?: ExtensionSettings;
@@ -96,7 +95,7 @@ defaultConfig: {
 
 ---
 
-#### Expected Behavior
+## Expected Behavior
 
 When implementing this interface:
 
@@ -104,7 +103,7 @@ When implementing this interface:
 2. **Configuration Management:** The `handler` function processes user interactions with the settings UI, allowing you to validate or transform the configuration.
 3. **Defaults:** The `defaultConfig` provides initial values for the settings, ensuring the panel or converter has a valid configuration even if the user hasn't customized it.
 
-#### Possible Outcomes
+## Outcomes
 
 1. **Dynamic Settings UI:**
 
@@ -122,7 +121,7 @@ When implementing this interface:
 
 ---
 
-### Example Implementation:
+## Example
 
 ```typescript
 type Schema1Schema = {
@@ -194,7 +193,7 @@ export function activate(extensionContext: ExtensionContext): void {
 }
 ```
 
-#### Use Case
+## Use Case
 
 This interface is typically used when registering a message converter:
 
@@ -220,7 +219,7 @@ extensionContext.registerMessageConverter({
 
 ---
 
-### Summary
+## Summary
 
 The `PanelSettings<ExtensionSettings>` interface provides a structured way to:
 
@@ -229,4 +228,4 @@ The `PanelSettings<ExtensionSettings>` interface provides a structured way to:
 3. Handle user interactions with the settings.
 4. Provide default values for the settings.
 
-By implementing this interface, you enable users to configure their panel or converter dynamically, making it more flexible and adaptable to different use cases.
+By implementing this interface, you enable users to configure their panel or converter dynamically, making it more flexible and adaptable to different use cases. In panels, render the editor via `updatePanelSettingsEditor` on the [PanelExtensionContext](./panel-extension-context).

@@ -1,8 +1,12 @@
+---
+slug: /visualization/message-schemas
+---
+
 # Message Schemas
 
 Lichtblick relies on structured message formats to ensure accurate data visualization and processing. By adhering to Lichtblick's schema standards, users can leverage the platform's robust visualization tools effectively.
 
-import FoxgloveNote from '../\_partials/\_foxglove-note.mdx';
+import FoxgloveNote from '../../\_partials/\_foxglove-note.mdx';
 
 <FoxgloveNote />
 
