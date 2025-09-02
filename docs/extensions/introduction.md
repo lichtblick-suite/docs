@@ -53,10 +53,6 @@ Topic alias extensions allow you to alias topics in your data source to new topi
 
 ---
 
-## Data Loaders
-
-Data loaders allow you to add support for custom file formats in Lichtblick. They are a small WASM binary bundled with the extension that reads a file and emits Lichtblick messages.
-
 **Links and resources**
 
 - Guide: Create data loader with Rust

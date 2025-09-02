@@ -137,7 +137,7 @@ aliases.push({
 ## Next steps
 
 - Learn about [message schemas](../docs/visualization/message-schemas) to understand data types
-- Explore [custom panels](../docs/visualization/panels/panels-introduction) that can use your aliased topics
+- Explore [custom panels](../docs/visualization/panels) that can use your aliased topics
 - Check out [message converters](../docs/extensions/extension-api/message-converters) for transforming message formats
 - Read about [live data connections](../docs/connecting-to-data/live-data) to understand data sources
 

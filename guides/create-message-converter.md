@@ -177,7 +177,7 @@ converter: (input: MyType, messageEvent) => {
 ## Next steps
 
 - Explore more [message schemas](../docs/visualization/message-schemas)
-- Learn about [custom panels](../docs/visualization/panels/panels-introduction) for more complex visualizations
+- Learn about [custom panels](../docs/visualization/panels) for more complex visualizations
 - Check the [Extension API reference](../docs/extensions/extension-api/introduction) for advanced features
 
 Your message converter is now ready to transform your custom messages for seamless visualization in Lichtblick's built-in panels!

@@ -1,9 +1,12 @@
+---
+slug: /visualization/panels
+---
+
 # Panels
 
 ## Overview
 
-Panels in Lichtblick are flexible, modular elements that allow you to visualize and interact with data. You can customize and organize these panels within your layout.
-To add a panel, use the "Add Panel" menu to select a new panel, or drag and drop the panel directly into your layout.
+Panels in Lichtblick are flexible, modular elements that allow you to visualize and interact with data. You can customize and organize these panels within your layout. To add a panel, use the "Add Panel" menu to select a new panel, or drag and drop the panel directly into your layout.
 
 ![Search panels](../images/search-panels.png)
 
