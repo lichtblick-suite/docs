@@ -140,7 +140,7 @@ To test your panel: add it from the panel library after installing your extensio
 ## Next steps
 
 - Explore the [Extension API reference](../docs/extensions/extension-api/introduction) for more advanced features
-- Learn about [message schemas](../docs/visualization/message-schemas-introduction) to work with different data types
+- Learn about [message schemas](../docs/visualization/message-schemas) to work with different data types
 - Check out [variables](../docs/visualization/variables) for dynamic panel configuration
 
 Your custom panel is now ready to visualize and interact with your robotics data in exactly the way your workflow requires!
