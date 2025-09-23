@@ -6,7 +6,7 @@ A single frame of a compressed video bitstream.
 
 <!--TODO: Link missing documentation when available-->
 
-`CompressedVideo` is used in the [3D](#) and [Image](#) panels.
+`CompressedVideo` is used in the [3D](../panels/3d-panel.md) and [Image](#) panels.
 
 ## Schema
 

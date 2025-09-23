@@ -6,7 +6,7 @@ Represents a visual arrow used to indicate direction or orientation in 3D space.
 
 <!--TODO: Link missing documentation when available-->
 
-`ArrowPrimitive` can be displayed in the following panels: [3D](#).
+`ArrowPrimitive` can be displayed in the following panels: [3D](../panels/3d-panel.md).
 
 ## Schema
 
