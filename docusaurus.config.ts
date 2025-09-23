@@ -42,6 +42,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -58,6 +60,8 @@ const config: Config = {
         path: "guides",
         routeBasePath: "guides",
         sidebarPath: "./sidebars.ts",
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
       },
     ],
   ],
