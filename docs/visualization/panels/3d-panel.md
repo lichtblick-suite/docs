@@ -8,6 +8,8 @@ description: Visualize robots and environments in 3D — markers, entities, poin
 
 Use the **3D panel** to render your data in a single interactive scene — from camera overlays and point clouds to URDF robot models, markers, and ad‑hoc primitives. The panel subscribes to enabled topics and draws the **latest message per topic** at its own timestamp, not by message receive time.
 
+![alt text](images/3d.png)
+
 ### Time & transforms (must‑read)
 
 Rendering is timestamped. For any object to appear, there must be a **transform path** from the object’s frame to the panel’s **Display frame** _at or before the object’s timestamp_. Transform messages are consumed in log‑time order but **indexed by their own timestamp** so the scene reflects the state your robot had when it produced the data.
@@ -93,6 +95,8 @@ Click the eye icon beside any topic name to show or hide it from the scene. Use 
 
 Add supplementary visualization elements that aren't tied to incoming message data.
 
+![alt text](images/3d-custom-layers.png)
+
 #### Grid Layer
 
 Create reference grids as 2D planes with customizable dimensions and subdivisions. Multiple grids can be added, each positioned relative to any coordinate frame in your transform tree.
@@ -132,11 +136,13 @@ Camera intrinsic parameters for overlays and textured drawing.
 
 [`CameraCalibration`](../message-schemas/camera-calibration.md)
 
-### Grids
+### 2D Grids
 
-Grid with optional elevation and lighting.
+2D Grid with optional coloring.
 
 [`Grid`](../message-schemas/grid.md)
+
+![alt text](images/grid.png)
 
 ### Images
 
@@ -144,23 +150,22 @@ Camera images placed in the 3D scene using paired calibration.
 
 [`RawImage`](../message-schemas/raw-image.md), [`CompressedImage`](../message-schemas/compressed-image.md), [`CompressedVideo`](../message-schemas/compressed-video.md)
 
+![alt text](images/3d-images.png)
+
 ### Laser scans
 
 Single‑plane range scans.
 
 [`LaserScan`](../message-schemas/laser-scan.md)
 
-### Paths
-
-Timestamped pose trajectories.
-
-[`PosesInFrame`](../message-schemas/poses-in-frame.md)
 
 ### Point clouds
 
 N‑D point sets with configurable shapes (circle/square/cube) and optional fields like intensity and normals.
 
 [`PointCloud`](../message-schemas/point-cloud.md)
+
+![alt text](images/3d-point-clouds.png)
 
 ### Poses
 
@@ -174,11 +179,15 @@ High‑level primitives (boxes, spheres, lines, text, meshes) for bounding boxes
 
 [`SceneEntity`](../message-schemas/scene-entity.md), [`SceneUpdate`](../message-schemas/scene-update.md)
 
+![alt text](images/3d-scene-entities.png)
+
 ### Transforms
 
 Static/dynamic transforms between reference frames.
 
 [`FrameTransform`](../message-schemas/frame-transform.md)
+
+![alt text](images/3d-static-transforms.png)
 
 ## Interactions
 
