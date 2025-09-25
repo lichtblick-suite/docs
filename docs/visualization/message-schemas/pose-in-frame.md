@@ -4,6 +4,8 @@ A position and orientation for an object or reference frame in 3D space.
 
 ## Panel support
 
+<!--TODO: Link missing documentation when available-->
+
 `PoseInFrame` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](#).
 
 ## Schema
