@@ -16,8 +16,7 @@ Custom panels are ideal when your visualization or interaction needs are bespoke
 
 **Links and resources**
 
-- Guide: Create custom panel
-- Build a custom panel extension (React)
+- Guide: [Create custom panel](/guides/create-custom-panel)
 
 ---
 
@@ -43,7 +42,7 @@ Message converters run on-demand only when the topic is subscribed to by a panel
 
 **Links and resources**
 
-- Guide: Create schema converter
+- Guide: [Create message converter](/guides/create-message-converter)
 
 ---
 
@@ -55,7 +54,7 @@ Topic alias extensions allow you to alias topics in your data source to new topi
 
 **Links and resources**
 
-- Guide: Create data loader with Rust
+- Guide: [Create Topic Aliases](/guides/create-topic-alias)
 
 ---
 
@@ -75,8 +74,6 @@ To set up your extension project, navigate to the directory where you'll want yo
 npm init lichtblick-extension@latest my-extension-name
 ```
 
-```
-
 This will set up an extension directory structure. The entrypoint of your extension is the `index.ts` file.
 
 The entrypoint script **MUST** export an `ExtensionModule` — that is, a single `activate` function which accepts a single `ExtensionContext` argument.
@@ -85,7 +82,5 @@ The entrypoint script **MUST** export an `ExtensionModule` — that is, a single
 
 ## API reference
 
-- `ExtensionContext`
-- `@lichtblick/suite`
-
-```
+- [`ExtensionContext`](./extension-api/extension-context.md)
+- [`@lichtblick/suite`](https://www.npmjs.com/package/@lichtblick/suite)
