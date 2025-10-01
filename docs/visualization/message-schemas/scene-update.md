@@ -6,7 +6,7 @@ An update to the entities displayed in a 3D scene.
 
 <!--TODO: Link missing documentation when available-->
 
-`SceneUpdate` is used in the [3D](#) and [Image](#) panels.
+`SceneUpdate` is used in the [3D](../panels/3d-panel.md) and [Image](#) panels.
 
 ## Schema
 

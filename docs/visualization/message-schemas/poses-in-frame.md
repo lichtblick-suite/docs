@@ -6,7 +6,7 @@ An array of timestamped poses for an object or reference frame in 3D space.
 
 <!--TODO: Link missing documentation when available-->
 
-`PosesInFrame` can be used in the following panels: [3D](#) and [Image](#).
+`PosesInFrame` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](#).
 
 ## Schema
 
