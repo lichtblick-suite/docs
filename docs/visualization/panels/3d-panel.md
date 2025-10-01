@@ -8,7 +8,7 @@ description: Visualize robots and environments in 3D — markers, entities, poin
 
 Use the **3D panel** to render your data in a single interactive scene — from camera overlays and point clouds to URDF robot models, markers, and ad‑hoc primitives. The panel subscribes to enabled topics and draws the **latest message per topic** at its own timestamp, not by message receive time.
 
-![alt text](images/3d.png)
+![3D-panel](images/3d.png)
 
 ### Time & transforms (must‑read)
 
@@ -49,7 +49,7 @@ Camera and viewport settings.
 
 | Field | Description |
 | --- | --- |
-| **Sync camera** | Synchronize camera with other 3d panels using this setting |
+| **Sync camera** | Synchronize camera with other 3D panels using this setting |
 | **Distance** | Camera distance from display frame origin |
 | **Perspective** | Enable perspective projection (true 3D) vs orthographic (flat) |
 | **3D view** | Toggle between 3D and 2D (top-down z-axis) views |
@@ -95,7 +95,7 @@ Click the eye icon beside any topic name to show or hide it from the scene. Use 
 
 Add supplementary visualization elements that aren't tied to incoming message data.
 
-![alt text](images/3d-custom-layers.png)
+![3d-custom-layers](images/3d-custom-layers.png)
 
 #### Grid Layer
 
@@ -142,7 +142,7 @@ Camera intrinsic parameters for overlays and textured drawing.
 
 [`Grid`](../message-schemas/grid.md)
 
-![alt text](images/grid.png)
+![grid](images/grid.png)
 
 ### Images
 
@@ -165,7 +165,7 @@ N‑D point sets with configurable shapes (circle/square/cube) and optional fiel
 
 [`PointCloud`](../message-schemas/point-cloud.md)
 
-![alt text](images/3d-point-clouds.png)
+![point-clouds](images/3d-point-clouds.png)
 
 ### Poses
 
@@ -179,7 +179,7 @@ High‑level primitives (boxes, spheres, lines, text, meshes) for bounding boxes
 
 [`SceneEntity`](../message-schemas/scene-entity.md), [`SceneUpdate`](../message-schemas/scene-update.md)
 
-![alt text](images/3d-scene-entities.png)
+![scene-entities](images/3d-scene-entities.png)
 
 ### Transforms
 
@@ -187,7 +187,7 @@ Static/dynamic transforms between reference frames.
 
 [`FrameTransform`](../message-schemas/frame-transform.md)
 
-![alt text](images/3d-static-transforms.png)
+![static-transforms](images/3d-static-transforms.png)
 
 ## Interactions
 
