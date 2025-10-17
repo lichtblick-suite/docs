@@ -6,7 +6,7 @@ A compressed image.
 
 <!--TODO: Link missing documentation when available-->
 
-`CompressedImage` is used in the [3D](../panels/3d-panel.md) and [Image](#) panels.
+`CompressedImage` is used in the [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md) panels.
 
 ## Schema
 

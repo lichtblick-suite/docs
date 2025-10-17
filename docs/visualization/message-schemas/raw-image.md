@@ -6,7 +6,7 @@ A raw image.
 
 <!--TODO: Link missing documentation when available-->
 
-`RawImage` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](#).
+`RawImage` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md).
 
 ## Schema
 
