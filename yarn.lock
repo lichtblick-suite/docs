@@ -2231,6 +2231,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/module-type-aliases@npm:3.9.1":
+  version: 3.9.1
+  resolution: "@docusaurus/module-type-aliases@npm:3.9.1"
+  dependencies:
+    "@docusaurus/types": 3.9.1
+    "@types/history": ^4.7.11
+    "@types/react": "*"
+    "@types/react-router-config": "*"
+    "@types/react-router-dom": "*"
+    react-helmet-async: "npm:@slorber/react-helmet-async@1.3.0"
+    react-loadable: "npm:@docusaurus/react-loadable@6.0.0"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: 7b71e344908824b69b15f4ccbb2b237a5043de1a39fdd9cf34d0a1253e7454be929b6d938ce1528873ee79326d7c2430fd53d6369f7aabb21a8b704ba0d5015c
+  languageName: node
+  linkType: hard
+
 "@docusaurus/plugin-content-blog@npm:3.8.1":
   version: 3.8.1
   resolution: "@docusaurus/plugin-content-blog@npm:3.8.1"
@@ -2572,6 +2590,27 @@ __metadata:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
   checksum: 51ffefcf438c1d7a2bae13c5e78145c05908292726a7934a63fabc43a29972a279f963ce7da081ebbd6d62cb11de4b7084c2534fc366adf423f9857b2deeb528
+  languageName: node
+  linkType: hard
+
+"@docusaurus/types@npm:3.9.1":
+  version: 3.9.1
+  resolution: "@docusaurus/types@npm:3.9.1"
+  dependencies:
+    "@mdx-js/mdx": ^3.0.0
+    "@types/history": ^4.7.11
+    "@types/mdast": ^4.0.2
+    "@types/react": "*"
+    commander: ^5.1.0
+    joi: ^17.9.2
+    react-helmet-async: "npm:@slorber/react-helmet-async@1.3.0"
+    utility-types: ^3.10.0
+    webpack: ^5.95.0
+    webpack-merge: ^5.9.0
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  checksum: f344a8517fd9597cc84d36929df7df7a53c72d30b56eb85470f29ace2ddb8c0fd8f36064240e645209c777637ab21498cce01494d862ec5867fe7a6461a6b874
   languageName: node
   linkType: hard
 
@@ -7397,7 +7436,7 @@ __metadata:
   resolution: "lichtblick-documentation@workspace:."
   dependencies:
     "@docusaurus/core": 3.8.1
-    "@docusaurus/module-type-aliases": 3.8.1
+    "@docusaurus/module-type-aliases": 3.9.1
     "@docusaurus/preset-classic": 3.8.1
     "@docusaurus/tsconfig": 3.8.1
     "@docusaurus/types": 3.8.1
