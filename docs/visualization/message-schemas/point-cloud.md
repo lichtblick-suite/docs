@@ -6,7 +6,7 @@ A collection of N-dimensional points, which may contain additional fields with i
 
 <!--TODO: Link missing documentation when available-->
 
-`PointCloud` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](#).
+`PointCloud` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md).
 
 ## Schema
 
