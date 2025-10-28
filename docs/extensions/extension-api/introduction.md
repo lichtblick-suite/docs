@@ -8,7 +8,7 @@ Your extension must export an `ExtensionModule` with an `activate()` function. T
 
 ```ts
 export function activate(extensionContext: ExtensionContext): void {
-  // Register panels, schema converters, topic aliases, or data loaders here
+  // Register panels, message converters, topic aliases, or data loaders here
 }
 ```
 
@@ -27,9 +27,9 @@ extensionContext.registerPanel({
 
 ---
 
-### Schema Converters
+### Message Converters
 
-Schema converters enable your extension to map custom messages to built-in Lichtblick schemas:
+Message converters enable your extension to map custom messages to built-in Lichtblick schemas:
 
 ```ts
 extensionContext.registerMessageConverter({
