@@ -21,15 +21,47 @@ Converters do not rename or alias topics; they only change the schema of the mes
 extensionContext.registerMessageConverter<{ x: number; y: number }>({
   fromSchemaName: "custom/Point2D",
   toSchemaName: "foxglove.Point2",
-  converter: (msg, event) => ({ x: msg.x, y: msg.y }),
+  converter: (msg, event, globalVariables) => ({ x: msg.x, y: msg.y }),
 });
 ```
 
 - `fromSchemaName`: Source schema your data arrives as.
 - `toSchemaName`: Target schema panels will receive when opting in.
-- `converter(msg, event)`: Synchronous function. Return the converted value, or `undefined` to drop this message.
+- `converter(msg, event, globalVariables)`: Synchronous function. Return the converted value, or `undefined` to drop this message.
 
 After registration, topics carrying `custom/Point2D` will advertise they are convertible to `foxglove.Point2` in the UI.
+Message converters may access `globalVariables` in the context. 
+
+## Using global variables
+
+The `converter` function receives `globalVariables` as its third parameter, allowing you to use user-defined variables to customize conversion behavior:
+
+```ts
+extensionContext.registerMessageConverter({
+  fromSchemaName: "custom/Point2D",
+  toSchemaName: "foxglove.Point2",
+  converter: (msg, event, globalVariables) => {
+    const maxDistance = globalVariables.maxPointDistance ?? Infinity;
+    const distance = Math.sqrt(msg.x ** 2 + msg.y ** 2);
+    
+    // Skip points beyond threshold
+    if (distance > maxDistance) {
+      return undefined;
+    }
+    
+    return { x: msg.x, y: msg.y };
+  },
+});
+```
+
+**Important considerations:**
+
+- **Read-only**: `globalVariables` is immutable within converters.
+- **Performance**: Access is fast, but avoid complex computations based on variables that change frequently.
+- **Defaults**: Always provide fallback values since variables may be undefined.
+- **Type safety**: Global variables are typed as `Readonly<Record<string, VariableValue>>` where `VariableValue` can be strings, numbers, booleans, or nested objects.
+
+Users can set global variables through the Variables panel in the Lichtblick UI or through other extensions.
 
 ## Using a converter in a panel
 
@@ -66,4 +98,3 @@ For a complete guide and examples, see Settings API.
 - Purity: keep converters fast and side‑effect free; they are called per message.
 - Return type: must match the target schema shape expected by panels.
 - Skipping: return `undefined` to omit a converted output for specific messages.
-
