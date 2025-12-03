@@ -56,6 +56,7 @@ extensionContext.registerMessageConverter({
 
 **Important considerations:**
 
+- **Optional**: `globalVariables` does not need to be used in every converter.
 - **Read-only**: `globalVariables` is immutable within converters.
 - **Performance**: Access is fast, but avoid complex computations based on variables that change frequently.
 - **Defaults**: Always provide fallback values since variables may be undefined.
