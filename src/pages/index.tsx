@@ -12,6 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <meta name="algolia-site-verification" content="235DCDF5401E75CF" />
+      <link rel="preconnect" href="https://F9LRT3JZFE-dsn.algolia.net" crossorigin />
       <div className="container">
         <div className={styles.heroContent}>
           <div className={styles.heroText}>

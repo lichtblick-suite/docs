@@ -63,7 +63,13 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    algolia: {
+      appId: 'F9LRT3JZFE',
+      apiKey: '7931be71299926f71313727a1355df6a',
+      indexName: 'lichtblick',
+      contextualSearch: true,
+      insights: true,
+    },
     image: "img/home-page-image.png",
     navbar: {
       title: "Lichtblick",
