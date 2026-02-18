@@ -117,27 +117,27 @@ Lichtblick also offers the option of opening live and cloud data sources from CL
   <TabItem value="linux" label="Linux" default>
 
 ```sh
-lichtblick "lichtblick://open?ds=foxglove-websocket&ds.url=ws://myrobot-connection:8777/"
+lichtblick "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
 ```
 
   </TabItem>
   <TabItem value="macos" label="macOS">
 
 ```sh
-open "lichtblick://open?ds=foxglove-websocket&ds.url=ws://myrobot-connection:8777/"
+open "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
 ```
 
   </TabItem>
   <TabItem value="windows" label="Windows">
 
 ```sh
-start "lichtblick://open?ds=foxglove-websocket&ds.url=ws://myrobot-connection:8777/"
+start "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
 ```
 
   </TabItem>
 </Tabs>
 
-This will open the desktop app and connect to `ws://myrobot-connection:8777/`
+This will open the desktop app and connect to `ws://localhost:8765/`
 
 ### Important Note
 
