@@ -109,6 +109,36 @@ Lichtblick supports several command-line parameters to streamline your workflow 
 
 These parameters help optimize the user experience by enabling quicker access to files and configurations without navigating through the UI manually.
 
+### Live and cloud data sources
+
+Lichtblick also offers the option of opening live and cloud data sources from CLI. For instance:
+
+<Tabs>
+  <TabItem value="linux" label="Linux" default>
+
+```sh
+lichtblick "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```sh
+open "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
+```
+
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+
+```sh
+start "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
+```
+
+  </TabItem>
+</Tabs>
+
+This will open the desktop app and connect to `ws://localhost:8765/`
+
 ### Important Note
 
 Multiple files are available only to `.mcap` files at the moment.
