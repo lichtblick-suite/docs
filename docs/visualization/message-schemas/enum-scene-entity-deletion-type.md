@@ -1,6 +1,6 @@
 # SceneEntityDeletionType
 
-An enumeration indicating which entities should match a `SceneEntityDeletion` command.
+An enumeration that specifies the scope of entities targeted by a `SceneEntityDeletion` command.
 
 ## Parent type
 
@@ -10,5 +10,5 @@ An enumeration indicating which entities should match a `SceneEntityDeletion` co
 
 | Name          | Value | Description                                                           |
 | ------------- | ----- | --------------------------------------------------------------------- |
-| `MATCHING_ID` | 0     | Delete the existing entity on the same topic that has the provided id |
-| `ALL`         | 1     | Delete all existing entities on the same topic                        |
+| `MATCHING_ID` | 0     | Removes only the entity on the same topic whose id matches the one provided. |
+| `ALL`         | 1     | Removes every entity currently published on the same topic.                  |

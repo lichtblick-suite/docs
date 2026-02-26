@@ -1,6 +1,6 @@
 # Vector2
 
-A vector in 2D space that represents a direction only.
+A directional vector defined in two-dimensional space.
 
 ## Parent schema
 

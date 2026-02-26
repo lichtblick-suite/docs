@@ -1,6 +1,6 @@
 # TriangleListPrimitive
 
-A primitive representing a set of triangles or a surface tiled by triangles.
+A primitive that defines a collection of triangles or a surface constructed from a triangular mesh.
 
 ## Parent schema
 
@@ -10,11 +10,11 @@ A primitive representing a set of triangles or a surface tiled by triangles.
 
 | Field     | Type                                     | Description                                                                                                                         |
 | --------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `pose`    | [`Pose`](./pose.md)                      | Origin of triangles relative to reference frame.                                                                                    |
-| `points`  | [`Point3[]`](./point3.md)                | Vertices to use for triangles, interpreted as a list of triples (0-1-2, 3-4-5, ...).                                                |
-| `color`   | [`Color`](./color.md)                    | Solid color to use for the whole shape. One of [`Color`](./color.md) or `colors` must be provided.                                  |
-| `colors`  | [`Color[]`](./color.md)                  | Per-vertex colors (if specified, must have the same length as `points`). One of [`Color`](./color.md) or `colors` must be provided. |
-| `indices` | [`uint32[]`](./built-in-types.md#uint32) | Indices into the `points` and `colors` arrays, which can be used to avoid duplicating attribute data.                               |
+| `pose`    | [`Pose`](./pose.md)                      | The position and orientation of the triangle set relative to its reference frame.                                                                |
+| `points`  | [`Point3[]`](./point3.md)                | Vertex positions that form the triangles, grouped in consecutive sets of three (0-1-2, 3-4-5, ...).                                              |
+| `color`   | [`Color`](./color.md)                    | A uniform color applied across the entire shape. Either this field or `colors` must be set.                                                      |
+| `colors`  | [`Color[]`](./color.md)                  | Individual colors assigned to each vertex. If provided, the length must match that of `points`. Either this field or `color` must be set.        |
+| `indices` | [`uint32[]`](./built-in-types.md#uint32) | References into the `points` and `colors` arrays, allowing shared vertex data to be reused without repetition.                                   |
 
 ### indices
 

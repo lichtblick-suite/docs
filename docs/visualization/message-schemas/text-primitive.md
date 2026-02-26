@@ -1,6 +1,6 @@
 # TextPrimitive
 
-A primitive representing a text label.
+A primitive used to display a text label in a 3D scene.
 
 ## Parent schema
 
@@ -10,12 +10,12 @@ A primitive representing a text label.
 
 | Field             | Type                                     | Description                                                                                                                                                    |
 | ----------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `pose`            | [`pose`](./pose.md)                      | Position of the center of the text box and orientation of the text. Identity orientation means the text is oriented in the xy-plane and flows from -x to +x.   |
-| `billboard`       | [`boolean`](./built-in-types.md#boolean) | Whether the text should respect `pose.orientation` (`false`) or always face the camera (`true`).                                                               |
-| `font_size`       | [`float64`](./built-in-types.md#float64) | Font size (height of one line of text).                                                                                                                        |
-| `scale_invariant` | [`boolean`](./built-in-types.md#boolean) | Indicates whether `font_size` is a fixed size in screen pixels (`true`), or specified in world coordinates and scales with distance from the camera (`false`). |
-| `color`           | [`Color`](./color.md)                    | Color of the text.                                                                                                                                             |
-| `text`            | [`string`](./built-in-types.md#string)   | Text content.                                                                                                                                                  |
+| `pose`            | [`pose`](./pose.md)                      | Location of the text box center and the rotation applied to the text. A default (identity) orientation places the text flat in the xy-plane, running from -x to +x. |
+| `billboard`       | [`boolean`](./built-in-types.md#boolean) | Controls whether the text follows the rotation in `pose.orientation` (`false`) or is always rotated to face the camera (`true`).                                     |
+| `font_size`       | [`float64`](./built-in-types.md#float64) | The height of a single line of text, used to determine the font size.                                                                                               |
+| `scale_invariant` | [`boolean`](./built-in-types.md#boolean) | Specifies whether `font_size` is a constant screen-space pixel size (`true`), or a world-space measurement that changes with camera distance (`false`).              |
+| `color`           | [`Color`](./color.md)                    | The color applied to the text.                                                                                                                                      |
+| `text`            | [`string`](./built-in-types.md#string)   | The string to be rendered as the label.                                                                                                                             |
 
 ## Reference implementations
 

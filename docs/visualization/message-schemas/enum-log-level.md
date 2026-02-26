@@ -1,6 +1,6 @@
 # LogLevel
 
-Log level.
+The severity level assigned to a log entry.
 
 ## Parent type
 
@@ -10,9 +10,9 @@ Log level.
 
 | Name      | Value | Description       |
 | --------- | ----- | ----------------- |
-| `UNKNOWN` | 0     | Unknown log level |
-| `DEBUG`   | 1     | Debug log level   |
-| `INFO`    | 2     | Info log level    |
-| `WARNING` | 3     | Warning log level |
-| `ERROR`   | 4     | Error log level   |
-| `FATAL`   | 5     | Fatal log level   |
+| `UNKNOWN` | 0     | The log level could not be determined. |
+| `DEBUG`   | 1     | Detailed diagnostic output for debugging purposes. |
+| `INFO`    | 2     | General informational messages about system operation. |
+| `WARNING` | 3     | Indicates a potential issue that does not stop execution. |
+| `ERROR`   | 4     | Signals a failure that may affect functionality. |
+| `FATAL`   | 5     | A critical failure that causes the process to terminate. |

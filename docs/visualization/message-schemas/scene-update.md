@@ -1,6 +1,6 @@
 # SceneUpdate
 
-An update to the entities displayed in a 3D scene.
+A message used to modify the set of entities rendered in a 3D scene.
 
 ## Panel support
 
@@ -12,8 +12,8 @@ An update to the entities displayed in a 3D scene.
 
 | Field       | Type                                                  | Description                       |
 | ----------- | ----------------------------------------------------- | --------------------------------- |
-| `deletions` | [`SceneEntityDeletion[]`](./scene-entity-deletion.md) | Scene entities to delete.         |
-| `entities`  | [`SceneEntity[]`](./scene-entity.md)                  | Scene entities to add or replace. |
+| `deletions` | [`SceneEntityDeletion[]`](./scene-entity-deletion.md) | A list of entities to be removed from the scene.              |
+| `entities`  | [`SceneEntity[]`](./scene-entity.md)                  | A list of entities to insert into or update within the scene. |
 
 ## Reference implementations
 

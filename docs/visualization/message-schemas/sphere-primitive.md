@@ -1,6 +1,6 @@
 # SpherePrimitive
 
-A primitive representing a sphere or ellipsoid.
+A primitive that describes a spherical or ellipsoidal shape.
 
 ## Parent schema
 
@@ -10,9 +10,9 @@ A primitive representing a sphere or ellipsoid.
 
 | Field   | Type                      | Description                                               |
 | ------- | ------------------------- | --------------------------------------------------------- |
-| `pose`  | [`pose`](./pose.md)       | Position of the center of the sphere and its orientation. |
-| `size`  | [`Vector3`](./vector3.md) | Size (diameter) of the sphere along each axis.            |
-| `color` | [`Color`](./color.md)     | Color of the sphere.                                      |
+| `pose`  | [`pose`](./pose.md)       | The location of the sphere's center and the rotation applied to it. |
+| `size`  | [`Vector3`](./vector3.md) | The diameter of the sphere measured along each axis.                |
+| `color` | [`Color`](./color.md)     | The color applied to the sphere.                                    |
 
 ## Reference implementations
 

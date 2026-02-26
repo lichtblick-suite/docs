@@ -1,6 +1,6 @@
 # SceneEntityDeletion
 
-Command to remove previously published entities.
+An instruction to delete entities that were previously added to the scene.
 
 ## Parent schema
 
@@ -10,9 +10,9 @@ Command to remove previously published entities.
 
 | Field       | Type                                                              | Description                                                                                    |
 | ----------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `timestamp` | [`time`](./built-in-types.md#time)                                | Timestamp of the deletion. Only matching entities earlier than this timestamp will be deleted. |
-| `type`      | [`SceneEntityDeletionType`](./enum-scene-entity-deletion-type.md) | Type of deletion action to perform.                                                            |
-| `id`        | [`string`](./built-in-types.md#string)                            | Identifier which must match if `type` is `MATCHING_ID`.                                        |
+| `timestamp` | [`time`](./built-in-types.md#time)                                | The time at which the deletion is applied. Only entities with a timestamp before this value will be removed. |
+| `type`      | [`SceneEntityDeletionType`](./enum-scene-entity-deletion-type.md) | The kind of deletion operation to execute.                                                                   |
+| `id`        | [`string`](./built-in-types.md#string)                            | The entity identifier to match when `type` is set to `MATCHING_ID`.                                         |
 
 ## Reference implementations
 

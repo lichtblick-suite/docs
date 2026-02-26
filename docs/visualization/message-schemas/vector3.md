@@ -1,6 +1,6 @@
 # Vector3
 
-A vector in 3D space that represents a direction only.
+A directional vector defined in three-dimensional space.
 
 ## Parent schemas
 
