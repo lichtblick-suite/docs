@@ -1,6 +1,6 @@
 # PositionCovarianceType
 
-Type of position covariance.
+Describes how the position covariance data was obtained or estimated.
 
 ## Parent type
 

@@ -1,6 +1,6 @@
 # NumericType
 
-Numeric type.
+The data type used to represent a numeric value.
 
 ## Parent type
 

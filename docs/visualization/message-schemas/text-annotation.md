@@ -1,6 +1,6 @@
 # TextAnnotation
 
-A text label on a 2D image.
+A textual annotation overlaid on a 2D image.
 
 ## Parent schema
 
@@ -10,12 +10,12 @@ A text label on a 2D image.
 
 | Field              | Type                                     | Description                                                            |
 | ------------------ | ---------------------------------------- | ---------------------------------------------------------------------- |
-| `timestamp`        | [`time`](./built-in-types.md#time)       | Timestamp of annotation.                                               |
-| `position`         | [`Point2`](./point2.md)                  | Bottom-left origin of the text label in 2D image coordinates (pixels). |
-| `text`             | [`string`](./built-in-types.md#string)   | Text to display.                                                       |
-| `font_size`        | [`float64`](./built-in-types.md#float64) | Font size in pixels.                                                   |
-| `text_color`       | [`Color`](./color.md)                    | Text color.                                                            |
-| `background_color` | [`Color`](./color.md)                    | Background fill color.                                                 |
+| `timestamp`        | [`time`](./built-in-types.md#time)       | The time at which the annotation is recorded.                                  |
+| `position`         | [`Point2`](./point2.md)                  | The bottom-left corner of the text label in 2D image coordinates (pixels).     |
+| `text`             | [`string`](./built-in-types.md#string)   | The content of the annotation label.                                           |
+| `font_size`        | [`float64`](./built-in-types.md#float64) | The size of the font, measured in pixels.                                      |
+| `text_color`       | [`Color`](./color.md)                    | The color used to render the text.                                             |
+| `background_color` | [`Color`](./color.md)                    | The color used to fill the background behind the text.                         |
 
 ## Position
 
