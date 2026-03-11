@@ -32,6 +32,18 @@ extensionContext.registerMessageConverter<{ x: number; y: number }>({
 After registration, topics carrying `custom/Point2D` will advertise they are convertible to `foxglove.Point2` in the UI.
 Message converters may access `globalVariables` in the context. 
 
+## Converter message input shape
+
+Message converters receive already-deserialized, JSON-like JavaScript objects, not raw encoding-native runtime objects.
+The exact structure of those objects depends on how the topic was decoded: message encoding, schema definition, and decoder-specific mapping behavior all matter.
+
+Because of that, it is not guaranteed that two data sources with the same schema name but different encodings will produce the same converter input shape.
+Potential differences include field naming, default handling, numeric representation, binary field mapping, and presence semantics.
+
+With evolving schemas (for example when a converter targets a newer schema version than the data source), version mismatches can cause fields expected by converter types to be missing at runtime.
+
+In short, converters should treat input as decoder-dependent and explicitly validate assumptions when strict compatibility is required.
+
 ## Using global variables
 
 The `converter` function receives `globalVariables` as its third parameter, allowing you to use user-defined variables to customize conversion behavior:
