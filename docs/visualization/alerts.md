@@ -19,12 +19,14 @@ Every alert has one of three severity levels:
 
 ### Alerts tab
 
+![Alerts tab](images/alerts-tab.png)
+
 Open the **Alerts** tab in the left sidebar to see all active alerts. Each entry shows:
 
 - The **severity icon** and **short message** in the header row.
 - An expandable section with additional details, such as a full error message or a troubleshooting tip.
 
-When there are no active alerts the tab displays an empty state message confirming everything is healthy.
+When there are no active alerts, the tab displays an empty state message confirming everything is healthy.
 
 ### Data source indicator
 
@@ -47,7 +49,7 @@ Common situations that trigger player alerts:
 - **Duplicate or mis-advertised topics** — the server advertises the same topic name on more than one channel.
 - **Service call issues** — a service uses a deprecated schema format, or no compatible encoding was found between client and server.
 - **File format issues** — a bag file has overlapping chunks, an MCAP file is missing schema information, or a ROS 2 `.db3` file contains unresolvable types.
-- **Playback cache limits** — the in-memory message cache is full, for example when the browser tab has been inactive for a while.
+- **Playback cache limits** — the in-memory message cache is full, for example, when the browser tab has been inactive for a while.
 - **High-frequency topic detection** — a topic is broadcasting messages at a rate that may affect visualization performance.
 
 Player alerts are automatically resolved when the underlying condition clears (for example, when a connection is successfully re-established).
@@ -77,7 +79,7 @@ These alerts appear in the Alerts tab and remain visible until the conflicting a
 
 ### Message converters
 
-Extensions that register **message converters** (transforming messages from one schema into another) can report alerts while processing individual messages. Each converter alert is tagged with the extension ID and the schema pair it handles, so the user can quickly identify which converter encountered the problem.
+Extensions that register [**message converters**](../extensions/extension-api/message-converters.md) (transforming messages from one schema into another) can report alerts while processing individual messages. Each converter alert is tagged with the extension ID and the schema pair it handles, so the user can quickly identify which converter encountered the problem.
 Errors thrown by a message converter will also be caught and an alert will be shown to the user.
 
 ---

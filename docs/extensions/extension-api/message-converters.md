@@ -66,6 +66,17 @@ extensionContext.registerMessageConverter({
 });
 ```
 
+
+**Important considerations:**
+
+- **Optional**: `globalVariables` does not need to be used in every converter.
+- **Read-only**: `globalVariables` is immutable within converters.
+- **Performance**: Access is fast, but avoid complex computations based on variables that change frequently.
+- **Defaults**: Always provide fallback values since variables may be undefined.
+- **Type safety**: Global variables are typed as `Readonly<Record<string, VariableValue>>` where `VariableValue` can be strings, numbers, booleans, or nested objects.
+
+Users can set global variables through the Variables panel in the Lichtblick UI or through other extensions.
+
 #### Emitting alerts from a message converter
 
 Use `context.emitAlert()` inside the `converter` function to raise an alert. An optional `alertId` string can be provided to deduplicate repeated alerts of the same kind — only the most recent alert for a given ID is shown.
@@ -103,14 +114,9 @@ export function activate(extensionContext: ExtensionContext): void {
 ```
 
 **Important considerations:**
-
-- **Optional**: `globalVariables` does not need to be used in every converter.
-- **Read-only**: `globalVariables` is immutable within converters.
-- **Performance**: Access is fast, but avoid complex computations based on variables that change frequently.
-- **Defaults**: Always provide fallback values since variables may be undefined.
-- **Type safety**: Global variables are typed as `Readonly<Record<string, VariableValue>>` where `VariableValue` can be strings, numbers, booleans, or nested objects.
-
-Users can set global variables through the Variables panel in the Lichtblick UI or through other extensions.
+- **Manual alert management**: The extension developer is responsible for deciding when to emit alerts, what severity to use, and how to tag them with `alertId` for deduplication. Choose meaningful IDs and messages to help users troubleshoot.
+- **Exception handling**: If the converter throws an exception, Lichtblick will automatically catch it and raise an error alert. However, explicitly catching errors and calling `emitAlert()` gives the extension developer more control over the message, severity, and tip shown to the user.
+- **Performance**: Avoid emitting alerts on every message if the same issue persists. Use `alertId` to deduplicate so only one alert appears for repeated occurrences of the same problem.
 
 ## Using a converter in a panel
 
