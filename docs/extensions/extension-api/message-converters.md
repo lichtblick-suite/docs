@@ -66,6 +66,42 @@ extensionContext.registerMessageConverter({
 });
 ```
 
+#### Emitting alerts from a message converter
+
+Use `context.emitAlert()` inside the `converter` function to raise an alert. An optional `alertId` string can be provided to deduplicate repeated alerts of the same kind — only the most recent alert for a given ID is shown.
+
+```ts
+import {
+  ExtensionContext,
+  MessageConverterAlert,
+  MessageConverterContext,
+} from "@lichtblick/suite";
+
+export function activate(extensionContext: ExtensionContext): void {
+  extensionContext.registerMessageConverter({
+    fromSchemaName: "custom/SensorData",
+    toSchemaName: "foxglove.SceneUpdate",
+    converter: (msg: unknown, _event: unknown, _globalVariables?: unknown, context?: MessageConverterContext) => {
+      const data = msg as { value: number };
+
+      if (data.value < 0) {
+        const alert: MessageConverterAlert = {
+          severity: "warn",
+          message: "Sensor value out of expected range",
+          tip: "Check the sensor calibration or data source configuration.",
+          error: new Error(`Received negative value: ${data.value}`),
+        };
+        // "range-check" deduplicates this alert — only the latest is shown
+        context?.emitAlert(alert, "range-check");
+        return undefined;
+      }
+
+      return { entities: [], deletions: [] };
+    },
+  });
+}
+```
+
 **Important considerations:**
 
 - **Optional**: `globalVariables` does not need to be used in every converter.
