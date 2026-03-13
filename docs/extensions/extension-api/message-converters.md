@@ -66,6 +66,7 @@ extensionContext.registerMessageConverter({
 });
 ```
 
+
 **Important considerations:**
 
 - **Optional**: `globalVariables` does not need to be used in every converter.
@@ -75,6 +76,47 @@ extensionContext.registerMessageConverter({
 - **Type safety**: Global variables are typed as `Readonly<Record<string, VariableValue>>` where `VariableValue` can be strings, numbers, booleans, or nested objects.
 
 Users can set global variables through the Variables panel in the Lichtblick UI or through other extensions.
+
+#### Emitting alerts from a message converter
+
+Use `context.emitAlert()` inside the `converter` function to raise an alert. An optional `alertId` string can be provided to deduplicate repeated alerts of the same kind — only the most recent alert for a given ID is shown.
+
+```ts
+import {
+  ExtensionContext,
+  MessageConverterAlert,
+  MessageConverterContext,
+} from "@lichtblick/suite";
+
+export function activate(extensionContext: ExtensionContext): void {
+  extensionContext.registerMessageConverter({
+    fromSchemaName: "custom/SensorData",
+    toSchemaName: "foxglove.SceneUpdate",
+    converter: (msg: unknown, _event: unknown, _globalVariables?: unknown, context?: MessageConverterContext) => {
+      const data = msg as { value: number };
+
+      if (data.value < 0) {
+        const alert: MessageConverterAlert = {
+          severity: "warn",
+          message: "Sensor value out of expected range",
+          tip: "Check the sensor calibration or data source configuration.",
+          error: new Error(`Received negative value: ${data.value}`),
+        };
+        // "range-check" deduplicates this alert — only the latest is shown
+        context?.emitAlert(alert, "range-check");
+        return undefined;
+      }
+
+      return { entities: [], deletions: [] };
+    },
+  });
+}
+```
+
+**Important considerations:**
+- **Manual alert management**: The extension developer is responsible for deciding when to emit alerts, what severity to use, and how to tag them with `alertId` for deduplication. Choose meaningful IDs and messages to help users troubleshoot.
+- **Exception handling**: If the converter throws an exception, Lichtblick will automatically catch it and raise an error alert. However, explicitly catching errors and calling `emitAlert()` gives the extension developer more control over the message, severity, and tip shown to the user.
+- **Performance**: Avoid emitting alerts on every message if the same issue persists. Use `alertId` to deduplicate so only one alert appears for repeated occurrences of the same problem.
 
 ## Using a converter in a panel
 
