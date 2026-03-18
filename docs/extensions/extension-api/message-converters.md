@@ -30,7 +30,34 @@ extensionContext.registerMessageConverter<{ x: number; y: number }>({
 - `converter(msg, event, globalVariables)`: Synchronous function. Return the converted value, or `undefined` to drop this message.
 
 After registration, topics carrying `custom/Point2D` will advertise they are convertible to `foxglove.Point2` in the UI.
-Message converters may access `globalVariables` in the context. 
+Message converters may access `globalVariables` in the context.
+
+## Performance: latest-per-render-tick sampling
+
+By default, every message on a subscribed topic is decoded and passed to your converter. For high-frequency or snapshot topics, this can be expensive because many intermediate messages are decoded but never rendered.
+
+When you set `supportsLatestPerRenderTick: true` in `registerMessageConverter`, you signal that your converter is **stateless** — it produces a correct result from any single message in isolation, with no dependency on previous messages. Lichtblick can then apply `latest-per-render-tick` sampling: only the newest raw message per topic per render window is decoded before being forwarded to your converter.
+
+```ts
+extensionContext.registerMessageConverter({
+  fromSchemaName: "custom/SensorSnapshot",
+  toSchemaName: "foxglove.SceneUpdate",
+  supportsLatestPerRenderTick: true, // safe to skip intermediate messages
+  converter: (msg) => buildScene(msg),
+});
+```
+
+**When to set `supportsLatestPerRenderTick: true`:**
+- Your converter derives output **only from the current message** — it holds no accumulated state across messages (no running totals, no history buffers).
+- Skipping intermediate messages does not affect the correctness of the result.
+
+**When to leave it `false` (default):**
+- Your converter builds cumulative state (e.g., appending to a list or tracking previous values).
+- Every message must be processed to produce a correct output.
+
+:::note
+Panels request sampling via the [`sampling` subscription option](./panel-extension-context). The optimization only activates when **both** the panel opts in **and** the converter declares `supportsLatestPerRenderTick: true`. If either side does not opt in, the topic falls back to full pass-through decoding.
+:::
 
 ## Converter message input shape
 
