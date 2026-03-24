@@ -46,13 +46,6 @@ Only the fields you `watch()` trigger re-renders.
 
 How your panel asks for data:
 
-```ts
-context.subscribe([
-  { topic: "/pose" },
-  { topic: "/laser", convertTo: "foxglove.PointCloud" },
-  { topic: "/odom", preload: true },
-]);
-```
 
 - topic: Name to subscribe
 - convertTo: Convert incoming messages using a registered [message converter](./message-converters)
