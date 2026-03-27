@@ -42,15 +42,6 @@ The object passed to `onRender` describing the app state for this frame:
 
 Only the fields you `watch()` trigger re-renders.
 
-### Subscription
-
-How your panel asks for data:
-
-
-- topic: Name to subscribe
-- convertTo: Convert incoming messages using a registered [message converter](./message-converters)
-- preload: Load full history, then access it via `state.allFrames`
-
 ### LayoutActions
 
 Open or update panels in the layout:
