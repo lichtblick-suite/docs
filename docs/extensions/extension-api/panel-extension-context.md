@@ -42,22 +42,6 @@ The object passed to `onRender` describing the app state for this frame:
 
 Only the fields you `watch()` trigger re-renders.
 
-### Subscription
-
-How your panel asks for data:
-
-```ts
-context.subscribe([
-  { topic: "/pose" },
-  { topic: "/laser", convertTo: "foxglove.PointCloud" },
-  { topic: "/odom", preload: true },
-]);
-```
-
-- topic: Name to subscribe
-- convertTo: Convert incoming messages using a registered [message converter](./message-converters)
-- preload: Load full history, then access it via `state.allFrames`
-
 ### LayoutActions
 
 Open or update panels in the layout:
@@ -83,15 +67,29 @@ context.watch("currentFrame");
 
 ### subscribe(subscriptions)
 
-Subscribe to topics with options like `convertTo` and `preload`.
+Subscribe to topics with options like `convertTo`, `preload`, and `sampling`.
 
 ```ts
 context.subscribe([
   { topic: "/chatter" },
   { topic: "/points", convertTo: "foxglove.PointCloud" },
   { topic: "/odom", preload: true },
+  {
+    topic: "/snapshot",
+    convertTo: "foxglove.SceneUpdate",
+    sampling: { mode: "latest-per-render-tick" },
+  },
 ]);
 ```
+
+**Subscription options:**
+
+| Option | Type | Description |
+|--------|------|-------------|
+| `topic` | `string` | Topic name to subscribe to |
+| `convertTo` | `string` | Request messages converted to this schema |
+| `preload` | `boolean` | Preload the full message history |
+| `sampling` | `{ mode: "latest-per-render-tick" }` | Request that only the latest message per render tick is decoded. Only active when the underlying [message converter](./message-converters#performance-latest-per-render-tick-sampling) also declares `supportsLatestPerRenderTick: true`. Ignored for preloaded or native (non-converted) subscriptions. |
 
 ### subscribe(topics)
 
