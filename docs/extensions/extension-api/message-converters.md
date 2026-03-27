@@ -34,7 +34,7 @@ Message converters may access `globalVariables` in the context.
 
 ## Performance: latest-per-render-tick sampling
 
-By default, every message on a subscribed topic is decoded and passed to your converter. For high-frequency or snapshot topics, this can be expensive because many intermediate messages are decoded but never rendered.
+By default, every message on a subscribed topic is decoded and passed to your converter. For high-frequency snapshot topics, this can be expensive because many intermediate messages are decoded but never rendered.
 
 When you set `supportsLatestPerRenderTick: true` in `registerMessageConverter`, you signal that your converter is **stateless** — it produces a correct result from any single message in isolation, with no dependency on previous messages. Lichtblick can then apply `latest-per-render-tick` sampling: only the newest raw message per topic per render window is decoded before being forwarded to your converter.
 
