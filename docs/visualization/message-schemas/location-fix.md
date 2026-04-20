@@ -4,9 +4,7 @@ A navigation satellite fix for any Global Navigation Satellite System
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
-
-`LocationFix` can be used in the following panels: [Map](#).
+`LocationFix` can be used in the following panels: [Map](../panels/map-panel.md).
 
 ## Schema
 

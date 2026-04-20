@@ -4,7 +4,6 @@ A color represented in RGBA format.
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
 
 `Color` is used in the [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md) panels.
 

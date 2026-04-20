@@ -4,7 +4,6 @@ Single scan from a planar laser range-finder
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
 
 `LaserScan` can be used in the following panels: [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md).
 
