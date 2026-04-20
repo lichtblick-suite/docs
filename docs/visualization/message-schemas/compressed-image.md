@@ -4,7 +4,6 @@ A compressed image.
 
 ## Panel support
 
-
 `CompressedImage` is used in the [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md) panels.
 
 ## Schema

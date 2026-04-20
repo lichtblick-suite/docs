@@ -4,7 +4,6 @@ A transform between two reference frames in 3D space.
 
 ## Panel support
 
-
 `FrameTransform` is used in the [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md) panels.
 
 ## Parent schema

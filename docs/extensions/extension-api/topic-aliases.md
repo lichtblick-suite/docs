@@ -92,4 +92,3 @@ context.subscribe([{ topic: "/pose" }]); // will read from /robot/pose
 - Avoid cycles or duplicates. If multiple extensions define the same alias name, the last loaded wins.
 - Keep functions fast and deterministic; they run when topics or variables change.
 - Combine with [message converters](./message-converters): panels can also set `convertTo` on an aliased topic.
-

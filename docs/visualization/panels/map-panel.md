@@ -6,15 +6,14 @@ description: Display GPS and GeoJSON data on a world map.
 
 Display GPS and GeoJSON data on a world map.
 
-
 ![image-panel](images/map-panel.png)
-
 
 ## Supported Messages
 
 To use this panel, your data must include messages that conform to one of the supported schemas listed below.
 
 #### `LocationFix`
+
 Used for GPS coordinates, with the ability to show signal accuracy when available. If the message contains a metadata field, an array of key-value pairs, those values will appear in a tooltip when hovering over the point.
 
 | Framework     | Schema |
@@ -23,8 +22,8 @@ Used for GPS coordinates, with the ability to show signal accuracy when availabl
 | ROS 2         | [sensor_msgs/msg/NavSatFix](https://github.com/ros2/common_interfaces/blob/master/sensor_msgs/msg/NavSatFix.msg) |
 | Custom        | [foxglove.LocationFix](https://lichtblick-suite.github.io/docs/docs/visualization/message-schemas/location-fix) |
 
-
 #### `GeoJSON`
+
 For displaying arbitrary shapes or points.
 
 | Framework     | schema |

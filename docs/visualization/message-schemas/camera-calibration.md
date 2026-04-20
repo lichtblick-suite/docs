@@ -4,7 +4,6 @@ Contains intrinsic and extrinsic calibration parameters for a camera.
 
 ## Panel support
 
-
 `CameraCalibration` is supported in the following panels: [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md).
 
 ## Schema
@@ -36,7 +35,7 @@ The `kannala_brandt` model corresponds to OpenCV’s fisheye model.
 
 A 3x3 matrix used to project 3D camera coordinates to 2D pixel coordinates:
 
-```
+```text
 [fx  0  cx]
 [ 0 fy  cy]
 [ 0  0   1]
@@ -50,7 +49,7 @@ Used to align the camera’s coordinate frame with a common stereo image plane, 
 
 ## P — Projection matrix
 
-```
+```text
 [fx'  0  cx'  Tx]
 [ 0  fy' cy'  Ty]
 [ 0   0   1    0]
@@ -66,7 +65,7 @@ In stereo configurations:
 
 Given a 3D point `[X Y Z]'`, its projection `[x y]` on the image is computed as:
 
-```
+```text
 [u v w]' = P * [X Y Z 1]'
 x = u / w
 y = v / w

@@ -16,7 +16,7 @@ See the [Getting Started](./#getting-started) section for extension setup requir
 
 Your extension project will have the following structure:
 
-```
+```text
 my-custom-panel/
 ├── src/
 │   ├── ExamplePanel.tsx    # Main panel component

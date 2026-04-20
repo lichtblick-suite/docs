@@ -158,7 +158,6 @@ Single‑plane range scans.
 
 [`LaserScan`](../message-schemas/laser-scan.md)
 
-
 ### Point clouds
 
 N‑D point sets with configurable shapes (circle/square/cube) and optional fields like intensity and normals.

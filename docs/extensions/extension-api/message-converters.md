@@ -48,10 +48,12 @@ extensionContext.registerMessageConverter({
 ```
 
 **When to set `supportsLatestPerRenderTick: true`:**
+
 - Your converter derives output **only from the current message** — it holds no accumulated state across messages (no running totals, no history buffers).
 - Skipping intermediate messages does not affect the correctness of the result.
 
 **When to leave it `false` (default):**
+
 - Your converter builds cumulative state (e.g., appending to a list or tracking previous values).
 - Every message must be processed to produce a correct output.
 
@@ -92,7 +94,6 @@ extensionContext.registerMessageConverter({
   },
 });
 ```
-
 
 **Important considerations:**
 
@@ -141,6 +142,7 @@ export function activate(extensionContext: ExtensionContext): void {
 ```
 
 **Important considerations:**
+
 - **Manual alert management**: The extension developer is responsible for deciding when to emit alerts, what severity to use, and how to tag them with `alertId` for deduplication. Choose meaningful IDs and messages to help users troubleshoot.
 - **Exception handling**: If the converter throws an exception, Lichtblick will automatically catch it and raise an error alert. However, explicitly catching errors and calling `emitAlert()` gives the extension developer more control over the message, severity, and tip shown to the user.
 - **Performance**: Avoid emitting alerts on every message if the same issue persists. Use `alertId` to deduplicate so only one alert appears for repeated occurrences of the same problem.
