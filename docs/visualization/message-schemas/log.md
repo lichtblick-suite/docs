@@ -4,7 +4,7 @@ A log message
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
+{/* TODO: Link missing documentation when available */}
 
 `Log` can be used in the following panels: [Log](#).
 

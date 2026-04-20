@@ -4,9 +4,7 @@ Array of annotations for a 2D image.
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
-
-`ImageAnnotations` is used in the [`Image`](#) panel.
+`ImageAnnotations` is used in the [`Image`](../panels/image-panel.md) panel.
 
 ## Schema
 

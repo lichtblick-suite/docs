@@ -4,7 +4,6 @@ Contains intrinsic and extrinsic calibration parameters for a camera.
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
 
 `CameraCalibration` is supported in the following panels: [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md).
 
