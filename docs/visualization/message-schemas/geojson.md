@@ -4,9 +4,7 @@ GeoJSON data for annotating maps.
 
 ## Panel support
 
-<!--TODO: Link missing documentation when available-->
-
-`GeoJSON` is used in the [Map](#) panel.
+`GeoJSON` is used in the [Map](../panels/map-panel.md) panel.
 
 ## Schema
 
