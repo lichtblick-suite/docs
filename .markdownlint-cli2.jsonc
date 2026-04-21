@@ -19,7 +19,9 @@
     // Disable heading increment check (existing docs skip levels intentionally)
     "MD001": false,
     // Disable emphasis-as-heading (used stylistically in existing docs)
-    "MD036": false
+    "MD036": false,
+    // Allow explicit ordered list numbering (1. 2. 3.) across code blocks
+    "MD029": false
   },
   "globs": [
     "docs/**/*.md",
