@@ -1,8 +1,33 @@
 version: 2
 
-updates: 
+updates:
   - package-ecosystem: npm
     directory: "/"
-    schedule: 
+    schedule:
       interval: "weekly"
-    
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      docusaurus:
+        patterns:
+          - "@docusaurus/*"
+          - "@mdx-js/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "ci"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
