@@ -4,7 +4,6 @@ The Gauge Panel in Lichtblick allows you to visualize numeric values from incomi
 
 ![Gauge panel](./images/gauge-panel.png)
 
-
 ## Settings
 
 ### General
