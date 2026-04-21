@@ -65,7 +65,7 @@ sudo apt install ros-noetic-foxglove-msgs # For ROS 1
 sudo apt install ros-galactic-foxglove-msgs # For ROS 2
 ```
 
-1. Import the necessary schemas into your ROS project to begin publishing data:
+3. Import the necessary schemas into your ROS project to begin publishing data:
 
 ```python
 from foxglove_msgs.msg import Vector2
