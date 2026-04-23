@@ -16,6 +16,7 @@ To remotely maneuver your robot using the directional control interface, ensure 
 * Right Control: Set the parameter (linear/angular: x, y, or z) and input the value sent when activating the Right arrow.
 
 ---
+
 #### Supported Message Types:
 
 Ensure your connection provides messages matching one of these compatible message types to utilize this panel effectively.

@@ -106,4 +106,3 @@ extensionContext.registerCameraModel({
 - modelBuilder(cameraInfo): Return an object implementing the camera model behavior.
 
 That’s it — use the `ExtensionContext` to register your features inside `activate()`. For details, see: [Message Converters](./message-converters), [Topic Aliases](./topic-aliases), and [Custom Camera Models](./custom-camera-models).
-

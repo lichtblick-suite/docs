@@ -17,5 +17,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Lint markdown
+        run: yarn lint:md
+
       - name: Build docusaurus static files
         run: yarn build

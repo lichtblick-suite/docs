@@ -8,7 +8,6 @@ The Image Panel enables you to display raw and compressed image data, as well as
 
 ![image-panel](images/image-panel.png)
 
-
 ## Settings
 
 ### General
@@ -45,11 +44,12 @@ List of transform messages to display.
 See the [3D panel docs](./3d-panel.md#transforms) for more information on transforms.
 
 ### Topics
+
 List of [3D marker topics](./3d-panel.md#topics) to superimpose on the image.
 
 ### Custom layers
-See the [3D panel docs](./3d-panel.md) for more information on possible settings.
 
+See the [3D panel docs](./3d-panel.md) for more information on possible settings.
 
 ## Supported encodings
 
@@ -69,8 +69,7 @@ See the [3D panel docs](./3d-panel.md) for more information on possible settings
 | `rbg8`     |                   |                   |
 | `rgba8`    |                   |                   |
 | `uyvy` or `yuv4222` |          |                   |
-| `yuyv` or `yuv422_yuy2 `|      |                   |
-
+| `yuyv` or `yuv422_yuy2`|      |                   |
 
 ## Supported messages
 
@@ -158,6 +157,7 @@ If it's missing or the Video Acceleration section is empty when you expect suppo
 The Lichtblick desktop app is built with Electron (Chromium-based) and will use hardware acceleration when available. If you notice issues, first confirm acceleration in Chrome, if it's not working there, it likely won't work in the desktop app either. Get it working in Chrome first, then report any remaining issues with the app.
 
 ## Enabling Hardware Acceleration
+
 **In Chromium-based browsers (Foxglove Web)**:
 
 - Go to `chrome://settings` → search for acceleration → enable `Use graphics acceleration when available`.
@@ -173,4 +173,3 @@ The Lichtblick desktop app is built with Electron (Chromium-based) and will use 
 - Chrome/Chromium does not enable video acceleration by default on Linux. Custom flags may be required depending on your GPU.
 
 - Make sure your graphics drivers are correctly installed and up to date.
-

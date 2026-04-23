@@ -27,6 +27,7 @@ color_msgs/PrimaryColor color
 Lichtblick recognizes that `PrimaryColor` defines named constants (`RED`, `YELLOW`, `BLUE`) adjacent to the `data` field with a matching `uint8` type. As a result, the platform displays these constant names alongside raw values in visualization panels such as **Raw Messages** and **State Transitions**.
 
 ### Note:
+
 Using separate enum messages requires accessing the value indirectly (e.g., `.color.data`). To simplify access, consider using inline annotations.
 
 ## Using Inline Enum Annotations
@@ -34,6 +35,7 @@ Using separate enum messages requires accessing the value indirectly (e.g., `.co
 Lichtblick allows you to annotate enum fields directly, eliminating the need for an intermediary message.
 
 ### Steps:
+
 1. Convert the enum field to its primitive type (e.g., `uint8`).
 2. Add an accompanying field with a `_lichtblick_enum` suffix that references the enum schema. Define this annotation on the line before the field declaration:
 
@@ -47,6 +49,7 @@ uint8 color
 Double underscores (`__lichtblick_enum`) are also supported, though only valid in ROS 1.
 
 ### Updating the Enum Message
+
 With inline annotations, you can remove the `data` field from the enum message, making it an empty structure:
 
 ```ros

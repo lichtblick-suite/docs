@@ -23,7 +23,6 @@ These metrics are useful for diagnosing playback behavior and ensuring performan
 
 🎯 Compact and interactive UI, integrated with existing Suite UI components
 
-
 ## Metrics Explained
 
 | Metric         | Description                                                 | Units        | Max Displayed Value |

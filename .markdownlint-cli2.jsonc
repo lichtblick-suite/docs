@@ -1,0 +1,35 @@
+{
+  "config": {
+    // Allow multiple top-level headings (Docusaurus frontmatter can cause this)
+    "MD025": false,
+    // Allow HTML in markdown (needed for MDX components, <br/>, <ul>, etc.)
+    "MD033": false,
+    // Allow bare URLs
+    "MD034": false,
+    // Disable line length limit (docs often have long table rows)
+    "MD013": false,
+    // Allow duplicate headings in different sections
+    "MD024": { "siblings_only": true },
+    // Allow trailing punctuation in headings
+    "MD026": false,
+    // Allow inline HTML images
+    "MD045": false,
+    // Disable table column style (existing docs have mixed formatting)
+    "MD060": false,
+    // Disable heading increment check (existing docs skip levels intentionally)
+    "MD001": false,
+    // Disable emphasis-as-heading (used stylistically in existing docs)
+    "MD036": false,
+    // Allow explicit ordered list numbering (1. 2. 3.) across code blocks
+    "MD029": false
+  },
+  "globs": [
+    "docs/**/*.md",
+    "guides/**/*.md"
+  ],
+  "ignores": [
+    "node_modules",
+    "build",
+    ".docusaurus"
+  ]
+}
