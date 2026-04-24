@@ -7350,9 +7350,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:16.1.1":
-  version: 16.1.1
-  resolution: "globby@npm:16.1.1"
+"globby@npm:16.2.0":
+  version: 16.2.0
+  resolution: "globby@npm:16.2.0"
   dependencies:
     "@sindresorhus/merge-streams": ^4.0.0
     fast-glob: ^3.3.3
@@ -7360,7 +7360,7 @@ __metadata:
     is-path-inside: ^4.0.0
     slash: ^5.1.0
     unicorn-magic: ^0.4.0
-  checksum: dcaf49a67a5ccbc92193b2dc55efbb949b8e95e704a759e0b2632fe88c9083c3b98c974e2c66cd12050c2532854cd6c9e2c5d75850d326f01ebec8441d611fed
+  checksum: e8af88db3e53a8ac03073fb2f093d7d51bcf0ab073958cb04706ce11a886ef2691650eede823bde53c3117a4055bada7aa64e5dfeb4263de4c3639dab4cbbfc8
   languageName: node
   linkType: hard
 
@@ -8561,7 +8561,7 @@ __metadata:
     "@docusaurus/types": 3.10.0
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
-    markdownlint-cli2: ^0.22.0
+    markdownlint-cli2: ^0.22.1
     prism-react-renderer: ^2.3.0
     react: ^19.2.5
     react-dom: ^19.2.5
@@ -8885,11 +8885,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:^0.22.0":
-  version: 0.22.0
-  resolution: "markdownlint-cli2@npm:0.22.0"
+"markdownlint-cli2@npm:^0.22.1":
+  version: 0.22.1
+  resolution: "markdownlint-cli2@npm:0.22.1"
   dependencies:
-    globby: 16.1.1
+    globby: 16.2.0
     js-yaml: 4.1.1
     jsonc-parser: 3.3.1
     jsonpointer: 5.0.1
@@ -8897,10 +8897,10 @@ __metadata:
     markdownlint: 0.40.0
     markdownlint-cli2-formatter-default: 0.0.6
     micromatch: 4.0.8
-    smol-toml: 1.6.0
+    smol-toml: 1.6.1
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: 67d10bf33f0b430db21de935e21046c0d407d22a473a9e32b9d30aedd69683972ffbe3e0f43b9f2619e47fd60c37376f101b6dfea0027764d8dc3c144531e097
+  checksum: dee36afd7b850aa50f96664d2d3df911807531c5a7b335557631ad8e43f7d56bfbcce949b7de6771185b798ae96ffbe27325912d514f941f5dded98c43d9242d
   languageName: node
   linkType: hard
 
@@ -12530,10 +12530,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smol-toml@npm:1.6.0":
-  version: 1.6.0
-  resolution: "smol-toml@npm:1.6.0"
-  checksum: e731aff4c52ff6f5401bc35f78643c30804c6957087a530d0d841b95266e6650a588cc8e59662872312d021aafcea8026372fa230cf6ba8b32a9c8f4c1a51cdf
+"smol-toml@npm:1.6.1":
+  version: 1.6.1
+  resolution: "smol-toml@npm:1.6.1"
+  checksum: bb5fce0c0369426ae8ae71ba91b5754423037dce8a2907d659ba4e45f5d7af1baabf7efea8ddb46ce681737be77a3795163f06ce4d7d3953f10cf6533194ffdb
   languageName: node
   linkType: hard
 
