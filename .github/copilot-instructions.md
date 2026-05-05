@@ -6,6 +6,8 @@ These instructions apply to all Copilot interactions in this repository.
 
 This is the documentation site for [Lichtblick](https://github.com/lichtblick-suite/lichtblick), a robotics visualization and diagnosis tool. Built with Docusaurus, hosted on GitHub Pages.
 
+For general project conventions, structure, and development workflow, refer to the [Lichtblick CONTRIBUTING.md](https://github.com/lichtblick-suite/lichtblick/blob/develop/CONTRIBUTING.md).
+
 ## Writing Conventions
 
 - **Audience**: Robotics engineers and developers familiar with ROS, MCAP, and data visualization
