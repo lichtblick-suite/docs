@@ -105,12 +105,87 @@ yarn web:serve
 5. **Capture**: Use `mcp_playwright_browser_take_screenshot` to save the image
 6. **Verify**: Confirm the screenshot captures the intended content
 
+**Preparing a single-panel layout:**
+
+When documenting a specific panel, the layout must show only that panel — no other panels should be visible. The default sample data source loads multiple panels, so you need to remove the extras:
+
+1. Open the app with sample data (e.g., `?ds=sample-nuscenes`)
+2. For each unwanted panel, hover over it to reveal the toolbar, click the **⋮** (More) button, then select **Remove panel**
+3. Repeat until only the target panel remains
+4. Hide the left sidebar using the `button[aria-label="Hide left sidebar"]` button before taking the main screenshot
+
+> **Note:** Do not attempt to manipulate `localStorage` or inject layout JSON — the sample data source overrides layout on load. Removing panels one-by-one via the UI is the reliable approach.
+
+**Available sample data sources:**
+
+| URL parameter | Description |
+| --- | --- |
+| `?ds=sample-nuscenes` | NuScenes v1.0 mini scene — loads a remote MCAP file with camera, lidar, GPS, and IMU data. This is the only user-facing sample data source. |
+
+The sample data source is activated via URL only (e.g., `http://localhost:8080/?ds=sample-nuscenes`). It does not appear in the data source dialog. The default layout is defined in `packages/suite-base/src/dataSources/SampleNuscenesLayout.json`.
+
 **Tips for good screenshots:**
 
-- Use sample data files from `e2e/fixtures/assets/` (e.g., `example.mcap`) for consistent content
 - Close sidebars if they're not relevant to the documentation topic
 - Use a clean layout with only the panel being documented
 - Ensure no personal data or sensitive info is visible
+- Dismiss any lingering tooltips before capturing — click an empty area of the panel to clear them
+- The playback bar at the bottom is always visible; this is expected and should not be cropped out
+
+### Lichtblick UI Selectors Reference
+
+When interacting with the Lichtblick app via Playwright MCP, use these patterns:
+
+**Panel toolbar buttons** use the `title` attribute (not `aria-label`):
+
+```
+button[title="Settings"]
+button[title="More"]
+button[title="Enter fullscreen"]
+```
+
+**Sidebar toggle** uses `aria-label`:
+
+```
+button[aria-label="Hide left sidebar"]
+button[aria-label="Show left sidebar"]
+```
+
+**Panel containers** use `data-testid` with the format `panel-mouseenter-container {PanelType}!{id}`:
+
+```
+[data-testid="panel-mouseenter-container StateTransitions!3010q0i"]
+```
+
+**Panel menu items** use `data-testid`:
+
+```
+[data-testid="panel-menu-item State Transitions"]
+```
+
+**Important:** Playwright MCP element refs (`ref=eNNN`) go stale between snapshots. Always use CSS selectors or re-take a snapshot before interacting with elements. Do not reuse refs from a previous snapshot.
+
+### Research Workflow Before Writing
+
+Before writing panel documentation, read the panel's source code in the Lichtblick repo to build an accurate settings list. The key files follow a consistent pattern:
+
+| File | What it provides |
+| --- | --- |
+| `packages/suite-base/src/panels/{PanelName}/types.ts` | Config types and interfaces — shows all available settings fields |
+| `packages/suite-base/src/panels/{PanelName}/hooks/usePanelSettings.ts` | Settings tree builder — shows how settings are grouped (General, X Axis, Series, etc.) and their UI controls |
+| `packages/suite-base/src/i18n/en/{panelName}.ts` | All user-facing strings — labels, descriptions, and tooltip text |
+
+**If the `lichtblick` repo is in the workspace**, use `read_file` to access these paths directly under the local repo root.
+
+**If the `lichtblick` repo is NOT in the workspace**, browse the source on GitHub instead:
+
+```
+https://github.com/lichtblick-suite/lichtblick/tree/develop/packages/suite-base/src/panels/{PanelName}
+```
+
+Use the `web` tool to fetch file contents from GitHub. The `develop` branch is the default and has the latest code.
+
+This is faster and more reliable than reverse-engineering settings from the UI alone. Always cross-reference with the live app to confirm the source code matches the deployed build.
 
 ## Page Templates
 
