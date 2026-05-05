@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "yarn markdownlint-cli2 --fix",
+        "osx": "yarn markdownlint-cli2 --fix",
+        "linux": "yarn markdownlint-cli2 --fix",
+        "windows": "yarn markdownlint-cli2 --fix",
+        "timeout": 30
+      }
+    ]
+  }
+}
