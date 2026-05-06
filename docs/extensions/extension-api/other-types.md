@@ -1,5 +1,8 @@
 ---
 sidebar_position: 10
+title: "Other Types"
+description: "Reference for all public types exported from the @lichtblick/suite package."
+keywords: [types, api reference, typescript, lichtblick/suite, public types, interfaces]
 ---
 
 # Other types

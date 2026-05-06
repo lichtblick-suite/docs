@@ -1,5 +1,8 @@
 ---
 sidebar_position: 8
+title: "Topic Aliases"
+description: "Expose friendly or standardized topic names without modifying the underlying data source."
+keywords: [topic aliases, topics, extension, api, typescript, renaming, remapping]
 ---
 
 # Topic Aliases

@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+title: "Create Message Converter"
+description: "Build a message converter extension to transform custom messages into Foxglove-supported schemas."
+keywords: [message converter, extension, typescript, tutorial, guide, schema, transform]
 ---
 
 # Create Message Converter

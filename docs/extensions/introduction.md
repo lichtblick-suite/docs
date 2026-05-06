@@ -1,3 +1,10 @@
+---
+sidebar_position: 0
+title: "Extensions"
+description: "Extend Lichtblick with custom panels, message converters, and topic aliases."
+keywords: [extensions, plugins, custom panels, message converters, topic aliases, typescript, developer]
+---
+
 # Extensions
 
 Extend Lichtblick's capabilities with custom extensions to better support your team's unique workflows. Build bespoke panels, convert custom messages to Lichtblick-supported schemas, and alias topic names for easy visualization.

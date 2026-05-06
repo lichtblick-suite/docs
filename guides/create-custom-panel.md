@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+title: "Create Custom Panel"
+description: "Build a custom panel extension to visualize and interact with your robotics data in Lichtblick."
+keywords: [custom panel, extension, typescript, tutorial, guide, react, visualization]
 ---
 
 # Create Custom Panel

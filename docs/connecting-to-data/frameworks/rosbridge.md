@@ -1,3 +1,10 @@
+---
+sidebar_position: 6
+title: "Rosbridge"
+description: "Connect Lichtblick to ROS 1 or ROS 2 via a Rosbridge WebSocket connection."
+keywords: [rosbridge, websocket, ros1, ros2, live connection, foxglove bridge]
+---
+
 # Rosbridge
 
 <div class="warning">

@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: "Live Data"
+description: "Connect to live data sources including Foxglove WebSocket, Rosbridge, and Velodyne Lidar."
+keywords: [live data, websocket, rosbridge, velodyne, real-time, streaming, foxglove bridge]
+---
+
 # Live Data
 
 Connect to live data sources using Lichtblick's WebSocket, Rosbridge, and Velodyne Lidar integrations for real-time streaming. You can also load remote data files via URL for easy access and processing.

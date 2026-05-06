@@ -1,3 +1,10 @@
+---
+sidebar_position: 25
+title: "LocationFix"
+description: "Schema for a GPS fix message displayed as a position on the Map panel."
+keywords: [location fix, gps, gnss, coordinates, map panel, schema]
+---
+
 # LocationFix
 
 A navigation satellite fix for any Global Navigation Satellite System

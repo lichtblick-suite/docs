@@ -1,3 +1,10 @@
+---
+sidebar_position: 5
+title: "Indicator Panel"
+description: "Display a color-coded label to indicate threshold values and system state at a glance."
+keywords: [indicator, threshold, status, alert, color, state, monitoring]
+---
+
 # Indicator Panel
 
 The Indicator Panel in Lichtblick displays a color-coded label to indicate threshold values in your data. It is useful for providing at-a-glance status information, such as whether a sensor reading is within acceptable limits or if a system state requires attention.

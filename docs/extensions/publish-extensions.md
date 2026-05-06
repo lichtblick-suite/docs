@@ -1,5 +1,8 @@
 ---
 sidebar_position: 2
+title: "Publishing Extensions"
+description: "Build and share Lichtblick extension packages with your team."
+keywords: [publish, extensions, package, share, distribution, npm]
 ---
 
 # Publishing Extensions

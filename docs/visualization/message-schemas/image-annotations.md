@@ -1,3 +1,10 @@
+---
+sidebar_position: 21
+title: "ImageAnnotations"
+description: "Schema for a collection of annotations (circles, points, text) overlaid on image data."
+keywords: [image annotations, overlay, circle, points, text, image panel, schema]
+---
+
 # ImageAnnotations
 
 Array of annotations for a 2D image.

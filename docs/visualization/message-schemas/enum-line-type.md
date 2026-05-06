@@ -1,3 +1,10 @@
+---
+sidebar_position: 11
+title: "LineType"
+description: "Enum defining line rendering styles used in LinePrimitive messages."
+keywords: [line type, enum, line primitive, rendering, schema, 3d]
+---
+
 # LineType
 
 An enumeration that defines how a set of input points is connected to form lines.

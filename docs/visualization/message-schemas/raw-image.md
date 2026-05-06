@@ -1,3 +1,10 @@
+---
+sidebar_position: 37
+title: "RawImage"
+description: "Schema for an uncompressed raw image for display in the Image panel."
+keywords: [raw image, uncompressed, camera, image panel, sensor, schema]
+---
+
 # RawImage
 
 A raw image.

@@ -1,3 +1,10 @@
+---
+sidebar_position: 38
+title: "SceneEntityDeletion"
+description: "Schema for removing one or all scene entities from the 3D panel at a given timestamp."
+keywords: [scene entity deletion, 3d panel, remove, delete, schema]
+---
+
 # SceneEntityDeletion
 
 An instruction to delete entities that were previously added to the scene.

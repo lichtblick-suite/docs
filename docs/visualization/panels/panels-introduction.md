@@ -1,5 +1,9 @@
 ---
 slug: /visualization/panels
+sidebar_position: 1
+title: "Panels"
+description: "Overview of Lichtblick's modular panels for visualizing and interacting with robotics data."
+keywords: [panels, visualization, layout, modular, robotics, overview]
 ---
 
 # Panels

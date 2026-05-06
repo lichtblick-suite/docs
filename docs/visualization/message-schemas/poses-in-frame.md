@@ -1,3 +1,10 @@
+---
+sidebar_position: 35
+title: "PosesInFrame"
+description: "Schema for a collection of poses in a single coordinate frame, rendered in the 3D panel."
+keywords: [poses in frame, trajectory, position, orientation, 3d panel, schema]
+---
+
 # PosesInFrame
 
 An array of timestamped poses for an object or reference frame in 3D space.

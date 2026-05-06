@@ -1,3 +1,10 @@
+---
+sidebar_position: 24
+title: "LinePrimitive"
+description: "Schema for a line or line list primitive rendered in the 3D panel."
+keywords: [line primitive, path, polyline, 3d, scene entity, schema]
+---
+
 # LinePrimitive
 
 A primitive representing a series of points connected by lines.

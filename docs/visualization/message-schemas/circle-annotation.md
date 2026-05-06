@@ -1,3 +1,10 @@
+---
+sidebar_position: 5
+title: "CircleAnnotation"
+description: "Schema for a circle annotation overlaid on image data."
+keywords: [circle annotation, image annotation, overlay, 2d, visualization, schema]
+---
+
 # CircleAnnotation
 
 A circle annotation on a 2D image.

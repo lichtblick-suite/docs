@@ -1,3 +1,10 @@
+---
+sidebar_position: 1
+title: "Experimental Features"
+description: "Early-stage features available for testing and feedback in Lichtblick."
+keywords: [experimental, beta, preview, features, testing, feedback]
+---
+
 # Experimental Features
 
 :::caution

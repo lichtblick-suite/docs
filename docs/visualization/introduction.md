@@ -1,3 +1,10 @@
+---
+sidebar_position: 1
+title: "Visualization"
+description: "Overview of Lichtblick's visualization tools for analyzing and interpreting robotics data."
+keywords: [visualization, panels, robotics, data analysis, ros, mcap, overview]
+---
+
 # Visualization
 
 Lichtblick offers a comprehensive suite of visualization tools to help you analyze and interpret your robotics data effectively.

@@ -1,3 +1,10 @@
+---
+sidebar_position: 44
+title: "TriangleListPrimitive"
+description: "Schema for a triangle mesh primitive rendered in the 3D panel."
+keywords: [triangle list, mesh, surface, 3d, scene entity, primitive, schema]
+---
+
 # TriangleListPrimitive
 
 A primitive that defines a collection of triangles or a surface constructed from a triangular mesh.

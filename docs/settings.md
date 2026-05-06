@@ -1,6 +1,8 @@
 ---
 sidebar_position: 4
 title: Settings
+description: "Configure language, appearance, and default behavior preferences in Lichtblick."
+keywords: [settings, preferences, configuration, language, appearance, theme]
 ---
 
 # Settings

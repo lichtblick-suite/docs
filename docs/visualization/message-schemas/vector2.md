@@ -1,3 +1,10 @@
+---
+sidebar_position: 45
+title: "Vector2"
+description: "Schema for a 2D vector with x and y components."
+keywords: [vector2, 2d vector, x, y, math, schema]
+---
+
 # Vector2
 
 A directional vector defined in two-dimensional space.

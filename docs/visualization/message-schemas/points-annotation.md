@@ -1,3 +1,10 @@
+---
+sidebar_position: 32
+title: "PointsAnnotation"
+description: "Schema for a points annotation overlaid on image data, supporting various rendering styles."
+keywords: [points annotation, image overlay, keypoints, markers, 2d, schema]
+---
+
 # PointsAnnotation
 
 An array of points on a 2D image.
