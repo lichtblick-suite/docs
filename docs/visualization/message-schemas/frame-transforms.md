@@ -2,6 +2,7 @@
 sidebar_position: 18
 title: "FrameTransforms"
 description: "Schema for a collection of coordinate frame transforms used in the 3D panel."
+keywords: [frame transforms, tf, coordinate frames, transforms, 3d, ros, schema]
 ---
 
 # FrameTransforms

@@ -2,6 +2,7 @@
 sidebar_position: 43
 title: "TextPrimitive"
 description: "Schema for a text label primitive rendered in the 3D panel."
+keywords: [text primitive, label, 3d, scene entity, schema]
 ---
 
 # TextPrimitive

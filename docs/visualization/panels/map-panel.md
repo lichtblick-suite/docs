@@ -3,6 +3,7 @@ id: map-panel
 sidebar_position: 6
 title: Map Panel
 description: Display GPS and GeoJSON data on a world map.
+keywords: [map, gps, geojson, location, navigation, world map, visualization]
 ---
 
 Display GPS and GeoJSON data on a world map.

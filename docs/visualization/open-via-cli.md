@@ -2,6 +2,7 @@
 sidebar_position: 9
 title: "Open via CLI"
 description: "Open local MCAP files directly from the command line using the Lichtblick desktop application."
+keywords: [cli, command line, mcap, desktop, open file, terminal]
 ---
 
 # Open via CLI

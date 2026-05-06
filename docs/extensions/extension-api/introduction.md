@@ -2,6 +2,7 @@
 sidebar_position: 0
 title: "Extension API"
 description: "API reference for the @lichtblick/suite package used to build Lichtblick extensions."
+keywords: [extension api, lichtblick/suite, typescript, api reference, sdk, developer]
 ---
 
 # Extension API

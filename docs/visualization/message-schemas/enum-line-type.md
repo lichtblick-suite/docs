@@ -2,6 +2,7 @@
 sidebar_position: 11
 title: "LineType"
 description: "Enum defining line rendering styles used in LinePrimitive messages."
+keywords: [line type, enum, line primitive, rendering, schema, 3d]
 ---
 
 # LineType

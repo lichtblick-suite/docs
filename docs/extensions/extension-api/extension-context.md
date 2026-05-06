@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: "ExtensionContext"
 description: "API reference for the ExtensionContext passed to your extension's activate() function."
+keywords: [extension context, activate, api, panels, converters, aliases, typescript]
 ---
 
 # ExtensionContext

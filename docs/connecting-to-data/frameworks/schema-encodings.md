@@ -2,6 +2,7 @@
 sidebar_position: 7
 title: "Schema Encodings"
 description: "Supported message and schema encodings for MCAP and WebSocket data sources in Lichtblick."
+keywords: [schema encodings, protobuf, flatbuffers, json, ros, mcap, websocket, message format]
 ---
 
 # Schema encodings

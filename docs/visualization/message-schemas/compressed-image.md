@@ -2,6 +2,7 @@
 sidebar_position: 7
 title: "CompressedImage"
 description: "Schema for a compressed image (JPEG, PNG, or WebP) for display in the Image panel."
+keywords: [compressed image, jpeg, png, webp, image panel, camera, schema]
 ---
 
 # CompressedImage

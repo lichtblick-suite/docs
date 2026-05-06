@@ -2,6 +2,7 @@
 sidebar_position: 3
 title: "Gauge Panel"
 description: "Display numeric topic values on a customizable dial gauge for at-a-glance scalar monitoring."
+keywords: [gauge, dial, numeric, scalar, monitoring, metrics, topics]
 ---
 
 # Gauge Panel

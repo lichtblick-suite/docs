@@ -2,6 +2,7 @@
 sidebar_position: 5
 title: "Create Custom Camera Model"
 description: "Build a custom camera model extension to handle specialized camera configurations in Lichtblick."
+keywords: [custom camera model, fisheye, distortion, extension, typescript, tutorial, guide]
 ---
 
 # Create Custom Camera Model

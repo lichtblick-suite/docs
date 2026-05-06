@@ -2,6 +2,7 @@
 sidebar_position: 9
 title: "Raw Messages Panel"
 description: "Inspect raw ROS or MCAP messages in a structured JSON view with diff and filtering support."
+keywords: [raw messages, json, inspection, debug, ros, mcap, topics, diff]
 ---
 
 # Raw Messages

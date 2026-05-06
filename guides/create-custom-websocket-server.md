@@ -2,6 +2,7 @@
 sidebar_position: 6
 title: "Create Custom WebSocket Server"
 description: "Build a WebSocket server using the Foxglove WebSocket Protocol to stream real-time data to Lichtblick."
+keywords: [websocket, custom server, foxglove protocol, live data, tutorial, guide, typescript]
 ---
 
 # Create Custom WebSocket Server

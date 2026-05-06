@@ -2,6 +2,7 @@
 sidebar_position: 0
 title: "Extensions"
 description: "Extend Lichtblick with custom panels, message converters, and topic aliases."
+keywords: [extensions, plugins, custom panels, message converters, topic aliases, typescript, developer]
 ---
 
 # Extensions

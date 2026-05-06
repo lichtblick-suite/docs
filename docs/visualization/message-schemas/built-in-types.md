@@ -2,6 +2,7 @@
 sidebar_position: 3
 title: "Built-in Types"
 description: "Primitive types that serve as the building blocks of Foxglove's supported message schemas."
+keywords: [built-in types, primitive types, bool, int, float, string, bytes, schema]
 ---
 
 # Built-in types

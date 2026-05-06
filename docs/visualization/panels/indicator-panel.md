@@ -2,6 +2,7 @@
 sidebar_position: 5
 title: "Indicator Panel"
 description: "Display a color-coded label to indicate threshold values and system state at a glance."
+keywords: [indicator, threshold, status, alert, color, state, monitoring]
 ---
 
 # Indicator Panel

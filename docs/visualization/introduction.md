@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: "Visualization"
 description: "Overview of Lichtblick's visualization tools for analyzing and interpreting robotics data."
+keywords: [visualization, panels, robotics, data analysis, ros, mcap, overview]
 ---
 
 # Visualization

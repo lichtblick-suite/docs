@@ -2,6 +2,7 @@
 sidebar_position: 10
 title: "Teleoperation Panel"
 description: "Remotely control your robot by publishing Twist messages via the teleoperation interface."
+keywords: [teleoperation, teleop, twist, robot control, ros, remote, geometry_msgs]
 ---
 
 # Teleoperation Panel

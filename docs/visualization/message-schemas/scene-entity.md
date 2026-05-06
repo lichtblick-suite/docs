@@ -2,6 +2,7 @@
 sidebar_position: 39
 title: "SceneEntity"
 description: "Schema for a collection of 3D primitives grouped as a named entity in the 3D panel."
+keywords: [scene entity, 3d, primitives, markers, visualization, schema]
 ---
 
 # SceneEntity

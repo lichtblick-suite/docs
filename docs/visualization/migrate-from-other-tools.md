@@ -2,6 +2,7 @@
 sidebar_position: 11
 title: "Migrate from Other Tools"
 description: "Map familiar ROS and ROS 2 developer tools to their equivalent Lichtblick panels."
+keywords: [migration, foxglove, rviz, rqt, ros, ros2, panels, tools]
 ---
 
 # Migrate from Other Tools

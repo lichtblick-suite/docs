@@ -2,6 +2,7 @@
 sidebar_position: 4
 title: "Settings Tree"
 description: "Render a settings UI for your panel or message converter using a declarative settings tree."
+keywords: [settings tree, settings ui, panel settings, declarative, api, typescript]
 ---
 
 # Settings Tree

@@ -2,6 +2,7 @@
 sidebar_position: 13
 title: "NumericType"
 description: "Enum defining numeric data types used in PackedElementField messages."
+keywords: [numeric type, enum, data type, int, float, packed element, schema]
 ---
 
 # NumericType

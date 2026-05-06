@@ -3,6 +3,7 @@ slug: /visualization/message-schemas
 sidebar_position: 1
 title: "Message Schemas"
 description: "Reference for Lichtblick's structured message schemas used to drive accurate data visualization."
+keywords: [message schemas, foxglove, ros, mcap, protobuf, flatbuffers, json, schema reference]
 ---
 
 # Message Schemas

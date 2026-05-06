@@ -2,6 +2,7 @@
 sidebar_position: 4
 title: "ROS 2"
 description: "Load ROS 2 MCAP files or connect to a live ROS 2 stack using Rosbridge or Foxglove Bridge."
+keywords: [ros2, ros 2, mcap, dds, rosbridge, foxglove bridge, live connection, topics]
 ---
 
 # ROS 2

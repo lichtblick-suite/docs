@@ -2,6 +2,7 @@
 sidebar_position: 7
 title: "Alerts"
 description: "Understand the alert system that surfaces errors, warnings, and info messages during data playback."
+keywords: [alerts, errors, warnings, diagnostics, playback, notifications, status]
 ---
 
 # Alerts

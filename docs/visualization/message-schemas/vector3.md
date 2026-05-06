@@ -2,6 +2,7 @@
 sidebar_position: 46
 title: "Vector3"
 description: "Schema for a 3D vector with x, y, and z components."
+keywords: [vector3, 3d vector, x, y, z, math, schema]
 ---
 
 # Vector3

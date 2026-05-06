@@ -2,6 +2,7 @@
 sidebar_position: 5
 title: "PX4 ULog"
 description: "Load PX4 ULog (.ulg) files for flight log visualization in Lichtblick."
+keywords: [px4, ulog, ulg, flight log, drone, uav, autopilot]
 ---
 
 # PX 4

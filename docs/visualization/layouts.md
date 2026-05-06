@@ -2,6 +2,7 @@
 sidebar_position: 3
 title: "Layouts"
 description: "Create, save, and share customized workspace layouts for recurring tasks and team collaboration."
+keywords: [layouts, workspace, panels, save, share, collaboration, template]
 ---
 
 # Layouts

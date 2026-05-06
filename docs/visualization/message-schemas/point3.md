@@ -2,6 +2,7 @@
 sidebar_position: 31
 title: "Point3"
 description: "Schema for a 3D point with x, y, and z coordinates."
+keywords: [point3, 3d point, coordinates, x, y, z, schema]
 ---
 
 # Point3

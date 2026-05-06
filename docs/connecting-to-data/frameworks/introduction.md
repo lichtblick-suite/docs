@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: "Frameworks"
 description: "Overview of data frameworks supported by Lichtblick, including ROS, MCAP, PX4, and Velodyne."
+keywords: [frameworks, ros, mcap, px4, velodyne, data formats, data sources]
 ---
 
 # Frameworks

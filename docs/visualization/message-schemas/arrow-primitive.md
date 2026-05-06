@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: "ArrowPrimitive"
 description: "Schema for a visual arrow primitive used to indicate direction or orientation in 3D space."
+keywords: [arrow, primitive, 3d, direction, orientation, scene entity, visualization]
 ---
 
 # ArrowPrimitive

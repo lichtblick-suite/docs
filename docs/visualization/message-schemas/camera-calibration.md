@@ -2,6 +2,7 @@
 sidebar_position: 4
 title: "CameraCalibration"
 description: "Schema for camera intrinsic and extrinsic calibration parameters."
+keywords: [camera calibration, intrinsics, extrinsics, distortion, camera info, ros, image]
 ---
 
 # CameraCalibration

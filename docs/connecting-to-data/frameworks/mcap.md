@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: "MCAP"
 description: "Load local and remote MCAP files or connect to MCAP-based live data sources in Lichtblick."
+keywords: [mcap, file format, recording, playback, ros2, local data, remote data]
 ---
 
 # MCAP

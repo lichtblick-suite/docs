@@ -2,6 +2,7 @@
 sidebar_position: 6
 title: "Keyboard Shortcuts"
 description: "Keyboard shortcuts for navigating and controlling playback in the Lichtblick interface."
+keywords: [keyboard shortcuts, hotkeys, navigation, playback, controls]
 ---
 
 # Shortcuts

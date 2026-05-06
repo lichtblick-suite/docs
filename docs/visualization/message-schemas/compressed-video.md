@@ -2,6 +2,7 @@
 sidebar_position: 8
 title: "CompressedVideo"
 description: "Schema for a compressed video frame for streaming display in the Image panel."
+keywords: [compressed video, h264, h265, video streaming, image panel, schema]
 ---
 
 # CompressedVideo

@@ -2,6 +2,7 @@
 sidebar_position: 6
 title: "Color"
 description: "Schema for an RGBA color value used across Lichtblick message schemas."
+keywords: [color, rgba, schema, visualization, primitive]
 ---
 
 # Color

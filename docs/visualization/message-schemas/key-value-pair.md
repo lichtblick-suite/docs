@@ -2,6 +2,7 @@
 sidebar_position: 22
 title: "KeyValuePair"
 description: "Schema for a generic key-value pair used in SceneEntity metadata."
+keywords: [key value pair, metadata, scene entity, schema]
 ---
 
 # KeyValuePair

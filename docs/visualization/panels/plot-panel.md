@@ -2,6 +2,7 @@
 sidebar_position: 8
 title: "Plot Panel"
 description: "Visualize and plot time-series data from message topics as interactive charts."
+keywords: [plot, chart, time-series, graph, data visualization, topics, metrics]
 ---
 
 # Plot

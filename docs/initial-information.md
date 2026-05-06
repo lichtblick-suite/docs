@@ -3,6 +3,7 @@ sidebar_position: 1
 title: Getting Started
 slug: /
 description: "An introduction to Lichtblick and how to get started with the platform."
+keywords: [getting started, introduction, lichtblick, robotics, visualization, overview]
 ---
 
 # Welcome to Lichtblick

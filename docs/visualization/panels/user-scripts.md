@@ -2,6 +2,7 @@
 sidebar_position: 11
 title: "User Scripts Panel"
 description: "Create synthetic topics in Lichtblick by processing and reshaping messages with TypeScript scripts."
+keywords: [user scripts, typescript, synthetic topics, scripting, data processing, custom]
 ---
 
 # User Scripts Panel

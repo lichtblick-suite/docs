@@ -2,6 +2,7 @@
 sidebar_position: 4
 title: "Variables"
 description: "Define global variables to reuse values consistently across multiple panels in a layout."
+keywords: [variables, global state, layout, panels, parameters, reuse]
 ---
 
 # Variables

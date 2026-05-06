@@ -2,6 +2,7 @@
 sidebar_position: 9
 title: "CubePrimitive"
 description: "Schema for a cube or rectangular box primitive rendered in the 3D panel."
+keywords: [cube, box, primitive, 3d, scene entity, visualization, schema]
 ---
 
 # CubePrimitive

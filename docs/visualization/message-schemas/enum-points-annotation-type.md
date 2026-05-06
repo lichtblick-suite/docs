@@ -2,6 +2,7 @@
 sidebar_position: 14
 title: "PointsAnnotationType"
 description: "Enum defining rendering styles for point annotations overlaid on image data."
+keywords: [points annotation type, enum, rendering, image annotation, schema]
 ---
 
 # PointsAnnotationType

@@ -2,6 +2,7 @@
 sidebar_position: 30
 title: "Point2"
 description: "Schema for a 2D point with x and y coordinates."
+keywords: [point2, 2d point, coordinates, x, y, schema]
 ---
 
 # Point2
