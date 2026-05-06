@@ -25,13 +25,22 @@ Before writing any documentation, read the skill file to understand conventions:
 .github/skills/docs-technical-writing/SKILL.md
 ```
 
-### 2. Understand the Target
+### 2. Verify Prerequisites
+
+Before starting any work that involves screenshots, confirm the Lichtblick app is running:
+
+1. Try navigating to `http://localhost:8080` using Playwright MCP
+2. If the page fails to load, use the `vscode_askQuestions` tool to ask the user to start the app:
+   - Question: "The Lichtblick web app must be running for screenshots. Please run `yarn web:serve` in the lichtblick repo and confirm when ready."
+3. Do NOT proceed with screenshot capture until the app is confirmed running
+
+### 3. Understand the Target
 
 - Identify what needs to be documented (panel, feature, workflow, guide)
 - Search the existing docs to understand current coverage and avoid duplication
 - Review the source code in the `lichtblick` repo if needed to understand behavior
 
-### 3. Capture Screenshots
+### 4. Capture Screenshots
 
 Use the Playwright MCP server to take screenshots of the Lichtblick web app:
 
@@ -42,7 +51,7 @@ Use the Playwright MCP server to take screenshots of the Lichtblick web app:
 5. Use a clean layout with only the panel being documented
 6. Take a screenshot and save it to the appropriate `images/` folder in the docs
 
-### 4. Write Documentation
+### 5. Write Documentation
 
 Follow the Docusaurus conventions:
 - Use proper frontmatter (`title`, `description`, `sidebar_position`)
@@ -51,7 +60,7 @@ Follow the Docusaurus conventions:
 - Use tables for settings/options documentation
 - Follow the existing docs tone: professional, direct, developer-facing
 
-### 5. Validate
+### 6. Validate
 
 - Ensure all image paths are correct and relative
 - Verify markdown links are valid
