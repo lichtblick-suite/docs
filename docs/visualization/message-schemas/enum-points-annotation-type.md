@@ -1,3 +1,9 @@
+---
+sidebar_position: 14
+title: "PointsAnnotationType"
+description: "Enum defining rendering styles for point annotations overlaid on image data."
+---
+
 # PointsAnnotationType
 
 Defines how a set of points should be rendered as an annotation.

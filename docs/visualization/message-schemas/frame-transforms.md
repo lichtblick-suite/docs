@@ -1,3 +1,9 @@
+---
+sidebar_position: 18
+title: "FrameTransforms"
+description: "Schema for a collection of coordinate frame transforms used in the 3D panel."
+---
+
 # FrameTransforms
 
 An array of [`FrameTransform`](./frame-transform.md) messages.

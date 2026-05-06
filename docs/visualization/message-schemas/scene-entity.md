@@ -1,3 +1,9 @@
+---
+sidebar_position: 39
+title: "SceneEntity"
+description: "Schema for a collection of 3D primitives grouped as a named entity in the 3D panel."
+---
+
 # SceneEntity
 
 A graphical object within a 3D scene. An entity can consist of several primitives that all operate within the same coordinate frame.

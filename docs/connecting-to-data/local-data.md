@@ -1,5 +1,7 @@
 ---
-position: 1
+sidebar_position: 2
+title: "Local Data"
+description: "Load local ROS 1 bag, ROS 2 MCAP, and PX4 ULog files for visualization in Lichtblick."
 ---
 
 # Local Data

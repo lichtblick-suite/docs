@@ -1,3 +1,9 @@
+---
+sidebar_position: 9
+title: "Raw Messages Panel"
+description: "Inspect raw ROS or MCAP messages in a structured JSON view with diff and filtering support."
+---
+
 # Raw Messages
 
 The **Raw Messages** panel in Lichtblick is a powerful debugging and inspection tool that enables users to visualize raw [ROS](/connecting-to-data/frameworks/ros1.md) or [MCAP](/connecting-to-data/frameworks/mcap.md) messages in a structured and interactive JSON format. It is particularly useful for understanding message structures, tracking state changes over time, and drilling into specific message fields for advanced diagnostics or visualizations.

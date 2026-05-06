@@ -1,3 +1,9 @@
+---
+sidebar_position: 43
+title: "TextPrimitive"
+description: "Schema for a text label primitive rendered in the 3D panel."
+---
+
 # TextPrimitive
 
 A primitive used to display a text label in a 3D scene.

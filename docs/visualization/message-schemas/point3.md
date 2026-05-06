@@ -1,3 +1,9 @@
+---
+sidebar_position: 31
+title: "Point3"
+description: "Schema for a 3D point with x, y, and z coordinates."
+---
+
 # Point3
 
 A point representing a position in 3D space.

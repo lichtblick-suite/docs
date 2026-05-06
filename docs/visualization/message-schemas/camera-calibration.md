@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+title: "CameraCalibration"
+description: "Schema for camera intrinsic and extrinsic calibration parameters."
+---
+
 # CameraCalibration
 
 Contains intrinsic and extrinsic calibration parameters for a camera.

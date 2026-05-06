@@ -1,3 +1,9 @@
+---
+sidebar_position: 7
+title: "Playback Performance Panel"
+description: "Monitor real-time playback performance metrics including speed, frame rate, and bandwidth."
+---
+
 # Playback Performance Panel
 
 ## Overview

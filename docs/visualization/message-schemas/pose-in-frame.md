@@ -1,3 +1,9 @@
+---
+sidebar_position: 33
+title: "PoseInFrame"
+description: "Schema for a pose (position and orientation) associated with a specific coordinate frame."
+---
+
 # PoseInFrame
 
 A position and orientation for an object or reference frame in 3D space.

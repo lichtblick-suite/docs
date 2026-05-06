@@ -1,3 +1,9 @@
+---
+sidebar_position: 41
+title: "SpherePrimitive"
+description: "Schema for a sphere or ellipsoid primitive rendered in the 3D panel."
+---
+
 # SpherePrimitive
 
 A primitive that describes a spherical or ellipsoidal shape.

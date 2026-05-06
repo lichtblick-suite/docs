@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+title: "Gauge Panel"
+description: "Display numeric topic values on a customizable dial gauge for at-a-glance scalar monitoring."
+---
+
 # Gauge Panel
 
 The Gauge Panel in Lichtblick allows you to visualize numeric values from incoming topic [message paths](/visualization/message-path-syntax.md) on a customizable dial gauge display. It is useful for monitoring single numeric readings such as speed, temperature, battery level, or any other scalar measurement.

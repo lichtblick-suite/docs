@@ -1,5 +1,7 @@
 ---
 sidebar_position: 8
+title: "Topic Aliases"
+description: "Expose friendly or standardized topic names without modifying the underlying data source."
 ---
 
 # Topic Aliases

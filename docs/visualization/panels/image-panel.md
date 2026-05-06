@@ -1,5 +1,6 @@
 ---
 id: image-panel
+sidebar_position: 4
 title: Image Panel
 description: Display raw and compressed images, as well as compressed videos.
 ---

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: "Create Custom Camera Model"
+description: "Build a custom camera model extension to handle specialized camera configurations in Lichtblick."
 ---
 
 # Create Custom Camera Model

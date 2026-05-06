@@ -1,7 +1,8 @@
 ---
 id: map-panel
+sidebar_position: 6
 title: Map Panel
-description: Display GPS and GeoJSON data on a world map. 
+description: Display GPS and GeoJSON data on a world map.
 ---
 
 Display GPS and GeoJSON data on a world map.

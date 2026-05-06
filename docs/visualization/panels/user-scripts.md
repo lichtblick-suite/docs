@@ -1,3 +1,9 @@
+---
+sidebar_position: 11
+title: "User Scripts Panel"
+description: "Create synthetic topics in Lichtblick by processing and reshaping messages with TypeScript scripts."
+---
+
 # User Scripts Panel
 
 User Scripts enable you to create synthetic topics in Lichtblick by processing and reshaping existing messages. These scripts are especially useful for extracting insights, generating visualization-friendly data, or filtering out irrelevant noise from playback or full-range messages.

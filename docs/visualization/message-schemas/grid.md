@@ -1,3 +1,9 @@
+---
+sidebar_position: 20
+title: "Grid"
+description: "Schema for a 2D grid of data cells displayed as a surface or heatmap in the 3D panel."
+---
+
 # Grid
 
 A 2D grid of data.

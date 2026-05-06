@@ -1,3 +1,9 @@
+---
+sidebar_position: 46
+title: "Vector3"
+description: "Schema for a 3D vector with x, y, and z components."
+---
+
 # Vector3
 
 A directional vector defined in three-dimensional space.

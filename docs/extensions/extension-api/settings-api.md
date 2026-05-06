@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: "Settings API"
+description: "Attach per-topic settings UI to message converters using the Lichtblick Settings API."
 ---
 
 # Settings API

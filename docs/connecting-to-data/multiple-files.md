@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+title: "Multiple Files"
+description: "Open and visualize multiple MCAP files simultaneously in a single Lichtblick session."
+---
+
 # Multiple files
 
 <div class="warning">

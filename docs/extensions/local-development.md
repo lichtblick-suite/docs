@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "Local Development"
+description: "Set up a local Lichtblick extension project for development and testing."
 ---
 
 # Local Development

@@ -1,3 +1,9 @@
+---
+sidebar_position: 7
+title: "Alerts"
+description: "Understand the alert system that surfaces errors, warnings, and info messages during data playback."
+---
+
 # Alerts
 
 Lichtblick's alert system surfaces issues that occur during data playback, live connections, and panel processing so the user always knows when something needs attention.

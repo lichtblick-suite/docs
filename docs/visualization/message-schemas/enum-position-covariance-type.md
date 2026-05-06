@@ -1,3 +1,9 @@
+---
+sidebar_position: 15
+title: "PositionCovarianceType"
+description: "Enum defining how position covariance data is represented in LocationFix messages."
+---
+
 # PositionCovarianceType
 
 Describes how the position covariance data was obtained or estimated.

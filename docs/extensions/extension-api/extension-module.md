@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: "ExtensionModule"
+description: "Entry point for a Lichtblick extension, defining the activate() function called on load."
 ---
 
 # ExtensionModule

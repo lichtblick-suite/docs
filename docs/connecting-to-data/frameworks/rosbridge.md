@@ -1,3 +1,9 @@
+---
+sidebar_position: 6
+title: "Rosbridge"
+description: "Connect Lichtblick to ROS 1 or ROS 2 via a Rosbridge WebSocket connection."
+---
+
 # Rosbridge
 
 <div class="warning">

@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+title: "Built-in Types"
+description: "Primitive types that serve as the building blocks of Foxglove's supported message schemas."
+---
+
 # Built-in types
 
 Primitive types are the building blocks of Foxglove's supported message schemas.

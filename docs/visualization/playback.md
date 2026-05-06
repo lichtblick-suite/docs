@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+title: "Playback"
+description: "Navigate and control playback of local and remote datasets using Lichtblick's playback controls."
+---
+
 # Playback
 
 Lichtblick enables seamless navigation through both local and remote datasets using its playback controls.

@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+title: "Message Path Syntax"
+description: "Syntax reference for accessing specific fields within messages using Lichtblick's path notation."
+---
+
 # Message Path Syntax
 
 In Lichtblick, message path syntax is utilized to precisely access specific data within your messages.

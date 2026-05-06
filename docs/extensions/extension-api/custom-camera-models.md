@@ -1,5 +1,7 @@
 ---
 sidebar_position: 7
+title: "Custom Camera Models"
+description: "Add support for custom camera projection models such as fisheye lenses in the Image panel."
 ---
 
 # Custom Camera Models

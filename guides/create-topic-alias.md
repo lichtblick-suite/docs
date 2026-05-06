@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Create Topic Alias"
+description: "Build a topic alias extension to create alternative names for topics in Lichtblick."
 ---
 
 # Create Topic Alias

@@ -1,3 +1,9 @@
+---
+sidebar_position: 16
+title: "SceneEntityDeletionType"
+description: "Enum defining deletion scope for SceneEntityDeletion messages in the 3D panel."
+---
+
 # SceneEntityDeletionType
 
 An enumeration that specifies the scope of entities targeted by a `SceneEntityDeletion` command.

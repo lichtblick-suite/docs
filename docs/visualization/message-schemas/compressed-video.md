@@ -1,3 +1,9 @@
+---
+sidebar_position: 8
+title: "CompressedVideo"
+description: "Schema for a compressed video frame for streaming display in the Image panel."
+---
+
 # CompressedVideo
 
 A single frame of a compressed video bitstream.

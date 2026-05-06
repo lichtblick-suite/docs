@@ -1,3 +1,9 @@
+---
+sidebar_position: 19
+title: "GeoJSON"
+description: "Schema for GeoJSON data displayed as geographic overlays in the Map panel."
+---
+
 # GeoJSON
 
 GeoJSON data for annotating maps.

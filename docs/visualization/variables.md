@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+title: "Variables"
+description: "Define global variables to reuse values consistently across multiple panels in a layout."
+---
+
 # Variables
 
 Variables in Lichtblick allow users to define global values that can be reused across multiple panels within a layout. This feature simplifies updates and ensures consistency throughout your workspace. Variables can store primitive data types such as strings, numbers, or booleans. They can also be structured as arrays (e.g., `["x", 2, false]`) or maps (e.g., `{ "x": 2, "y": false }`).

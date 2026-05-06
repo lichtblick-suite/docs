@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: Browser Support
+description: "Supported browsers and minimum versions for running Lichtblick."
 ---
 
 # Browser Support

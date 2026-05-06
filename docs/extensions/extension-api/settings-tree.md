@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: "Settings Tree"
+description: "Render a settings UI for your panel or message converter using a declarative settings tree."
 ---
 
 # Settings Tree

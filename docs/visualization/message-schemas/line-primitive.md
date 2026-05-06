@@ -1,3 +1,9 @@
+---
+sidebar_position: 24
+title: "LinePrimitive"
+description: "Schema for a line or line list primitive rendered in the 3D panel."
+---
+
 # LinePrimitive
 
 A primitive representing a series of points connected by lines.

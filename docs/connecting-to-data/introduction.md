@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+title: "Connecting to Data"
+description: "Overview of data source options in Lichtblick, including local files and live connections."
+---
+
 # Connecting to Data
 
 To begin visualizing data, navigate to the Lichtblick dashboard and select a data source option.

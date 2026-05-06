@@ -1,3 +1,9 @@
+---
+sidebar_position: 8
+title: "Velodyne Lidar"
+description: "Connect to a Velodyne Lidar sensor over UDP to stream live point cloud data into Lichtblick."
+---
+
 # Velodyne
 
 <div class="warning">

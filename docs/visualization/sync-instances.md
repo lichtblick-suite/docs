@@ -1,3 +1,9 @@
+---
+sidebar_position: 8
+title: "Synchronizing Instances"
+description: "Synchronize playback across multiple Lichtblick instances on the same platform."
+---
+
 # Synchronizing Instances
 
 ## Overview

@@ -1,3 +1,9 @@
+---
+sidebar_position: 11
+title: "Migrate from Other Tools"
+description: "Map familiar ROS and ROS 2 developer tools to their equivalent Lichtblick panels."
+---
+
 # Migrate from Other Tools
 
 Lichtblick streamlines robotics development by integrating commonly used developer tools into modular panels—providing a unified development environment.

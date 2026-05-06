@@ -1,3 +1,9 @@
+---
+sidebar_position: 6
+title: "Color"
+description: "Schema for an RGBA color value used across Lichtblick message schemas."
+---
+
 # Color
 
 A color represented in RGBA format.

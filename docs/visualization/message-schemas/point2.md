@@ -1,3 +1,9 @@
+---
+sidebar_position: 30
+title: "Point2"
+description: "Schema for a 2D point with x and y coordinates."
+---
+
 # Point2
 
 A point representing a position in 2D space.

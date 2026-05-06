@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: "ExtensionContext"
+description: "API reference for the ExtensionContext passed to your extension's activate() function."
 ---
 
 # ExtensionContext

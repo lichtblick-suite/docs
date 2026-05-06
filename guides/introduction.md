@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Introduction
 slug: /
+description: "Step-by-step tutorials for extending Lichtblick and integrating it with your robotics workflows."
 ---
 
 # Introduction

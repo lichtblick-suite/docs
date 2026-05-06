@@ -1,3 +1,9 @@
+---
+sidebar_position: 12
+title: "LogLevel"
+description: "Enum defining log severity levels used in Log messages."
+---
+
 # LogLevel
 
 The severity level assigned to a log entry.

@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+title: "ROS 1"
+description: "Load ROS 1 bag files or connect to a live ROS 1 stack using Rosbridge or Foxglove Bridge."
+---
+
 # ROS 1
 
 Load local and remote ROS 1 (`.bag`) files, or connect directly to a live ROS 1 stack.

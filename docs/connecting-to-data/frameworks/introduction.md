@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+title: "Frameworks"
+description: "Overview of data frameworks supported by Lichtblick, including ROS, MCAP, PX4, and Velodyne."
+---
+
 # Frameworks
 
 This section of the documentation provides a guide on how to connect Lichtblick to various data sources and understand the supported data formats and schema encodings. Whether you are working with live sensor data or recorded files, Lichtblick offers flexible options to integrate and visualize your information.

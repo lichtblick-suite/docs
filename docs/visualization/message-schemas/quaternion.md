@@ -1,3 +1,9 @@
+---
+sidebar_position: 36
+title: "Quaternion"
+description: "Schema for a unit quaternion representing a 3D rotation."
+---
+
 # Quaternion
 
 A [quaternion](https://eater.net/quaternions) representing a rotation in 3D.

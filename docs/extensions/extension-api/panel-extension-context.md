@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: "PanelExtensionContext"
+description: "API reference for PanelExtensionContext, used to interact with Lichtblick from a custom panel."
 ---
 
 # PanelExtensionContext

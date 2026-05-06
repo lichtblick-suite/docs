@@ -1,5 +1,8 @@
 ---
 slug: /visualization/message-schemas
+sidebar_position: 1
+title: "Message Schemas"
+description: "Reference for Lichtblick's structured message schemas used to drive accurate data visualization."
 ---
 
 # Message Schemas

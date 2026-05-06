@@ -1,3 +1,9 @@
+---
+sidebar_position: 34
+title: "Pose"
+description: "Schema for a position and quaternion orientation in 3D space."
+---
+
 # Pose
 
 A position and orientation for an object or reference frame in 3D space.

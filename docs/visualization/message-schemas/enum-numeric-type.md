@@ -1,3 +1,9 @@
+---
+sidebar_position: 13
+title: "NumericType"
+description: "Enum defining numeric data types used in PackedElementField messages."
+---
+
 # NumericType
 
 The data type used to represent a numeric value.

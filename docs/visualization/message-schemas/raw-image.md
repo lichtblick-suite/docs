@@ -1,3 +1,9 @@
+---
+sidebar_position: 37
+title: "RawImage"
+description: "Schema for an uncompressed raw image for display in the Image panel."
+---
+
 # RawImage
 
 A raw image.

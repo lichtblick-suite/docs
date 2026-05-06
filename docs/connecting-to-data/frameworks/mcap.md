@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+title: "MCAP"
+description: "Load local and remote MCAP files or connect to MCAP-based live data sources in Lichtblick."
+---
+
 # MCAP
 
 Load local and remote [MCAP files](https://mcap.dev).

@@ -1,3 +1,9 @@
+---
+sidebar_position: 28
+title: "PackedElementField"
+description: "Schema for a field descriptor used in packed point cloud data structures."
+---
+
 # PackedElementField
 
 A field present within each element in a byte array of packed elements.

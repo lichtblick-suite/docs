@@ -1,3 +1,9 @@
+---
+sidebar_position: 29
+title: "PointCloud"
+description: "Schema for a point cloud rendered as a 3D scatter plot in the 3D panel."
+---
+
 # PointCloud
 
 A collection of N-dimensional points, which may contain additional fields with information like normals, intensity, etc.
