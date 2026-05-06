@@ -1,7 +1,8 @@
 ---
 title: State Transitions
-sidebar_position: 11
+sidebar_position: 10
 description: Visualize discrete value changes over time using the State Transitions panel.
+keywords: [state transitions, discrete values, timeline, bool, string, integer, enum, ros, message path, plot, series]
 ---
 
 # State Transitions
