@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "rm -rf .playwright-mcp",
+        "timeout": 10
+      }
+    ]
+  }
+}
