@@ -7867,6 +7867,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:^9.1.7":
+  version: 9.1.7
+  resolution: "husky@npm:9.1.7"
+  bin:
+    husky: bin.js
+  checksum: c2412753f15695db369634ba70f50f5c0b7e5cb13b673d0826c411ec1bd9ddef08c1dad89ea154f57da2521d2605bd64308af748749b27d08c5f563bcd89975f
+  languageName: node
+  linkType: hard
+
 "hyperdyperid@npm:^1.2.0":
   version: 1.2.0
   resolution: "hyperdyperid@npm:1.2.0"
@@ -8543,6 +8552,7 @@ __metadata:
     "@docusaurus/types": 3.10.1
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
+    husky: ^9.1.7
     markdownlint-cli2: ^0.22.1
     prism-react-renderer: ^2.3.0
     react: ^19.2.6
