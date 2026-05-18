@@ -17,6 +17,20 @@ Never use placeholder images.
   (started with `yarn web:serve` from the lichtblick directory)
 - Playwright MCP configured in `.vscode/mcp.json`
 
+## Browser Mode
+
+Playwright MCP runs in **headed mode** (visible browser window). Headless mode
+is not used — the MCP server launches a real browser so the agent can interact
+with the live UI via `browser_snapshot`, `browser_click`, and related tools.
+
+The default viewport is **1280×800**, set via `--viewport-size=1280,800` in
+`.vscode/mcp.json`. Do not change this — all documentation screenshots must use
+this viewport for visual consistency.
+
+Element selectors are obtained at runtime from `browser_snapshot`, which returns
+an accessibility tree with exact element references. Never hard-code CSS selectors
+or XPath — always derive them from the current snapshot.
+
 ---
 
 ## Step-by-Step Process
