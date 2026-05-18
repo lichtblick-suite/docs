@@ -14,6 +14,35 @@ same section to match the local style exactly.
 Follow the project's contribution standards defined in [`README.md`](../../README.md).
 Follow the **docusaurus-conventions** skill for page structure, frontmatter, tables, and formatting.
 Follow the **screenshot-workflow** skill for capturing live screenshots via Playwright MCP.
+Follow the **app-setup** skill for loading layouts and installing extensions before screenshots.
+
+---
+
+## I/O Contract
+
+**Input:** The name of a panel, feature, or topic to document (the agent argument).
+
+**Output:**
+- One `.md` documentation page written to the correct directory
+- One or more `.png` screenshots saved to the nearest `images/` subdirectory
+- Both `yarn lint:md` and `yarn build` passing with no errors
+
+**This agent does not open PRs or commit changes.** Hand off to the user after
+the Quality Checklist passes.
+
+---
+
+## Human-in-the-Loop Checkpoints
+
+This agent pauses and waits for explicit human confirmation at three points:
+
+| # | When | What the agent presents | Required response |
+|---|------|------------------------|-------------------|
+| HITL-1 | Before starting | Pre-flight questions (source file, layout, extension) | User answers all three |
+| HITL-2 | After step 4 (plan) | Page outline with proposed headings and sections | User approves or requests changes |
+| HITL-3 | After step 6 (write) | Completed page for human review | User approves before validation runs |
+
+Do not proceed past a checkpoint until the user explicitly confirms.
 
 ---
 
@@ -65,11 +94,17 @@ Follow the **screenshot-workflow** skill for capturing live screenshots via Play
    - User interactions / controls
    - Troubleshooting (if applicable)
 
+   > **HITL-2** — Present the outline to the user and wait for approval
+   > before proceeding to screenshots or writing.
+
 5. **Capture screenshots** — Follow the **screenshot-workflow** skill to capture
    live screenshots from the running Lichtblick app.
 
 6. **Write the page** — Create the markdown file following all conventions from
    the **docusaurus-conventions** skill.
+
+   > **HITL-3** — Present the completed page to the user for review and wait
+   > for explicit approval before running validation.
 
 7. **Validate** — Run both checks:
    - `yarn lint:md` to verify markdown formatting

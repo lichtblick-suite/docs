@@ -19,6 +19,35 @@ Before reviewing, read:
 
 ---
 
+## I/O Contract
+
+**Input:** One of:
+- A relative file path (e.g. `docs/visualization/panels/gauge-panel.md`)
+- A directory path (e.g. `docs/visualization/panels/`)
+- The literal string `"changed"` — reviews all `.md`/`.mdx` files changed since the last commit
+
+**Output:** A single structured review report containing:
+- A one-sentence summary
+- A findings table (file, line, severity, category, issue)
+- Raw `yarn lint:md` output
+- A binary verdict: **Ready to merge** or **Needs changes**
+
+**This agent does not edit files.** If the user asks to fix the findings,
+hand off to the docs-writer agent or fix manually.
+
+---
+
+## Human-in-the-Loop Checkpoints
+
+| # | When | What the agent presents | Required response |
+|---|------|------------------------|-------------------|
+| HITL-1 | After producing the report | Full findings table and verdict | User decides: fix issues, override findings, or approve |
+
+The agent stops after delivering the report and waits. It does not auto-fix,
+auto-commit, or open a PR.
+
+---
+
 ## Workflow
 
 1. **Determine scope** — Resolve the input argument to a list of `.md` / `.mdx`
