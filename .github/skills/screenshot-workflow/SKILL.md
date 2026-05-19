@@ -19,9 +19,23 @@ Never use placeholder images.
 
 ## Browser Mode
 
-Playwright MCP runs in **headed mode** (visible browser window). Headless mode
-is not used — the MCP server launches a real browser so the agent can interact
-with the live UI via `browser_snapshot`, `browser_click`, and related tools.
+Playwright MCP defaults to **headed mode** (visible browser window) as configured
+in `.vscode/mcp.json`. This is the right default for interactive agents where the
+user is present at HITL checkpoints and needs to observe or debug the capture.
+
+Headless mode is also supported and produces equivalent screenshots — use it when:
+- Running the visual regression agent unattended over many screenshots
+- Working on a remote machine or CI runner with no display
+- The agent being used has no browser-interaction HITL checkpoints
+
+To switch to headless, add `--headless` to the args in `.vscode/mcp.json`:
+```json
+"args": ["@playwright/mcp@latest", "--headless", "--viewport-size=1280,800"]
+```
+
+> **Important for visual regression:** baseline screenshots and re-captures must
+> use the same mode. Mixing headed and headless renders can produce cosmetic
+> differences (GPU vs software anti-aliasing) that trigger false positives.
 
 The default viewport is **1280×800**, set via `--viewport-size=1280,800` in
 `.vscode/mcp.json`. Do not change this — all documentation screenshots must use
