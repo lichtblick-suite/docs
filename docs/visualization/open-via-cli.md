@@ -131,9 +131,10 @@ open "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
   <TabItem value="windows" label="Windows">
 
 ```sh
-start "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
+start "" /D "C:\Users\<user>\AppData\Local\Programs\lichtblick" "lichtblick.exe" "lichtblick://open?ds=foxglove-websocket&ds.url=ws://localhost:8765/"
 ```
-
+  Note: The path "C:\Users\<user>\AppData\Local\Programs\lichtblick" assumes a default installation. Adjust it if you installed Lichtblick in a different directory.
+  
   </TabItem>
 </Tabs>
 
