@@ -13,7 +13,7 @@ page yourself unless the user asks you to.
 
 Before reviewing, read:
 
-- [`AGENTS.md`](../../AGENTS.md) — project-wide conventions and standards
+- [`copilot-instructions.md`](../copilot-instructions.md) — project-wide conventions and standards
 - [`README.md`](../../README.md) — contribution guidelines (branch, filenames, PR flow)
 - The **docusaurus-conventions** skill — page structure, frontmatter, and formatting rules
 

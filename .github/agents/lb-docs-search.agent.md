@@ -14,7 +14,7 @@ user queries have a matching page that answers them.
 
 Before auditing, read:
 
-- [`AGENTS.md`](../../AGENTS.md) — conventions, including frontmatter requirements
+- [`copilot-instructions.md`](../copilot-instructions.md) — conventions, including frontmatter requirements
 - The **docusaurus-conventions** skill — `keywords`, `description`, and `title` rules
 
 ---

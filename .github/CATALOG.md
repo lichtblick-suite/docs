@@ -3,7 +3,7 @@
 Reference document for the team. Lists all agents, skills, and automation in this
 repository, when to use each, and how they relate to each other.
 
-> For project-wide conventions, see [`AGENTS.md`](../AGENTS.md).
+> For project-wide conventions, see [`copilot-instructions.md`](./copilot-instructions.md).
 > For contribution guidelines, see [`README.md`](../README.md).
 
 ---

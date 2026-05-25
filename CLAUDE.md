@@ -1,6 +1,9 @@
 # Claude Code — Lichtblick Documentation
 
-See [AGENTS.md](./AGENTS.md) for full project context, conventions, and commands.
+See [copilot-instructions.md](.github/copilot-instructions.md) for project-wide
+conventions, coding standards, and formatting rules.
+
+See [AGENTS.md](./AGENTS.md) for agent architecture, skills, and workflows.
 
 ## Claude Code-specific
 
