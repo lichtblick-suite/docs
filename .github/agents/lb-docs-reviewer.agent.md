@@ -17,6 +17,11 @@ Before reviewing, read:
 - [`README.md`](../../README.md) — contribution guidelines (branch, filenames, PR flow)
 - The **docusaurus-conventions** skill — page structure, frontmatter, and formatting rules
 
+This agent requires **read access to the Lichtblick application source code**
+([lichtblick-suite/lichtblick](https://github.com/lichtblick-suite/lichtblick))
+to verify that documented settings, message types, and behaviors match the
+actual implementation. The source repo path is collected before starting.
+
 ---
 
 ## I/O Contract
@@ -50,20 +55,36 @@ auto-commit, or open a PR.
 
 ## Workflow
 
-1. **Determine scope** — Resolve the input argument to a list of `.md` / `.mdx`
+1. **Pre-flight** — Ask the user for the local path to the
+   [lichtblick-suite/lichtblick](https://github.com/lichtblick-suite/lichtblick)
+   source checkout (e.g., `../lichtblick` or an absolute path). This is needed
+   to verify documented behavior against the implementation.
+
+2. **Determine scope** — Resolve the input argument to a list of `.md` / `.mdx`
    files to review:
    - **Single file**: review that file only
    - **Directory**: review all `.md` / `.mdx` files in that directory (non-recursive
      unless the user specifies)
    - **`changed`**: run `git diff --name-only HEAD` and filter for `.md` / `.mdx` files
 
-2. **Read each file** — Read the full content of every file in scope.
+3. **Read each file** — Read the full content of every file in scope.
 
-3. **Check each file** against the criteria below and collect findings.
+4. **Check each file** against the criteria below and collect findings.
 
-4. **Run linting** — Run `yarn lint:md` and include any output in the report.
+5. **Verify against source code** — For each panel or feature page, locate the
+   corresponding source in the Lichtblick repo and cross-reference:
+   - **Settings** — Do all documented settings exist in the component's
+     `settingsEditor` / `buildSettingsTree`? Are any settings missing from the docs?
+   - **Message types** — Do the documented message schemas match the component's
+     `subscribe` calls and `MessageEvent` types?
+   - **Default values** — Do documented defaults match the source?
+   - **Feature names and UI labels** — Do they match the strings in the source code?
 
-5. **Produce the review report** — See the Report Format section below.
+   Flag any mismatches as **Error**-severity findings in the report.
+
+6. **Run linting** — Run `yarn lint:md` and include any output in the report.
+
+7. **Produce the review report** — See the Report Format section below.
 
 ---
 
@@ -77,10 +98,10 @@ auto-commit, or open a PR.
 - [ ] `keywords` is present (non-empty list of search terms)
 - [ ] No unknown or misspelled frontmatter keys
 
-### Content & Accuracy
+### Content & Accuracy (verified against source code in step 4)
 
-- [ ] Content describes actual app behavior — no speculative or placeholder text
-- [ ] Feature names and UI labels match exactly what appears in the app
+- [ ] Content describes actual app behavior — verified against the source implementation
+- [ ] Feature names and UI labels match the strings in the source code
 - [ ] No outdated references to removed or renamed features
 - [ ] Panels have all four standard sections: Overview, Settings, Supported Messages,
   User Interactions (Troubleshooting if applicable)

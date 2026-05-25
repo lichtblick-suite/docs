@@ -63,7 +63,7 @@ sample-data/    → Sample files for reproducible screenshots
 - Format: PNG only
 - Naming: lowercase, hyphenated (e.g., `state-transitions-settings.png`)
 - Alt text: Required, must describe the image content
-- Viewport: 1280x800 for full-page, 900x600 for panel-focused shots
+- Viewport: 1280x800 for all captures, cropped to the target element via Playwright
 - No personal data or sensitive information in screenshots
 - All screenshots must come from the live app via Playwright MCP — no placeholders
 - The app runs at `http://localhost:8080` (start with `yarn web:serve` in the lichtblick directory)
