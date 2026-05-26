@@ -15,6 +15,7 @@ Note: This project uses Yarn 3 with the packageManager field configured.
 
 ```bash
 yarn install
+yarn prepare
 ```
 
 ## Running a Local Preview
