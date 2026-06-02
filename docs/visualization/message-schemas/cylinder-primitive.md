@@ -1,3 +1,10 @@
+---
+sidebar_position: 10
+title: "CylinderPrimitive"
+description: "Schema for a cylinder or cone primitive rendered in the 3D panel."
+keywords: [cylinder, cone, primitive, 3d, scene entity, visualization, schema]
+---
+
 # CylinderPrimitive
 
 A primitive representing a cylinder, elliptic cylinder, or truncated cone.

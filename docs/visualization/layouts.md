@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: "Layouts"
+description: "Create, save, and share customized workspace layouts for recurring tasks and team collaboration."
+keywords: [layouts, workspace, panels, save, share, collaboration, template]
+---
+
 # Layouts
 
 Lichtblick layouts enable users to design and save customized workspaces tailored to specific tasks or workflows. These layouts can be reused for recurring projects or shared with team members working on similar challenges.

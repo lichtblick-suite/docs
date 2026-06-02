@@ -1,7 +1,9 @@
 ---
 id: 3d
+sidebar_position: 2
 title: 3D Panel
 description: Visualize robots and environments in 3D — markers, entities, point clouds, URDFs, transforms and more.
+keywords: [3d, visualization, point cloud, lidar, transforms, scene entities, urdf, ros, markers, tf]
 ---
 
 ## Overview

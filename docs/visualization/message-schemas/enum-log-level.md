@@ -1,3 +1,10 @@
+---
+sidebar_position: 12
+title: "LogLevel"
+description: "Enum defining log severity levels used in Log messages."
+keywords: [log level, enum, severity, debug, info, warning, error, schema]
+---
+
 # LogLevel
 
 The severity level assigned to a log entry.

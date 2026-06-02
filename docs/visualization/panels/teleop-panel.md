@@ -1,3 +1,10 @@
+---
+sidebar_position: 10
+title: "Teleoperation Panel"
+description: "Remotely control your robot by publishing Twist messages via the teleoperation interface."
+keywords: [teleoperation, teleop, twist, robot control, ros, remote, geometry_msgs]
+---
+
 # Teleoperation Panel
 
 The Teleoperation Panel allows you to remotely control your robot by sending [geometry\_msgs/Twist](https://docs.ros.org/en/api/geometry_msgs/html/msg/Twist.html) or [geometry\_msgs/msg/Twist](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/Twist.msg) messages directly to your active ROS system.

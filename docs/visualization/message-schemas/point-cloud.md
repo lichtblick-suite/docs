@@ -1,3 +1,10 @@
+---
+sidebar_position: 29
+title: "PointCloud"
+description: "Schema for a point cloud rendered as a 3D scatter plot in the 3D panel."
+keywords: [point cloud, lidar, sensor data, 3d, scatter plot, mcap, ros, schema]
+---
+
 # PointCloud
 
 A collection of N-dimensional points, which may contain additional fields with information like normals, intensity, etc.

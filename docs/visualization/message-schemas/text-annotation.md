@@ -1,3 +1,10 @@
+---
+sidebar_position: 42
+title: "TextAnnotation"
+description: "Schema for a text label annotation overlaid on image data."
+keywords: [text annotation, label, image overlay, 2d, schema]
+---
+
 # TextAnnotation
 
 A textual annotation overlaid on a 2D image.

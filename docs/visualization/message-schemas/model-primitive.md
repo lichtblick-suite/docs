@@ -1,3 +1,10 @@
+---
+sidebar_position: 27
+title: "ModelPrimitive"
+description: "Schema for a 3D model primitive (glTF/GLB) rendered in the 3D panel."
+keywords: [model, gltf, glb, 3d model, scene entity, primitive, schema]
+---
+
 # ModelPrimitive
 
 A primitive representing a 3D model file loaded from an external URL or embedded data.

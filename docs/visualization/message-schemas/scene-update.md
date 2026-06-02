@@ -1,3 +1,10 @@
+---
+sidebar_position: 40
+title: "SceneUpdate"
+description: "Schema for adding or deleting scene entities in the 3D panel."
+keywords: [scene update, 3d panel, entities, add, delete, schema]
+---
+
 # SceneUpdate
 
 A message used to modify the set of entities rendered in a 3D scene.

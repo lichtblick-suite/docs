@@ -1,3 +1,10 @@
+---
+sidebar_position: 19
+title: "GeoJSON"
+description: "Schema for GeoJSON data displayed as geographic overlays in the Map panel."
+keywords: [geojson, map, geographic, gps, location, overlay, schema]
+---
+
 # GeoJSON
 
 GeoJSON data for annotating maps.

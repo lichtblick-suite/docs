@@ -1,3 +1,10 @@
+---
+sidebar_position: 26
+title: "Log"
+description: "Schema for a log message with severity level, displayed in the Log panel."
+keywords: [log, logging, severity, debug, info, warning, error, schema]
+---
+
 # Log
 
 A log message

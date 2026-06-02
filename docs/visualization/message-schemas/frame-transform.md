@@ -1,3 +1,10 @@
+---
+sidebar_position: 17
+title: "FrameTransform"
+description: "Schema for a coordinate frame transform defining the relationship between two frames."
+keywords: [frame transform, tf, coordinate frames, transforms, 3d, ros, schema]
+---
+
 # FrameTransform
 
 A transform between two reference frames in 3D space.

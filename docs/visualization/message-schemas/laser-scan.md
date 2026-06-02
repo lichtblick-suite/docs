@@ -1,3 +1,10 @@
+---
+sidebar_position: 23
+title: "LaserScan"
+description: "Schema for a single 2D or 3D laser scan displayed as a point cloud in the 3D panel."
+keywords: [laser scan, lidar, point cloud, sensor, 2d, 3d, ros, schema]
+---
+
 # LaserScan
 
 Single scan from a planar laser range-finder

@@ -1,7 +1,9 @@
 ---
 id: image-panel
+sidebar_position: 4
 title: Image Panel
 description: Display raw and compressed images, as well as compressed videos.
+keywords: [image, camera, raw image, compressed image, video, annotations, visualization]
 ---
 
 The Image Panel enables you to display raw and compressed image data, as well as compressed video streams, directly within the workspace. It supports intuitive 2D annotations—including text labels, circles, and key points—for contextual markup. Additionally, you can overlay 3D markers on top of the visual content to provide spatial insight and enhance data interpretation.

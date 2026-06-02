@@ -1,5 +1,8 @@
 ---
 sidebar_position: 5
+title: "Message Converters"
+description: "Transform messages from one schema to another using Lichtblick message converter extensions."
+keywords: [message converters, schema, transform, extension, typescript, api, custom messages]
 ---
 
 # Message Converters

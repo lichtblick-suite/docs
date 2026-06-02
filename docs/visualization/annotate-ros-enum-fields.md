@@ -1,3 +1,10 @@
+---
+sidebar_position: 10
+title: "Annotating ROS Enum Fields"
+description: "Display ROS message constants as named enum values in Lichtblick panels."
+keywords: [ros, enums, message constants, annotations, fields, visualization]
+---
+
 # Annotating ROS Enum Fields
 
 ROS messages do not natively support enumerations, but Lichtblick provides two ways to treat constant values as enums: using a separate enum message or applying inline annotations.
