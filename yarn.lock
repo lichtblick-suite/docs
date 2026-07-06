@@ -7361,10 +7361,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-east-asian-width@npm:^1.3.0":
-  version: 1.5.0
-  resolution: "get-east-asian-width@npm:1.5.0"
-  checksum: 60bc34cd1e975055ab99f0f177e31bed3e516ff7cee9c536474383954a976abaa6b94a51d99ad158ef1e372790fa096cab7d07f166bb0778f6587954c0fbe946
+"get-east-asian-width@npm:^1.5.0":
+  version: 1.6.0
+  resolution: "get-east-asian-width@npm:1.6.0"
+  checksum: 88faf98aaade2b24ad260be369b026d979ff4d0e6201bfd991654da17f2aa720bbddb812ce5612110eef6b469d8370c863f69a2f9818d61733f1eb2a83d779b8
   languageName: node
   linkType: hard
 
@@ -8526,14 +8526,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:4.1.1, js-yaml@npm:^4.1.0":
-  version: 4.1.1
-  resolution: "js-yaml@npm:4.1.1"
+"js-yaml@npm:5.2.0":
+  version: 5.2.0
+  resolution: "js-yaml@npm:5.2.0"
   dependencies:
     argparse: ^2.0.1
   bin:
-    js-yaml: bin/js-yaml.js
-  checksum: ea2339c6930fe048ec31b007b3c90be2714ab3e7defcc2c27ebf30c74fd940358f29070b4345af0019ef151875bf3bc3f8644bea1bab0372652b5044813ac02d
+    js-yaml: bin/js-yaml.mjs
+  checksum: 2a524de6aa50ac467b24e6dc6f6e0b302a5e11cded4ab6fbc948e679c06d0b65bb468f9de9fcd1fe97c45eccebcc5c68cf379480b1304166c145802a8ffeaae3
   languageName: node
   linkType: hard
 
@@ -8546,6 +8546,17 @@ __metadata:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: 626fc207734a3452d6ba84e1c8c226240e6d431426ed94d0ab043c50926d97c509629c08b1d636f5d27815833b7cfd225865631da9fb33cb957374490bf3e90b
+  languageName: node
+  linkType: hard
+
+"js-yaml@npm:^4.1.0":
+  version: 4.1.1
+  resolution: "js-yaml@npm:4.1.1"
+  dependencies:
+    argparse: ^2.0.1
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: ea2339c6930fe048ec31b007b3c90be2714ab3e7defcc2c27ebf30c74fd940358f29070b4345af0019ef151875bf3bc3f8644bea1bab0372652b5044813ac02d
   languageName: node
   linkType: hard
 
@@ -8695,7 +8706,7 @@ __metadata:
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
     husky: ^9.1.7
-    markdownlint-cli2: ^0.22.1
+    markdownlint-cli2: ^0.23.0
     prism-react-renderer: ^2.3.0
     react: ^19.2.7
     react-dom: ^19.2.7
@@ -8837,12 +8848,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linkify-it@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "linkify-it@npm:5.0.0"
+"linkify-it@npm:^5.0.1":
+  version: 5.0.2
+  resolution: "linkify-it@npm:5.0.2"
   dependencies:
     uc.micro: ^2.0.0
-  checksum: b0b86cadaf816b64c947a83994ceaad1c15f9fe7e079776ab88699fb71afd7b8fc3fd3d0ae5ebec8c92c1d347be9ba257b8aef338c0ebf81b0d27dcf429a765a
+  checksum: 3ac965e7df2c8788dc5c4c3009aab745f0288dcbc8776ab5bf4317b106c7b7b84fd0f502565d81f9c07f61fa0f0a4150893a6af9d86c36af985aac115bb5c293
   languageName: node
   linkType: hard
 
@@ -8978,19 +8989,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:14.1.1":
-  version: 14.1.1
-  resolution: "markdown-it@npm:14.1.1"
+"markdown-it@npm:14.2.0":
+  version: 14.2.0
+  resolution: "markdown-it@npm:14.2.0"
   dependencies:
     argparse: ^2.0.1
     entities: ^4.4.0
-    linkify-it: ^5.0.0
+    linkify-it: ^5.0.1
     mdurl: ^2.0.0
     punycode.js: ^2.3.1
     uc.micro: ^2.1.0
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: d6d55865c60debc4cc21d7288f0f6ea04ca055af79c58c467a29c949a289b7e679912c2575d79edb20f55ff3b4548f75b1e1184f939223fa32b08331c5fee81c
+  checksum: 693269ccf502a461f13ffed54f6d47c05e1a2ceb0c31bfb0edcba5e54cb1e6000444b712fab1857493e43cfdded5d5d91f05dcb63a4db7a6990788340266b749
   languageName: node
   linkType: hard
 
@@ -9010,28 +9021,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:^0.22.1":
-  version: 0.22.1
-  resolution: "markdownlint-cli2@npm:0.22.1"
+"markdownlint-cli2@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "markdownlint-cli2@npm:0.23.0"
   dependencies:
     globby: 16.2.0
-    js-yaml: 4.1.1
+    js-yaml: 5.2.0
     jsonc-parser: 3.3.1
     jsonpointer: 5.0.1
-    markdown-it: 14.1.1
-    markdownlint: 0.40.0
+    markdown-it: 14.2.0
+    markdownlint: 0.41.0
     markdownlint-cli2-formatter-default: 0.0.6
     micromatch: 4.0.8
-    smol-toml: 1.6.1
+    smol-toml: 1.7.0
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: dee36afd7b850aa50f96664d2d3df911807531c5a7b335557631ad8e43f7d56bfbcce949b7de6771185b798ae96ffbe27325912d514f941f5dded98c43d9242d
+  checksum: 4df7ff8bc7dfdf03a9d72480ccbcc0a99ee2eb671e13b6eb860cabb28d91a9764189c42354a24d14050823dfbd94835c5104f25c7c1bd69a2571f681bf21e29c
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.40.0":
-  version: 0.40.0
-  resolution: "markdownlint@npm:0.40.0"
+"markdownlint@npm:0.41.0":
+  version: 0.41.0
+  resolution: "markdownlint@npm:0.41.0"
   dependencies:
     micromark: 4.0.2
     micromark-core-commonmark: 2.0.3
@@ -9041,8 +9052,8 @@ __metadata:
     micromark-extension-gfm-table: 2.1.1
     micromark-extension-math: 3.1.0
     micromark-util-types: 2.0.2
-    string-width: 8.1.0
-  checksum: c62e1695de703e50364b3f985f1870a01dffd4ce5662c41fe3fd42996f858f8b166e0919b4343d60717f6d027956735fcb7413f987e943d024fbefb70b3f3c58
+    string-width: 8.2.1
+  checksum: 1b2805e5240fe3ac9ad61a491c30cc79ad5745fa5be528572439fea8f65896d6fe3985ee6bf05cb0ff8a4ab438de0cfaa4cc50f7d91845bdd973e48029ac6dd0
   languageName: node
   linkType: hard
 
@@ -12648,10 +12659,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smol-toml@npm:1.6.1":
-  version: 1.6.1
-  resolution: "smol-toml@npm:1.6.1"
-  checksum: bb5fce0c0369426ae8ae71ba91b5754423037dce8a2907d659ba4e45f5d7af1baabf7efea8ddb46ce681737be77a3795163f06ce4d7d3953f10cf6533194ffdb
+"smol-toml@npm:1.7.0":
+  version: 1.7.0
+  resolution: "smol-toml@npm:1.7.0"
+  checksum: 4007f76de75437dbe9fdcb7fdc08a55206dadce43faa8da0ec8e769f73907a4773bd4bfd5c578cda3b9898580b1d346b141959ba2fa104d857e586ccb40b0072
   languageName: node
   linkType: hard
 
@@ -12813,13 +12824,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:8.1.0":
-  version: 8.1.0
-  resolution: "string-width@npm:8.1.0"
+"string-width@npm:8.2.1":
+  version: 8.2.1
+  resolution: "string-width@npm:8.2.1"
   dependencies:
-    get-east-asian-width: ^1.3.0
-    strip-ansi: ^7.1.0
-  checksum: 51ee97c4ffee7b94f8a2ee785fac14f81ec9809b9fcec9a4db44e25c717c263af0cc4387c111aef76195c0718dc43766f3678c07fb542294fb0244f7bfbde883
+    get-east-asian-width: ^1.5.0
+    strip-ansi: ^7.1.2
+  checksum: f77829903c89e671942a8863cfc801f9ea330d3b7439f0ef9b0fcb2960866802bb90c598cf9aca86961e616e6d5182077e8b9c389f8ace42f7a3584a4f8f99d0
   languageName: node
   linkType: hard
 
@@ -12893,7 +12904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-ansi@npm:^7.0.1, strip-ansi@npm:^7.1.0":
+"strip-ansi@npm:^7.0.1, strip-ansi@npm:^7.1.2":
   version: 7.2.0
   resolution: "strip-ansi@npm:7.2.0"
   dependencies:
