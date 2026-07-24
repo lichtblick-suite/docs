@@ -6880,7 +6880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"entities@npm:^4.2.0, entities@npm:^4.4.0":
+"entities@npm:^4.2.0, entities@npm:^4.4.0, entities@npm:^4.5.0":
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: 853f8ebd5b425d350bffa97dd6958143179a5938352ccae092c62d1267c4e392a039be1bae7d51b6e4ffad25f51f9617531fedf5237f15df302ccfb452cbf2d7
@@ -7598,9 +7598,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:16.2.0":
-  version: 16.2.0
-  resolution: "globby@npm:16.2.0"
+"globby@npm:16.2.1":
+  version: 16.2.1
+  resolution: "globby@npm:16.2.1"
   dependencies:
     "@sindresorhus/merge-streams": ^4.0.0
     fast-glob: ^3.3.3
@@ -7608,7 +7608,7 @@ __metadata:
     is-path-inside: ^4.0.0
     slash: ^5.1.0
     unicorn-magic: ^0.4.0
-  checksum: e8af88db3e53a8ac03073fb2f093d7d51bcf0ab073958cb04706ce11a886ef2691650eede823bde53c3117a4055bada7aa64e5dfeb4263de4c3639dab4cbbfc8
+  checksum: 95a67667383ff9493eca00f15bc08a0752526dc9d5e506a0a848086c1b90f500d92d0b1698a77b27333e1585ef8fa440af904e640d7d7eac5ca84f7935e373d8
   languageName: node
   linkType: hard
 
@@ -8638,14 +8638,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:5.2.0":
-  version: 5.2.0
-  resolution: "js-yaml@npm:5.2.0"
+"js-yaml@npm:5.2.1":
+  version: 5.2.1
+  resolution: "js-yaml@npm:5.2.1"
   dependencies:
     argparse: ^2.0.1
   bin:
     js-yaml: bin/js-yaml.mjs
-  checksum: 2a524de6aa50ac467b24e6dc6f6e0b302a5e11cded4ab6fbc948e679c06d0b65bb468f9de9fcd1fe97c45eccebcc5c68cf379480b1304166c145802a8ffeaae3
+  checksum: 8cbefb87c31db3fc177ce5ecf92c072d124be9247f1164ea50cb446d56037d3f4c086a4167cd127f20bb2b4281d9c64d051a8e148f8f4c841c074d3b06492bcf
   languageName: node
   linkType: hard
 
@@ -8806,7 +8806,7 @@ __metadata:
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
     husky: ^9.1.7
-    markdownlint-cli2: ^0.23.0
+    markdownlint-cli2: ^0.23.1
     prism-react-renderer: ^2.3.0
     react: ^19.2.8
     react-dom: ^19.2.8
@@ -8948,7 +8948,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linkify-it@npm:^5.0.1":
+"linkify-it@npm:^5.0.2":
   version: 5.0.2
   resolution: "linkify-it@npm:5.0.2"
   dependencies:
@@ -9089,19 +9089,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:14.2.0":
-  version: 14.2.0
-  resolution: "markdown-it@npm:14.2.0"
+"markdown-it@npm:14.3.0":
+  version: 14.3.0
+  resolution: "markdown-it@npm:14.3.0"
   dependencies:
     argparse: ^2.0.1
-    entities: ^4.4.0
-    linkify-it: ^5.0.1
+    entities: ^4.5.0
+    linkify-it: ^5.0.2
     mdurl: ^2.0.0
     punycode.js: ^2.3.1
     uc.micro: ^2.1.0
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 693269ccf502a461f13ffed54f6d47c05e1a2ceb0c31bfb0edcba5e54cb1e6000444b712fab1857493e43cfdded5d5d91f05dcb63a4db7a6990788340266b749
+  checksum: 738b14c8e34cade05e153bfcea4f3e669fa98e669e1373e505b6f2a384ce8146e25cc0449bd4675d4df52e12e46f85d5018a9f2fb3decee90fbb0aa526fb7383
   languageName: node
   linkType: hard
 
@@ -9121,28 +9121,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:^0.23.0":
-  version: 0.23.0
-  resolution: "markdownlint-cli2@npm:0.23.0"
+"markdownlint-cli2@npm:^0.23.1":
+  version: 0.23.1
+  resolution: "markdownlint-cli2@npm:0.23.1"
   dependencies:
-    globby: 16.2.0
-    js-yaml: 5.2.0
+    globby: 16.2.1
+    js-yaml: 5.2.1
     jsonc-parser: 3.3.1
     jsonpointer: 5.0.1
-    markdown-it: 14.2.0
-    markdownlint: 0.41.0
+    markdown-it: 14.3.0
+    markdownlint: 0.41.1
     markdownlint-cli2-formatter-default: 0.0.6
     micromatch: 4.0.8
     smol-toml: 1.7.0
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: 4df7ff8bc7dfdf03a9d72480ccbcc0a99ee2eb671e13b6eb860cabb28d91a9764189c42354a24d14050823dfbd94835c5104f25c7c1bd69a2571f681bf21e29c
+  checksum: c347222bac2549e6e0f5ac2408fcaf19181053b6d2aed5ee9f49265721c3f9932b25b25825a4d8aa951417afb06d344e764d7330c1fc42714547d17dee870fdc
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.41.0":
-  version: 0.41.0
-  resolution: "markdownlint@npm:0.41.0"
+"markdownlint@npm:0.41.1":
+  version: 0.41.1
+  resolution: "markdownlint@npm:0.41.1"
   dependencies:
     micromark: 4.0.2
     micromark-core-commonmark: 2.0.3
@@ -9153,7 +9153,7 @@ __metadata:
     micromark-extension-math: 3.1.0
     micromark-util-types: 2.0.2
     string-width: 8.2.1
-  checksum: 1b2805e5240fe3ac9ad61a491c30cc79ad5745fa5be528572439fea8f65896d6fe3985ee6bf05cb0ff8a4ab438de0cfaa4cc50f7d91845bdd973e48029ac6dd0
+  checksum: 5c4c2451c46ca9a58d0ddc1575e3827cde3dc14349e8f67dc57a8b13b84ef336a24d00873cb00f2c249b286b7c280bf4dae9e80fe65a3834b3c3abe4045a50b9
   languageName: node
   linkType: hard
 
