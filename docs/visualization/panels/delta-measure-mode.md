@@ -13,11 +13,11 @@ Use this feature to measure elapsed time, compare signal values, or inspect stat
 
 ## Activate measure mode
 
-1. Open a [Plot panel](./plot-panel.md) or [State Transitions panel](./state-transitions-panel.md).
+1. Open a [**Plot panel**](./plot-panel.md) or [**State Transitions panel**](./state-transitions-panel.md).
 2. Add the series or state paths you want to inspect.
-3. Click the measure mode icon in the panel toolbar. The icon remains highlighted while measure mode is active.
+3. Click the **measure mode icon** in the panel toolbar. The icon remains highlighted while measure mode is active.
 
-![Delta Measure Mode - Plot Panel](images/delta-measure-mode.png)
+![Plot panel showing two measurement markers on separate series with vertical delta lines and an overlay listing each marker's timestamp, Y-axis value, and the delta between them.](images/delta-measure-mode.png)
 
 ## Place measurement markers
 
@@ -29,9 +29,9 @@ Click two points on the chart to place **Marker A** and **Marker B**. The panel 
 | **Y** | The value at the marker. |
 | **Delta** | The absolute difference between the two marker positions or values. |
 
-The overlay displays a placeholder until enough information is available. Click a marker's close button to remove it and place it again. You can drag the overlay to move it out of the way of the chart.
+The overlay displays a placeholder until enough information is available. Click a marker's **close button** to remove it and place it again. You can drag the overlay to move it out of the way of the chart.
 
-Press `Escape` or click the toolbar icon again to leave measure mode. Leaving the mode does not change the panel configuration.
+Press `Escape` or click the **toolbar icon** again to leave measure mode. Leaving the mode does not change the panel configuration.
 
 ## Plot panel
 
