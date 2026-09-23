@@ -60,6 +60,30 @@ const config: Config = {
         sidebarPath: "./sidebars.ts",
       },
     ],
+    [
+      "docusaurus-plugin-llms",
+      {
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        // Covers both plugin-content-docs instances (docs/ + guides/) in one llms.txt/llms-full.txt
+        docsDir: [
+          { path: "docs", routeBasePath: "docs", label: "Documentation" },
+          { path: "guides", routeBasePath: "guides", label: "Guides" },
+        ],
+        title: "Lichtblick Documentation",
+        description: "An integrated visualization and diagnosis tool for robotics",
+        excludeImports: true,
+        removeDuplicateHeadings: true,
+      },
+    ],
+    [
+      "docusaurus-plugin-copy-page-button",
+      {
+        placement: "toc",
+        enabledActions: ["copy", "view", "chatgpt", "claude", "perplexity", "gemini"],
+        generateMarkdownRoutes: true,
+      },
+    ],
   ],
 
   themeConfig: {
