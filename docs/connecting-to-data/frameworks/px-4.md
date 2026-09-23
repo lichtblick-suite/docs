@@ -2,7 +2,7 @@
 
 Load local PX 4 ULog (`ulg`) files for visualization.
 
-# Local Data
+## Local Data
 
 You can load local files for visualization by:
 

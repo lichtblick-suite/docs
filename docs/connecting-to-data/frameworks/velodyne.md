@@ -6,6 +6,8 @@ Desktop Only
 Velodyne sensors communicate using UDP sockets, which are not supported by web browsers. To establish a connection with a Velodyne sensor, please use our desktop application, which is designed to handle UDP communication reliably.
 </div>
 
+## Connecting
+
 Connect to Velodyne Lidar to load live incoming data.
 
 Select "Open connection" in the "Open data source" menu, and select the "Velodyne Lidar" option.
