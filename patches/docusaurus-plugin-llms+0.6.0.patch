@@ -1,0 +1,20 @@
+diff --git a/node_modules/docusaurus-plugin-llms/lib/utils.js b/node_modules/docusaurus-plugin-llms/lib/utils.js
+index 3db3e3d..c902506 100644
+--- a/node_modules/docusaurus-plugin-llms/lib/utils.js
++++ b/node_modules/docusaurus-plugin-llms/lib/utils.js
+@@ -335,9 +335,12 @@ function joinSiteUrl(siteUrl, routePath) {
+     try {
+         const base = new URL(siteUrl);
+         const basePath = base.pathname.replace(/\/+$/, ''); // '' for root, '/docs' otherwise
+-        const full = basePath && path !== basePath && !path.startsWith(`${basePath}/`)
+-            ? `${basePath}${path}`
+-            : path;
++        // Patched (lichtblick-suite/docs): always prepend basePath. Upstream's
++        // "already starts with basePath" skip produces false positives whenever
++        // a routeBasePath happens to textually match the baseUrl segment (e.g.
++        // baseUrl "/docs" + docs routeBasePath "docs"), silently dropping the
++        // routeBasePath from generated links. See patches/docusaurus-plugin-llms+0.6.0.patch.
++        const full = basePath ? `${basePath}${path}` : path;
+         return `${base.origin}${full}`;
+     }
+     catch {

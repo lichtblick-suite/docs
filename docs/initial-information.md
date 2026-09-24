@@ -10,7 +10,7 @@ Lichtblick empowers robotics teams to efficiently explore, collaborate on, and i
 
 ![Lichtblick Overview](https://github.com/user-attachments/assets/94609fb1-0bfa-49c7-8d07-9e846ebc9d9f)
 
-# Workflows
+## Workflows
 
 Lichtblick offers a comprehensive suite of developer tools tailored for each phase of the robotics development lifecycle:
 

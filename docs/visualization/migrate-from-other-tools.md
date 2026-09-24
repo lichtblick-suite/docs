@@ -2,6 +2,8 @@
 
 Lichtblick streamlines robotics development by integrating commonly used developer tools into modular panels—providing a unified development environment.
 
+## Tool Mapping
+
 | Tool | Lichtblick Panel |
 |------|-----------------|
 | **ROS 1** | |

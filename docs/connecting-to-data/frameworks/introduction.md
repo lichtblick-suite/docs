@@ -2,6 +2,8 @@
 
 This section of the documentation provides a guide on how to connect Lichtblick to various data sources and understand the supported data formats and schema encodings. Whether you are working with live sensor data or recorded files, Lichtblick offers flexible options to integrate and visualize your information.
 
+## Topics Covered
+
 The pages within this section cover the following key areas:
 
 - **Connecting to Live Data Sources:** Learn how to establish real-time connections with platforms like ROS 1 and ROS 2, as well as specialized sensors like Velodyne.

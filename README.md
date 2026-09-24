@@ -38,6 +38,26 @@ yarn build
 
 This generates static content into the `build` directory.
 
+## AI-Friendly Documentation
+
+Every production build also generates output for LLMs and AI tooling:
+
+- `build/llms.txt` and `build/llms-full.txt` — a link index and full-content
+  file following the [llmstxt.org](https://llmstxt.org/) standard, covering
+  both the `docs/` and `guides/` sections.
+- A plain-Markdown `.md` route for every page (e.g. `build/docs/browser-support.md`),
+  used by the "Copy page" button described below.
+
+Doc and guide pages also include a **Copy page** button in the table of
+contents sidebar, letting readers copy the page as Markdown, view it as
+Markdown, or open it directly in ChatGPT, Claude, Perplexity, or Gemini.
+
+Note: `docusaurus-plugin-llms` ships with a link-generation bug that surfaces
+only on this site's `baseUrl`/`routeBasePath` combination (both are `docs`).
+A local fix is applied automatically via `patch-package` on `yarn install`
+(see `patches/docusaurus-plugin-llms+0.6.0.patch`) and can be removed once
+fixed upstream.
+
 ## Contribution Guidelines
 
 - Familiarize yourself with the [Docusaurus documentation](https://docusaurus.io/docs) to understand the basics.
