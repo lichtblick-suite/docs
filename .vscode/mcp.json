@@ -1,8 +1,13 @@
 {
-    "servers": {
-        "playwright": {
-            "command": "npx",
-            "args": ["@playwright/mcp@latest", "--viewport-size=1280,800"]
-        }
-    }
+	"servers": {
+		"playwright": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest",
+				"--viewport-size=1280,800"
+			]
+		}
+	},
+	"inputs": []
 }
