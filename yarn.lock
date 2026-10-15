@@ -6724,13 +6724,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"docusaurus-plugin-copy-page-button@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "docusaurus-plugin-copy-page-button@npm:0.8.4"
+"docusaurus-plugin-copy-page-button@npm:^0.8.5":
+  version: 0.8.5
+  resolution: "docusaurus-plugin-copy-page-button@npm:0.8.5"
   peerDependencies:
     "@docusaurus/core": ^3.0.0
     react: ^18.0.0 || ^19.0.0
-  checksum: ba9d82d4b33feaf9170c11b6b34de8c0db37b0552ade84c6147d831c15b1e73aedbaed1cb4bf770078df3f8752cad0f5531c4d0a23a7fd98d6b34044ab0ce59e
+  checksum: 4bb94918b22524086e31e72d0e4e4c943c729d3e38fe89f99e46546927a606ef4bf277e214ca7f63bacc79688e7ef3b97a4959527cbaafafe465d0ee6a6143bc
   languageName: node
   linkType: hard
 
@@ -8965,7 +8965,7 @@ __metadata:
     "@docusaurus/types": 3.10.2
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
-    docusaurus-plugin-copy-page-button: ^0.8.4
+    docusaurus-plugin-copy-page-button: ^0.8.5
     docusaurus-plugin-llms: ^0.6.0
     husky: ^9.1.7
     markdownlint-cli2: ^0.23.3
