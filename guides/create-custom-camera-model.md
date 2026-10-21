@@ -10,7 +10,7 @@ Custom camera models are essential for fisheye cameras, omnidirectional cameras,
 
 ## Prerequisites
 
-See the [Getting Started](./introduction.md#getting-started) section for extension setup requirements.
+See the [Getting Started](./index.md#getting-started) section for extension setup requirements.
 
 ## Camera model interface
 

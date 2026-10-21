@@ -41,15 +41,15 @@ The Image Panel enables you to display raw and compressed image data, as well as
 
 List of transform messages to display.
 
-See the [3D panel docs](./3d-panel.md#transforms) for more information on transforms.
+See the [3D panel docs](./3d.md#transforms) for more information on transforms.
 
 ### Topics
 
-List of [3D marker topics](./3d-panel.md#topics) to superimpose on the image.
+List of [3D marker topics](./3d.md#topics) to superimpose on the image.
 
 ### Custom layers
 
-See the [3D panel docs](./3d-panel.md) for more information on possible settings.
+See the [3D panel docs](./3d.md) for more information on possible settings.
 
 ## Supported encodings
 

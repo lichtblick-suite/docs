@@ -4,7 +4,7 @@ Represents a visual arrow used to indicate direction or orientation in 3D space.
 
 ## Panel support
 
-`ArrowPrimitive` can be displayed in the following panels: [3D](../panels/3d-panel.md).
+`ArrowPrimitive` can be displayed in the following panels: [3D](../panels/3d.md).
 
 ## Schema
 

@@ -4,7 +4,7 @@ A message used to modify the set of entities rendered in a 3D scene.
 
 ## Panel support
 
-`SceneUpdate` is used in the [3D](../panels/3d-panel.md) and [Image](../panels/image-panel.md) panels.
+`SceneUpdate` is used in the [3D](../panels/3d.md) and [Image](../panels/image-panel.md) panels.
 
 ## Schema
 
