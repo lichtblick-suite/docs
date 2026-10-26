@@ -94,7 +94,7 @@ export function activate(extensionContext: ExtensionContext) {
 
 ## Building and testing
 
-Follow the standard [extension building process](./introduction.md#building-and-testing).
+Follow the standard [extension building process](./index.md#building-and-testing).
 
 Both original and aliased topics will appear in the topic list, and panels can subscribe to either version.
 

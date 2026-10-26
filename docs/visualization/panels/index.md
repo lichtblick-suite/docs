@@ -1,7 +1,3 @@
----
-slug: /visualization/panels
----
-
 # Panels
 
 ## Overview

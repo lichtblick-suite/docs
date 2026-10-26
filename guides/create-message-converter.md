@@ -10,7 +10,7 @@ Message converters are ideal when there's a 1:1 relationship between your intern
 
 ## Prerequisites
 
-See the [Getting Started](./introduction.md#getting-started) section for extension setup requirements.
+See the [Getting Started](./index.md#getting-started) section for extension setup requirements.
 
 ## Understanding the entry point
 
