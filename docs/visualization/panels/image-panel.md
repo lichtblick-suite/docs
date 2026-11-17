@@ -56,7 +56,7 @@ See the [3D panel docs](./3d.md) for more information on possible settings.
 | Raw images | Compressed images | Compressed videos |
 | ---------- | ----------------- | ----------------- |
 | `8UC1`     | `webp`            | `h264`            |
-| `8UC3`     | `jpeg`            | `h265` (HVEC)     |
+| `8UC3`     | `jpeg`            | `h265` (HEVC)     |
 | `16UC1`    | `jpg`             | `vp9`             |
 | `32FC1`    | `png`             | `av1`             |
 | `bayer_bggr8` | `avif`         |                   |
@@ -130,6 +130,8 @@ If you notice warnings for `foxglove.CompressedVideo` topics about frames being 
 Tips for Low-Latency Video Encoding
 
 Use the `BASELINE` profile for `H.264`, as it avoids B-frames which add decoding delay.
+
+For `H.265` (HEVC), encode with only I and P frames (no B-frames). Lichtblick does not support H.265 B-frames and skips them. Include the VPS, SPS, and PPS in every key frame, and use a regular key frame interval so seeking resolves quickly. See [CompressedVideo](../message-schemas/compressed-video.md#format-details-for-h265-hevc) for details.
 
 Disable frame reordering in your encoder settings.
 
