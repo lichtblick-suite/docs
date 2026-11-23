@@ -8758,14 +8758,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:5.4.3":
-  version: 5.4.3
-  resolution: "js-yaml@npm:5.4.3"
+"js-yaml@npm:5.5.0":
+  version: 5.5.0
+  resolution: "js-yaml@npm:5.5.0"
   dependencies:
-    argparse: ^2.0.1
+    argparse: ^3.0.3
   bin:
     js-yaml: bin/js-yaml.mjs
-  checksum: 5a440efca085ea5727ea7da345a94a9bc58cc962b79d57174cbc530624f55b8fd93a8cf504c508096d6a0991f1e82fc8301e69dd70c25d586d714b8c6fd2cc5c
+  checksum: cc72b07047154c8ee26a30f081cd93b99ddd4c5ab06f57ab562f728fdd5b599a7c6658f2b41d5eb11908605c9c2f005b72b56d606a4d9a460cc6324a00ba26dc
   languageName: node
   linkType: hard
 
@@ -8969,7 +8969,7 @@ __metadata:
     docusaurus-plugin-copy-page-button: ^0.8.5
     docusaurus-plugin-llms: ^0.6.0
     husky: ^9.1.7
-    markdownlint-cli2: ^0.24.0
+    markdownlint-cli2: ^0.24.1
     patch-package: ^8.0.1
     prism-react-renderer: ^2.3.0
     react: ^19.3.1
@@ -9285,28 +9285,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:^0.24.0":
-  version: 0.24.0
-  resolution: "markdownlint-cli2@npm:0.24.0"
+"markdownlint-cli2@npm:^0.24.1":
+  version: 0.24.1
+  resolution: "markdownlint-cli2@npm:0.24.1"
   dependencies:
     globby: 16.2.4
-    js-yaml: 5.4.3
+    js-yaml: 5.5.0
     jsonc-parser: 3.3.1
     jsonpointer: 5.0.1
     markdown-it: 15.0.3
-    markdownlint: 0.42.0
+    markdownlint: 0.42.1
     markdownlint-cli2-formatter-default: 0.0.6
     micromatch: 4.0.8
     smol-toml: 1.9.1
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: e25112a4b5bafd6429343821e5c95ca3b2179d3802ef0fa69263853e692e2ba796255512c7b1292547d38bf1cb37ba8e527c4ee4ad88a8ea471d35a13223b607
+  checksum: a676b5ced95624b269c819474e3179ac2ad02dcdfb638fdcec04d00aa3a59a9d7d67184e6be82f42f54d7a4c860a122604f2a5bc0694b127686ae051918018f0
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.42.0":
-  version: 0.42.0
-  resolution: "markdownlint@npm:0.42.0"
+"markdownlint@npm:0.42.1":
+  version: 0.42.1
+  resolution: "markdownlint@npm:0.42.1"
   dependencies:
     micromark: 4.0.3
     micromark-core-commonmark: 2.0.4
@@ -9316,9 +9316,9 @@ __metadata:
     micromark-extension-gfm-table: 2.1.2
     micromark-extension-math: 3.1.0
     micromark-util-types: 2.0.3
-    re2js: 2.8.6
+    re2js: 2.9.1
     string-width: 8.3.0
-  checksum: 8ce4aeed2c96fd89606a8828f96d4e070f33b48c1e25b15ed7d85e4af3b24cf281c973ca130781de3adb6fef0f916c24947e9f3653c8e8f6466abe8bf6f648e8
+  checksum: d2c3ce3b828e3bd7ee3d73c18ec010a0d2842beb7b5c44c26639a8e1b10781121af2977dda5ac532a4e0fa8da2f358e280709fcde979914db4069b1ec2205ab8
   languageName: node
   linkType: hard
 
@@ -12144,10 +12144,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"re2js@npm:2.8.6":
-  version: 2.8.6
-  resolution: "re2js@npm:2.8.6"
-  checksum: 545e82b73149683649412d90078a4dafde0cd410f23a1ea3b2c7f62651d8c5198d099e72c84d6585a1e42efa9d2fb2da9e3a42f5a55a452f13167aeba0df59c4
+"re2js@npm:2.9.1":
+  version: 2.9.1
+  resolution: "re2js@npm:2.9.1"
+  checksum: 6435aa62f4647966d9aaa2c9a882b5a8b609d733d61ab273ce7da71abddfa9c01cab864005d9afac88eed9d5b81115cf0d581957b674b88e5d095181033ecaad
   languageName: node
   linkType: hard
 
