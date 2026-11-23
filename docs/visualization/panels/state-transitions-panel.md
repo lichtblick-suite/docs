@@ -61,7 +61,7 @@ To restore the default view, press `r` or double-click the chart area.
 
 ### Scroll vertically
 
-When not all series fit in the viewport, use the scrollbar on the right side of the panel to scroll vertically.
+When not all series fit in the viewport, hold `Shift` and use the scroll wheel over the chart to scroll vertically. You can also drag the scrollbar on the right side of the panel.
 
 ### Click-to-seek
 
