@@ -6735,16 +6735,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"docusaurus-plugin-llms@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "docusaurus-plugin-llms@npm:0.6.0"
+"docusaurus-plugin-llms@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "docusaurus-plugin-llms@npm:0.6.2"
   dependencies:
     gray-matter: 4.0.3
     minimatch: 9.0.3
     yaml: 2.8.1
   peerDependencies:
     "@docusaurus/core": ^3.0.0
-  checksum: fe24c0c362955bb95554101d21a10e8988cd62a3f6fcd159bc55d9501e611f1929c760a9b97168506fe5d1958cf4a033834bbec622094e9107b2e9ebf505eab6
+  checksum: a70025e3974c709dee6ff97420f1ae121e0999e1d24515ae49ad59cb3e82a067c3684ee7c2d937b80f50b06e260cc155e8862fb78d97885f49a695fed7f525d3
   languageName: node
   linkType: hard
 
@@ -8967,7 +8967,7 @@ __metadata:
     "@mdx-js/react": ^3.1.1
     clsx: ^2.0.0
     docusaurus-plugin-copy-page-button: ^0.8.6
-    docusaurus-plugin-llms: ^0.6.0
+    docusaurus-plugin-llms: ^0.6.2
     husky: ^9.1.7
     markdownlint-cli2: ^0.24.1
     patch-package: ^8.0.1
