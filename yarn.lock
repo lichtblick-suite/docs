@@ -8969,7 +8969,7 @@ __metadata:
     docusaurus-plugin-copy-page-button: ^0.8.6
     docusaurus-plugin-llms: ^0.6.0
     husky: ^9.1.7
-    markdownlint-cli2: ^0.24.1
+    markdownlint-cli2: ^0.24.2
     patch-package: ^8.0.1
     prism-react-renderer: ^2.3.0
     react: ^19.3.1
@@ -9285,28 +9285,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdownlint-cli2@npm:^0.24.1":
-  version: 0.24.1
-  resolution: "markdownlint-cli2@npm:0.24.1"
+"markdownlint-cli2@npm:^0.24.2":
+  version: 0.24.2
+  resolution: "markdownlint-cli2@npm:0.24.2"
   dependencies:
     globby: 16.2.4
     js-yaml: 5.5.0
     jsonc-parser: 3.3.1
     jsonpointer: 5.0.1
     markdown-it: 15.0.3
-    markdownlint: 0.42.1
+    markdownlint: 0.42.2
     markdownlint-cli2-formatter-default: 0.0.6
     micromatch: 4.0.8
     smol-toml: 1.9.1
   bin:
     markdownlint-cli2: markdownlint-cli2-bin.mjs
-  checksum: a676b5ced95624b269c819474e3179ac2ad02dcdfb638fdcec04d00aa3a59a9d7d67184e6be82f42f54d7a4c860a122604f2a5bc0694b127686ae051918018f0
+  checksum: 5f9b603f4d083724c7ed0f46507b8f29c7ebf67df27774c72c728369a06c78c768aa393497253dc79f9fbe3077603eafcb082e09dff942b196cfda029f6dbb93
   languageName: node
   linkType: hard
 
-"markdownlint@npm:0.42.1":
-  version: 0.42.1
-  resolution: "markdownlint@npm:0.42.1"
+"markdownlint@npm:0.42.2":
+  version: 0.42.2
+  resolution: "markdownlint@npm:0.42.2"
   dependencies:
     micromark: 4.0.3
     micromark-core-commonmark: 2.0.4
@@ -9318,7 +9318,7 @@ __metadata:
     micromark-util-types: 2.0.3
     re2js: 2.9.1
     string-width: 8.3.0
-  checksum: d2c3ce3b828e3bd7ee3d73c18ec010a0d2842beb7b5c44c26639a8e1b10781121af2977dda5ac532a4e0fa8da2f358e280709fcde979914db4069b1ec2205ab8
+  checksum: 19a38146c88620463802aff47d1516132ac998ab1d81cec4685c6016bcf4b3fad1b20a30e0e5946cb92647c8f85b74f23028933d2ad8d1b57d9ca2f8ba89bf6a
   languageName: node
   linkType: hard
 
